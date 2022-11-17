@@ -11310,7 +11310,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
   box-shadow: 0 0 20px 20px rgba(0, 0, 0, 40%);
 }
 
@@ -11476,6 +11476,7 @@ header.masthead h1, header.masthead .h1, header.masthead_aboutus h1, header.mast
   background: rgba(151, 72, 47, 0.9);
   transition: opacity 0.5s ease;
   text-align: center;
+  border-radius: 10px;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
