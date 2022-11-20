@@ -11319,7 +11319,7 @@ header.masthead .site-heading .h1 {
 }
 
 .music-player {
-  width: 400px;
+  width: 90%;
   display: flex;
   justify-content: center; 
   align-items: center;
