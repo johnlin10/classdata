@@ -1,155 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>班級資料平台</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
+    <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">班級資料平台</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand" href="index.html"><i class="fa-solid fa-school"></i>　班級資料平台</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    導覽
+                    <i class="fas fa-bars"></i>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#page-top">頂部</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#news">公告</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">資料庫</a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutus.html#page-top">關於</a></li>
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#view">版塊</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#top"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">班級資料平台<br>4.0 Beta</h1>
-                        <hr class="divider" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5"></p>
-                        <a class="btn btn-primary btn-xl" href="aboutus.html#page-top">瞭解更多</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!--公告-->
-        <section class="page-section bg-primary" id="news">
-            <div class="container px-4 px-lg-5">
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/portfolio/thumbnails/1.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h1 class="text-littlered mt-0">最新公告</h1>
-                        <hr class="divider divider-light" />
-                        <p class="mb-4 btn btn-light btn-xl"><a style="color: rgb(255, 73, 22);">11.15　</a>測試公告三</p><br>
-                        <p class="mb-4 btn btn-light btn-xl"><a style="color: rgb(255, 73, 22);">11.15　</a>測試公告二</p><br>
-                        <p class="mb-4 btn btn-light btn-xl"><a style="color: rgb(255, 73, 22);">11.15　</a>測試公告一</p><br>
-                        <p class="mb-4 btn btn-light btn-xl"><a style="color: rgb(255, 73, 22);">11.14　</a>明天「體育課」調為「地理課」</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--資料庫-->
-        <section class="page-section bg-primary1" id="news">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h1 class="text-littlered mt-0">資料庫</h1>
-                        <hr class="divider divider-light" />
-                        <div id="portfolio">
-                            <div class="container-fluid p-0">
-                                <div class="row g-0">
-                                    <div class="col-lg-4 col-sm-6">
-                                        <a class="portfolio-box" href="images//區塊封面/課程表.png" title="課程表">
-                                            <img class="img-fluid" src="images//區塊封面/課程表.png" alt="課程表" />
-                                            <div class="portfolio-box-caption">
-                                                <div class="project-category text-white-50">Course Schedule</div>
-                                                <div class="project-name">課程表</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <a class="portfolio-box" href="images/區塊封面/工具集.png" title="工具集">
-                                            <img class="img-fluid" src="images/區塊封面/工具集.png" alt="工具集" />
-                                            <div class="portfolio-box-caption">
-                                                <div class="project-category text-white-50">Tools</div>
-                                                <div class="project-name">工具集</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <a class="portfolio-box" href="images/區塊封面/考程表.png" title="考程表">
-                                            <img class="img-fluid" src="images/區塊封面/考程表.png" alt="考程表" />
-                                            <div class="portfolio-box-caption">
-                                                <div class="project-category text-white-50">Exam Schedule</div>
-                                                <div class="project-name">考程表</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <a class="portfolio-box" href="images/區塊封面/資料夾.png" title="資料夾">
-                                            <img class="img-fluid" src="images/區塊封面/資料夾.png" alt="資料夾" />
-                                            <div class="portfolio-box-caption">
-                                                <div class="project-category text-white-50">Folder</div>
-                                                <div class="project-name">資料夾</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <a class="portfolio-box" href="#" title="空位">
-                                            <img class="img-fluid" src="images/區塊封面/空.png" alt="空位" />
-                                            <div class="portfolio-box-caption p-3">
-                                                <div class="project-category text-white-50">Empty</div>
-                                                <div class="project-name">空位</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <a class="portfolio-box" href="#" title="空位">
-                                            <img class="img-fluid" src="images/區塊封面/空.png" alt="空位" />
-                                            <div class="portfolio-box-caption p-3">
-                                                <div class="project-category text-white-50">Empty</div>
-                                                <div class="project-name">空位</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>班級資料平台</h1>
+                            <span class="subheading">Beta 4.0</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <!--版權-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Johnolin10 &copy; 2022.11.14</div></div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <h2 class="post-title">此頁面正在開發中...</h2>
+                        <p class="post-meta">
+                            目前開放公測，歡迎各位提供意見！
+                        </p>
+                    </div>
+                    <hr class="my-4 hr" />
+                    <a id="view"></a>
+                    <br>
+                    <div class="post-preview">
+                        <h1 class="view-title">版塊</h1>
+                    </div>
+                    <hr class="title-hr">
+                    <div class="post-preview">
+                        <div class="post-view">
+                            <br>
+                            <h2 class="post-title post-title-view">啦啦隊比賽</h2>
+                            <p class="post-meta post-meta-view">目前只存放比賽音樂。</p>
+                            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="啦啦隊比賽/啦啦隊比賽.html">前往</a></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/shoujidaxiaosh" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/profile.php?id=100018725941094" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/johnlin10" target="_block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic" id="c"><a href="https://johnlin10.github.io/johnolin10/">Johnolin10</a> &copy; 2022</div>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
