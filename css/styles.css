@@ -299,7 +299,6 @@ svg {
 
 table {
   caption-side: bottom;
-  border-collapse: collapse;
 }
 
 caption {
@@ -4615,11 +4614,12 @@ textarea.form-control-lg {
 .accordion-button:not(.collapsed) {
   color: #007891;
   background-color: #e6f3f6;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23007891'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   transform: rotate(-180deg);
+  margin-top: 0;
 }
 .accordion-button::after {
   flex-shrink: 0;
@@ -11132,6 +11132,40 @@ blockquote {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -87px;
+    transition: transform 0.5s;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #mainNav.is-fixed .navbar-brand {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@media (max-width: 860px) {
+  #mainNav {
+    transition: background-color 0.15s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -87px;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
@@ -11153,6 +11187,74 @@ blockquote {
     transform: translate3d(0, 100%, 0);
   }
 }
+
+@media (max-width: 859px) {
+  #mainNav {
+    transition: background-color 0.15s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: 0px;
+    transition: transform 0.2s;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #mainNav.is-fixed .navbar-brand {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media (max-width: 240px) {
+  #mainNav {
+    transition: background-color 0.15s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: 0px;
+    transition: transform 0.2s;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #mainNav.is-fixed .navbar-brand {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #212529;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 
 footer {
   padding-top: 3rem;
@@ -11378,4 +11480,70 @@ header.masthead .site-heading .h1 {
   display: flex;
   justify-content: center; 
   align-items: center;
+}
+
+
+.table-view {
+  width: 100%;
+  border: 0px;
+  border-color: #fff;
+  border-spacing: 0.3rem;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.table-top {
+  font-weight: 900;
+  color: #7f7f7f;
+  text-align: center;
+}
+
+.table-top-left {
+  font-weight: 900;
+  color: #7f7f7f;
+  text-align: right;
+}
+
+.table-data {
+  background-color: #f9f9f9;
+  text-align: center;
+  font-weight: 300;
+  transition: 0.3s;
+  width: 20%;
+}
+
+.table-data:hover {
+  font-weight: 500;
+  background-color: #f1f1f1;
+  border: 5px;
+}
+
+.table-data-blue {
+  color: #006a81;
+  background-color: #ecf2f9;
+}
+.table-data-blue:hover {
+  background-color: #d2e4f1;
+  border: 5px;
+}
+
+.table-data-gray {
+  color: #2f2f2f;
+}
+
+.table-view tr td{
+  font-size: 0.9rem;
+  height: 3rem;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.classchange {
+  border: 3px #efbfbf solid; 
+  transition: 0.3s;
+}
+.classchange:hover {
+  border: 1px #efbfbf solid; 
 }
