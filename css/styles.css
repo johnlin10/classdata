@@ -11457,6 +11457,16 @@ header.masthead .site-heading .h1 {
   color: #1f1f1f;
 }
 
+.post-title-blue {
+  font-weight: 900;
+  color: #005061;
+}
+
+.post-title-red {
+  font-weight: 900;
+  color: #401010;
+}
+
 .post-title-view {
   opacity: 80%;
   width: 88%;
@@ -11512,12 +11522,10 @@ header.masthead .site-heading .h1 {
 
 .bg-blue {
   background-color: #e6f3f6;
-  color: #005061;
 }
 
 .bg-red {
   background-color: #b02a3714;
-  color: #401010;
 }
 
 .music-div {
