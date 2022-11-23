@@ -11506,27 +11506,27 @@ header.masthead .site-heading .h1 {
 }
 
 .table-data {
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   text-align: center;
   font-weight: 300;
-  transition: 0.5s;
+  transition: 0.3s;
   width: 20%;
 }
 
 .table-data:hover {
-  font-weight: 500;
-  background-color: #f1f1f1;
-  border: 5px;
+  font-weight: 400;
+  font-size: 0.95rem;
+  background-color: #eeeeee;
+  border-radius: 10px;
 }
 
 .table-data-blue {
   color: #006a81;
   background-color: #ecf2f9;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .table-data-blue:hover {
   background-color: #e2eaf1;
-  border: 5px;
 }
 
 .table-data-gray {
@@ -11539,12 +11539,13 @@ header.masthead .site-heading .h1 {
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .classchange {
-  border: 3px #efbfbf solid; 
-  transition: 0.5s;
+  border: 4px #efbfbf solid;
+  transition: 0.3s;
 }
 .classchange:hover {
-  border: 1px #efbfbf solid; 
+  border: 2px #efbfbf solid; 
 }
