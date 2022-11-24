@@ -10,7 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- 
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -88,6 +88,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
 }
 
 hr {
@@ -2974,6 +2975,7 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   border-radius: 10px 0 15px 0;
   transition: 0.3s;
+  animation-timing-function: cubic-bezier(.75,-0.01,.55,1.01);
 }
 
 .btn-red {
@@ -2995,6 +2997,7 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   border-radius: 10px 0 15px 0;
   transition: 0.3s;
+  animation-timing-function: cubic-bezier(.75,-0.01,.55,1.01);
 }
 
 .btn-gray {
@@ -3016,6 +3019,7 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   border-radius: 10px 0 15px 0;
   transition: 0.3s;
+  animation-timing-function: cubic-bezier(.75,-0.01,.55,1.01);
 }
 
 .btn:hover {
@@ -3023,7 +3027,7 @@ textarea.form-control-lg {
   background-image: linear-gradient(90deg, #0085A1, #6fff8e);
   background-size: 300%;
   margin-top: 1%;
-  margin-right: -1%;
+  margin-right: -1.5%;
   margin-bottom: -1%;
   border-radius: 10px 10px 10px 10px;
   animation: bg-animation 3s infinite alternate;
@@ -3034,7 +3038,7 @@ textarea.form-control-lg {
   background: linear-gradient(70deg, #b24d4d, #e78d3e);
   background-size: 300%;
   margin-top: 1%;
-  margin-right: -1%;
+  margin-right: -1.5%;
   margin-bottom: -1%;
   border-radius: 10px 10px 10px 10px;
   animation: bg-animation 3s infinite alternate;
@@ -3045,7 +3049,7 @@ textarea.form-control-lg {
   background: linear-gradient(70deg, #797979, #b8b8b8);
   background-size: 300%;
   margin-top: 1%;
-  margin-right: -1%;
+  margin-right: -1.5%;
   margin-bottom: -1%;
   border-radius: 10px 10px 10px 10px;
   animation: bg-animation 3s infinite alternate;
@@ -3955,7 +3959,6 @@ textarea.form-control-lg {
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
   color: #212529;
-  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
   transition: 0.5s;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4457,6 +4460,7 @@ textarea.form-control-lg {
   margin-top: -0.6rem;
   margin-bottom: 0;
   font-size: 1.25rem;
+  transition-timing-function: cubic-bezier(.61,0,.48,.99);
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
@@ -11508,6 +11512,7 @@ header.masthead .site-heading .h1 {
   width: 100.2%;
   margin-left: -0.1%;
   box-shadow: 0 0 40px 5px #e1e1e181;
+  animation-timing-function: cubic-bezier(.49,.07,.52,.92);
   transition: 0.5s;
 }
 
@@ -11624,7 +11629,7 @@ header.masthead .site-heading .h1 {
 }
 
 .marq-view {
-  background-color: #fff5f5;
+  background-color: #fff;
   height: 2rem;
   transition: 0.5s;
 }
@@ -11639,12 +11644,85 @@ header.masthead .site-heading .h1 {
   background-color: #f1e1e1;
   height: 2.5rem;
   transition: 0.5s;
+  animation-timing-function: cubic-bezier(.49,.07,.52,.92);
 }
 .marq-view:hover > .marq {
   font-size: 1.6rem;
   transition: 0.5s;
+  animation-timing-function: cubic-bezier(.49,.07,.52,.92);
 }
 
 .bigtitle {
   margin-top: 3rem;
+}
+
+
+.loading-div {
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  color: #555;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  transition: 0.5s;
+}
+.loading-div::before {
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.5s;
+} 
+
+.dot-pulse {
+  --uib-size: 40px;
+  --uib-speed: 1.3s;
+  --uib-color: black;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--uib-size);
+  height: calc(var(--uib-size) * 0.27);
+}
+
+.dot-pulse__dot,
+.dot-pulse::before,
+.dot-pulse::after {
+  content: '';
+  display: block;
+  height: calc(var(--uib-size) * 0.18);
+  width: calc(var(--uib-size) * 0.18);
+  border-radius: 50%;
+  background-color: var(--uib-color);
+  transform: scale(0);
+}
+
+.dot-pulse::before {
+  animation: pulse var(--uib-speed) ease-in-out infinite;
+}
+
+.dot-pulse__dot {
+  animation: pulse var(--uib-speed) ease-in-out
+    calc(var(--uib-speed) * 0.125) infinite both;
+}
+
+.dot-pulse::after {
+  animation: pulse var(--uib-speed) ease-in-out
+    calc(var(--uib-speed) * 0.25) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
 }

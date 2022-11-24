@@ -27,3 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
         scrollPos = currentTop;
     });
 })
+
+setTimeout(() => {
+    $(".loading-div").hide();
+    $('body').css('overflow-y','scroll');
+}, 1200);
