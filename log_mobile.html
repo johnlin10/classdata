@@ -5,9 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <link rel="manifest" href="manifest.json">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <title>班級資料平台</title>
+        <title>更新日誌 - 班級資料平台 Mobile</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -15,49 +13,46 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="mobile_css/styles.css" rel="stylesheet" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
         <script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html"><i class="fa-solid fa-school"></i>　班級資料平台</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    導覽
-                    <i class="fas fa-bars"></i>
-                </button>
+                <a class="navbar-brand" href="mobile.html"><i class="fa-solid fa-school"></i>　班級資料平台</a>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#view">版塊</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">關於 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#log">更新日誌</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#top"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <footer class="footer">
+            <a href="mobile.html"><div class="home"><i class="fa-solid fa-house"></i><br>首頁</div></a>
+            <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off"></i><br>公告</div></a>
+            <a href="資料庫_mobile.html"><div class="folder"><i class="fa-solid fa-folder"></i><br>資料庫</div></a>
+            <a href="log_mobile.html"><div class="log icon-blue"><i class="fa-solid fa-scroll"></i><br>日誌</div></a>
+        </footer>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('assets/img/portfolio/thumbnails/1.jpg')">
+        <header class="masthead" style="background-image: url('assets/img/portfolio/thumbnails/1.jpg')" id="top">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
-                            <h1>班級資料平台</h1>
-                            <span class="subheading">4.0</span>
+                            <h1>關於</h1>
+                            <span class="subheading">班級資料平台 Mobile 4.0</span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Main Content-->
-        <div class="marq-view">
-            <marquee class="marq">班級資料平台 4.0 正式版已發布，歡迎各位提供建議！</marquee>
-        </div>
         <div class="loading-div">
             <div class="dot-pulse">
                 <div class="dot-pulse__dot"></div>
@@ -67,54 +62,23 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <!-- Post preview-->
-                    <a id="view"></a>
+                    <div class="post-preview">
+                        <h2 class="post-title bigtitle"><i class="fa-solid fa-code"></i> 正在開發中...</h2>
+                        <p class="post-meta">
+                            敬請期待！
+                        </p>
+                    </div>
+                    <hr class="my-4 hr" />
+                    <a id="log"></a>
                     <br>
                     <div class="post-preview">
-                        <div class="post-view bg-red">
+                        <div class="post-view bg-gray">
                             <br>
-                            <h5 class="post-meta-red post-title-view">2022.11.25</h5>
-                            <h2 class="post-title-red post-title-view">手機版應用即將上線</h2>
-                            <p class="post-meta post-meta-view post-meta-red">可安裝於手機上的網頁應用。</p>
-                            <p class="post-meta post-meta-view post-meta-red">目前正在開發中...</p>
+                            <h2 class="post-title- post-title-view">Mobile 4.0</h2>
+                            <p class="post-meta post-meta-view post-meta-gray">建立 PWA 網站應用基礎架構</p>
                             <br>
-                            <div class="d-flex justify-content-end mb-4"><a class="btn-red btn-primary text-uppercase" href="mobile.html">前往體驗</a></div>
                         </div>
                     </div>
-                    <br>
-                    <div class="post-preview">
-                        <div class="post-view bg-blue">
-                            <br>
-                            <h2 class="post-title-blue post-title-view">課程表</h2>
-                            <p class="post-meta post-meta-view post-meta-blue">經過重新設計的課程表。</p>
-                            <br>
-                            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="課程表.html">前往</a></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="post-preview">
-                        <div class="post-view bg-red">
-                            <br>
-                            <h2 class="post-title-red post-title-view">學校行程</h2>
-                            <p class="post-meta post-meta-view post-meta-red">一個日歷訂閱項目，可使用 Google 日曆、Apple 行事曆等 App 訂閱。（測試中）</p>
-                            <br>
-                            <div class="d-flex justify-content-end mb-4"><a class="btn-red btn-primary text-uppercase" href="webcal://p38-caldav.icloud.com/published/2/MjAxMjA1MTU0ODIyMDEyMKYkcttLsUTi1DHtRrVO4uGYU9h1O43ZkPvOWEP1nFOCkGNg2Vi8qIiWWzq14-3pMBGTFlMLUSF0Io9rDYSR3DI" target="_blank">訂閱</a></div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="post-preview">
-                        <h1 class="view-title">版塊</h1>
-                    </div>
-                    <hr class="title-hr">
-                    <div class="post-preview">
-                        <div class="post-view bg-blue">
-                            <br>
-                            <h2 class="post-title-blue post-title-view">啦啦隊比賽</h2>
-                            <p class="post-meta post-meta-view post-meta-blue">目前只存放比賽音樂。</p>
-                            <br>
-                            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="啦啦隊比賽.html">前往</a></div>
-                        </div>
-                    </div>
-                    <br>
                     <br>
                     <br>
                     <br>
@@ -157,6 +121,8 @@
                 </div>
             </div>
         </footer>
+        <br>
+        <br>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
