@@ -11659,7 +11659,7 @@ header.masthead .site-heading .h1 {
 
 .loading-div {
   width: 100%;
-  height: 30px;
+  height: 50px;
   background-color: #fff;
   display: table-cell;
   vertical-align: middle;
@@ -11669,12 +11669,10 @@ header.masthead .site-heading .h1 {
   display: flex;
   justify-content: center; 
   align-items: center;
-  transition: 0.5s;
 }
 .loading-div::before {
   display: inline-block;
   vertical-align: middle;
-  transition: 0.5s;
 } 
 
 .dot-pulse {
