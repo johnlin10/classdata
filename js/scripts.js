@@ -29,6 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 setTimeout(() => {
-    $(".loading-div").hide();
+    $(".loading-div").hide(duration=500);
     $('body').css('overflow-y','scroll');
-}, 1200);
+},1200);
