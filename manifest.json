@@ -3,18 +3,18 @@
     "name": "班級資料平台",
     "icons": [
       {
-        "src": "/school.svg",
-        "type": "image/svg",
+        "src": "/school.png",
+        "type": "image/png",
         "sizes": "512x512"
       },
       {
-        "src": "/school.svg",
-        "type": "image/svg",
+        "src": "/school.png",
+        "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "/school.svg",
-        "type": "image/svg",
+        "src": "/school.png",
+        "type": "image/png",
         "sizes": "512x512"
       }
     ],
