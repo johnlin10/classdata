@@ -80,6 +80,7 @@
 }
 
 body {
+  height: 100%;
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -11590,6 +11591,12 @@ header.masthead .site-heading .h1 {
   font-weight: 300;
   color: #7f7f7f;
   text-align: right;
+}
+
+.table-top-left-test {
+  font-weight: 300;
+  color: #7f7f7f;
+  text-align: center;
 }
 
 .table-data {

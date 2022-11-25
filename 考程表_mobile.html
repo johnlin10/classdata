@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>考程表 - 班級資料平台 Mobile</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- PWA設定 -->
+        <link rel="manifest" href="manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="mobile_css/styles.css" rel="stylesheet" />
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <!-- 主體 -->
+    <body>
+        <!-- 頂部標題欄 -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="mobile.html"><i class="fa-solid fa-school"></i>　班級資料平台</a>
+                <a href="考程表_mobile.html">
+                    <button class="navbar-toggler" type="button" >
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </a>
+            </div>
+        </nav>
+        <!-- 底部導航欄 -->
+        <div class="footer-view">
+            <footer class="footer">
+                <a href="mobile.html"><div class="home"><i class="fa-solid fa-house"></i><br>首頁</div></a>
+                <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off"></i><br>公告</div></a>
+                <a href="資料庫_mobile.html"><div class="folder icon-blue"><i class="fa-solid fa-folder"></i><br>資料庫</div></a>
+                <a href="log_mobile.html"><div class="log"><i class="fa-solid fa-scroll"></i><br>日誌</div></a>
+            </footer>
+        </div>
+        <!-- 標題 -->
+        <header class="masthead" style="background-image: url('images/教室背景.jpeg')" id="top">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>考程表</h1>
+                            <span class="subheading" id="music2.1"><i class="fa-solid fa-check"></i> 即時更新</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 加載動畫 -->
+        <div class="loading-div">
+            <div class="dot-pulse">
+                <div class="dot-pulse__dot"></div>
+            </div>
+        </div>
+        <!-- 內容區 -->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- 內容顯示區 -->
+                    <div class="post-preview .bigtitle">
+                        <a id="h1"></a>
+                        <br>
+                        <div class="post-preview">
+                            <h1 class="view-title">第一天</h1>
+                        </div>
+                        <hr class="title-hr">
+                        <table class="table-view">
+                            <tr class="table-top">
+                                <td></td>
+                                <td> 　資訊科 　</td>
+                                <td> 　電子科 　</td>
+                                <td> 　電機科 　</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第一節</td>
+                                <td class="table-data table-data-blue" colspan="3">化學</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第二節</td>
+                                <td class="table-data table-data-blue" colspan="3">體育</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第三節</td>
+                                <td class="table-data" colspan="3" rowspan="2">ILTEA測驗</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第四節</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第五節</td>
+                                <td class="table-data table-data-blue" colspan="3">英語文</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第六節</td>
+                                <td class="table-data" colspan="3">英 Passion</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第七節</td>
+                                <td class="table-data table-data-blue" colspan="2">行動裝置</td>
+                                <td class="table-data table-data-blue" >可程式控制</td>
+                            </tr>
+                        </table>
+                        <a id="h2"></a>
+                        <br>
+                        <hr class="my-4 hr" />
+                        <br>
+                        <div class="post-preview">
+                            <h1 class="view-title">第二天</h1>
+                        </div>
+                        <hr class="title-hr">
+                        <table class="table-view">
+                            <tr class="table-top">
+                                <td></td>
+                                <td> 　資訊科 　</td>
+                                <td> 　電子科 　</td>
+                                <td> 　電機科 　</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第一節</td>
+                                <td class="table-data table-data-blue" colspan="2">電路學</td>
+                                <td class="table-data table-data-blue">工業配線</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第二節</td>
+                                <td class="table-data table-data-blue" colspan="2">可程式邏輯</td>
+                                <td class="table-data table-data-blue">變壓器室配</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第三節</td>
+                                <td class="table-data table-data-blue" colspan="3">電子學</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第四節</td>
+                                <td class="table-data table-data-blue" colspan="3">國 Passion</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第五節</td>
+                                <td class="table-data" colspan="3" rowspan="3">ESG 講座</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第六節</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第七節</td>
+                            </tr>
+                        </table>
+                        <a id="h3"></a>
+                        <br>
+                        <hr class="my-4 hr" />
+                        <br>
+                        <div class="post-preview">
+                            <h1 class="view-title">第三天</h1>
+                        </div>
+                        <hr class="title-hr">
+                        <table class="table-view">
+                            <tr class="table-top">
+                                <td></td>
+                                <td> 　資訊科 　</td>
+                                <td> 　電子科 　</td>
+                                <td> 　電機科 　</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第一節</td>
+                                <td class="table-data table-data-blue" colspan="3">數學</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第二節</td>
+                                <td class="table-data table-data-blue" colspan="3">國語文</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第三節</td>
+                                <td class="table-data table-data-blue classchange" colspan="3">電子學實習</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第四節</td>
+                                <td class="table-data" colspan="3">數 Passion</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第五節</td>
+                                <td class="table-data table-data-blue classchange" colspan="3">電子學實習</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第六節</td>
+                                <td class="table-data" colspan="3">大掃除</td>
+                            </tr>
+                            <tr>
+                                <td class="table-top-left-test">第七節</td>
+                                <td class="table-data" colspan="3">導師時間</td>
+                            </tr>
+                        </table>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
