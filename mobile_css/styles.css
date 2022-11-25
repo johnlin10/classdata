@@ -4107,7 +4107,7 @@ textarea.form-control-lg {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 50%;
+  border-radius: 10px;
   transition: box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -7077,8 +7077,8 @@ textarea.form-control-lg {
 }
 
 .my-4 {
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
+  margin-top: 1.7rem !important;
+  margin-bottom: 1.7rem !important;
 }
 
 .my-5 {
@@ -11127,7 +11127,7 @@ blockquote {
 #mainNav .navbar-toggler {
   font-size: 0.75rem;
   font-weight: 800;
-  padding: 0.75rem;
+  padding: 0.65rem;
   text-transform: uppercase;
   transition: 0.5s;
 }
@@ -11802,4 +11802,18 @@ header.masthead .site-heading .h1 {
 .icon-blue {
   color:#0085A1;
   font-weight: 500;
+}
+
+.img-view {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.img {
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px 0 #0000002a;
 }
