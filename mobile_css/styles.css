@@ -11582,12 +11582,18 @@ header.masthead .site-heading .h1 {
 }
 
 .table-top {
+  width: 100%;
   font-weight: 300;
   color: #7f7f7f;
   text-align: center;
 }
 
+.table-top-content {
+  width: 27%;
+}
+
 .table-top-left {
+  width: 10%;
   font-weight: 300;
   color: #7f7f7f;
   text-align: right;
@@ -11604,10 +11610,15 @@ header.masthead .site-heading .h1 {
   text-align: center;
   font-weight: 300;
   transition: 0.3s;
-  width: 20%;
 }
 
 .table-data:hover {
+  font-weight: 700;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.table-data-test:hover {
   font-weight: 700;
   background-color: #eeeeee;
   border-radius: 10px;
