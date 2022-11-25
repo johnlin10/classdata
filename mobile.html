@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <link rel="manifest" href="manifest.json">
-        <meta name="apple-mobile-web-app-capable" content="yes">
         <title>班級資料平台</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- PWA設定 -->
+        <link rel="manifest" href="manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -23,8 +24,9 @@
 
         <script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
+    <!-- 主體 -->
     <body>
-        <!-- Navigation-->
+        <!-- 頂部標題欄 -->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="mobile.html"><i class="fa-solid fa-school"></i>　班級資料平台</a>
@@ -37,13 +39,16 @@
                 </div>
             </div>
         </nav>
-        <footer class="footer">
-            <a href="mobile.html"><div class="home icon-blue"><i class="fa-solid fa-house"></i><br>首頁</div></a>
-            <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off"></i><br>公告</div></a>
-            <a href="資料庫_mobile.html"><div class="folder"><i class="fa-solid fa-folder"></i><br>資料庫</div></a>
-            <a href="log_mobile.html"><div class="log"><i class="fa-solid fa-scroll"></i><br>日誌</div></a>
-        </footer>
-        <!-- Page Header-->
+        <!-- 底部導航欄 -->
+        <div class="footer-view">
+            <footer class="footer">
+                <a href="mobile.html"><div class="home icon-blue"><i class="fa-solid fa-house"></i><br>首頁</div></a>
+                <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off"></i><br>公告</div></a>
+                <a href="資料庫_mobile.html"><div class="folder"><i class="fa-solid fa-folder"></i><br>資料庫</div></a>
+                <a href="log_mobile.html"><div class="log"><i class="fa-solid fa-scroll"></i><br>日誌</div></a>
+            </footer>
+        </div>
+        <!-- 標題 -->
         <header class="masthead" style="background-image: url('assets/img/portfolio/thumbnails/1.jpg')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -56,17 +61,17 @@
                 </div>
             </div>
         </header>
-        <!-- Main Content-->
+        <!-- 加載動畫 -->
         <div class="loading-div">
             <div class="dot-pulse">
                 <div class="dot-pulse__dot"></div>
             </div>
         </div>
+        <!-- 主畫面-->
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                    <!-- Post preview-->
-                    <a id="view"></a>
+                    <!-- 內容顯示區 -->
                     <br>
                     <div class="post-preview">
                         <div class="post-view bg-red">
@@ -78,7 +83,6 @@
                             <div class="d-flex justify-content-end mb-4"><a class="btn-red btn-primary text-uppercase" href="index.html">切換為網頁版</a></div>
                         </div>
                     </div>
-                    <br>
                     <br>
                     <br>
                     <br>

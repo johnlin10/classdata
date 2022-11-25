@@ -7,6 +7,9 @@
         <meta name="author" content="" />
         <title>課程表 - 班級資料平台 Mobile</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- PWA設定 -->
+        <link rel="manifest" href="manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -31,12 +34,14 @@
                 </div>
             </div>
         </nav>
-        <footer class="footer">
-            <a href="mobile.html"><div class="home"><i class="fa-solid fa-house"></i><br>首頁</div></a>
-            <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off"></i><br>公告</div></a>
-            <a href="資料庫_mobile.html"><div class="folder icon-blue"><i class="fa-solid fa-folder"></i><br>資料庫</div></a>
-            <a href="log_mobile.html"><div class="log"><i class="fa-solid fa-scroll"></i><br>日誌</div></a>
-        </footer>
+        <div class="footer-view">
+            <footer class="footer">
+                <a href="mobile.html"><div class="home"><i class="fa-solid fa-house"></i><br>首頁</div></a>
+                <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off"></i><br>公告</div></a>
+                <a href="資料庫_mobile.html"><div class="folder icon-blue"><i class="fa-solid fa-folder"></i><br>資料庫</div></a>
+                <a href="log_mobile.html"><div class="log"><i class="fa-solid fa-scroll"></i><br>日誌</div></a>
+            </footer>
+        </div>
         <!-- Page Header-->
         <header class="masthead" style="background-image: url('images/教室背景.jpeg')" id="top">
             <div class="container position-relative px-4 px-lg-5">

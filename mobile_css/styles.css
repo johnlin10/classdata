@@ -11735,37 +11735,49 @@ header.masthead .site-heading .h1 {
   }
 }
 
+.footer-view {
+  display: flex;/*设置弹性盒子*/
+  justify-content: space-evenly;/*水平对齐，两边间距是中间间距的一半*/
+  align-items: center;/* 垂直居中对齐 */
+  position: fixed;
+  bottom: -1px;
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+  box-shadow: 0 0 40px 0 #0000001a;
+  z-index: 4000;
+}
 
 .footer{
-    /* _____(2)_____;设置弹性盒子 */
-    /* _____(3)_______;水平对齐，两边间距是中间间距的一半 */
-    /* _____(4)______;垂直居中对齐 */
-    display: flex;/*设置弹性盒子*/
-    justify-content: space-evenly;/*水平对齐，两边间距是中间间距的一半*/
-    align-items: center;/* 垂直居中对齐 */
-    position: fixed;
-    bottom: -1px;;
-    left:50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 20px;
-    max-width: 860px;
-    font-size: 0.8rem;
-    font-weight: 200;
-    text-align: center;
-    background-color: #fff;
-    z-index: 5000;
-    box-shadow: 0 0 40px 0 #0000001a;
+  /* _____(2)_____;设置弹性盒子 */
+  /* _____(3)_______;水平对齐，两边间距是中间间距的一半 */
+  /* _____(4)______;垂直居中对齐 */
+  display: flex;/*设置弹性盒子*/
+  justify-content: space-evenly;/*水平对齐，两边间距是中间间距的一半*/
+  align-items: center;/* 垂直居中对齐 */
+  position: fixed;
+  bottom: -1px;;
+  left:50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 20px;
+  max-width: 640px;
+  font-size: 0.8rem;
+  font-weight: 200;
+  text-align: center;
+  background-color: #fff;
+  z-index: 5000;
 }
 .footer div{
-    width: 80px;
+  width: 80px;
+  margin-bottom: 1rem
 }
 .footer div i{
-    /* ____(5)_______;设置资自定义图标字体 */
-    font-family:var(--bs-body-font-family);/*设置资自定义图标字体*/
-    font-size: 0.8rem;
-    font-style: normal;
-    display: block;
+  /* ____(5)_______;设置资自定义图标字体 */
+  font-family:var(--bs-body-font-family);/*设置资自定义图标字体*/
+  font-size: 0.8rem;
+  font-style: normal;
+  display: block;
 }
 
 .icon-blue {
