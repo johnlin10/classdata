@@ -1,6 +1,6 @@
 {
     "short_name": "班級資料平台",
-    "name": "班級資料平台",
+    "name": "班級資料平台 4.0",
     "icons": [
       {
         "src": "school.png",
@@ -13,5 +13,5 @@
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
-    "theme_color": "#ffffff"
+    "theme_color": "#0085A1"
   }

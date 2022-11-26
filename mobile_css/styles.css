@@ -4066,13 +4066,13 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  margin-right: 0.7rem;
+  font-size: 1.2rem;
   white-space: nowrap;
 }
 .navbar-nav {
@@ -4102,7 +4102,8 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  margin-left: 0.3rem;
+  padding: 0.2rem 0.7rem;
   font-size: 1.5rem;
   line-height: 1;
   background-color: transparent;
@@ -11127,7 +11128,7 @@ blockquote {
 #mainNav .navbar-toggler {
   font-size: 0.75rem;
   font-weight: 800;
-  padding: 0.65rem;
+  padding: 0.5rem;
   text-transform: uppercase;
   transition: 0.5s;
 }
