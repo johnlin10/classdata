@@ -79,8 +79,13 @@
   }
 }
 
+.html{
+  height: 100%;
+}
+
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -11120,7 +11125,8 @@ blockquote {
   right: 0;
   z-index: 1030;
   border-bottom: 1px solid #dee2e6;
-  background-color: #fff;
+  background-color: #ffffffc1;
+  backdrop-filter: blur(10px);
   font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;}
 #mainNav .navbar-brand {
   font-weight: 500;
@@ -11763,7 +11769,8 @@ header.masthead .site-heading .h1 {
   bottom: -1px;
   width: 100%;
   height: 4rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
   box-shadow: 0 0 40px 0 #0000001a;
   z-index: 4000;
 }
@@ -11785,7 +11792,6 @@ header.masthead .site-heading .h1 {
   font-size: 0.8rem;
   font-weight: 200;
   text-align: center;
-  background-color: #fff;
   z-index: 5000;
 }
 .footer div{
@@ -11805,6 +11811,27 @@ header.masthead .site-heading .h1 {
   font-weight: 500;
 }
 
+.home:visited {
+  color:#0085A1;
+  font-weight: 500;
+}
+.home:active > .post {
+  color:#1f1f1f;
+  font-weight: 500;
+}
+
+.post:visited {
+  color:#0085A1;
+  font-weight: 500;
+}
+.post:active > .home {
+  color:#1f1f1f;
+  font-weight: 500;
+}
+
+
+
+
 .img-view {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -11817,4 +11844,19 @@ header.masthead .site-heading .h1 {
   width: 90%;
   border-radius: 10px;
   box-shadow: 0 10px 15px 0 #0000002a;
+}
+
+.frame-div {
+  height:100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
