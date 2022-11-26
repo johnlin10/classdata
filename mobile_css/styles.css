@@ -116,7 +116,13 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  z-index: 500;
 }
+
+h1 {
+  text-shadow: 0.3rem 0.3rem #314c52aa;
+}
+
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
@@ -11314,7 +11320,7 @@ header.masthead {
   padding-bottom: 8rem;
   background: no-repeat center center;
   background-color: #6c757d;
-  background-size: cover;
+  background-size:cover;
   background-attachment: scroll;
 }
 header.masthead:before {
@@ -11324,7 +11330,7 @@ header.masthead:before {
   left: 0;
   right: 0;
   bottom: -1px;
-  background: linear-gradient(180deg, #0000006f, #0000006f, #0000006f, #0000006f, #0000006f, #0000006f, #0000006f, #0000005f, #0000005f, #0000005f, #0000004f, #0000004f, #ffffff2f, #ffffffaf, #fffffffa, #ffffffff);
+  background: linear-gradient(180deg, #266f7e77, #307b8b77, #3c889877, #3c889877, #3c889866, #72b1be44, #ffffffc1, #ffffffff);
 }
 header.masthead .page-heading,
 header.masthead .post-heading,
