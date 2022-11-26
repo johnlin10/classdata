@@ -11767,7 +11767,7 @@ header.masthead .site-heading .h1 {
 }
 
 @supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)){
-  .footer-view, .navbar{
+  .footer-view, .navbar, .last-div{
     -webkit-backdrop-filter:saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     background-color:rgba(255,255,255,0.7)
@@ -11879,4 +11879,23 @@ header.masthead .site-heading .h1 {
   color: #a1a1a1;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.last-div {
+  display: flex;
+  position: fixed;
+  bottom: 4.5rem;
+  right: -1.3rem;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  color: #a7d5df;
+  border-radius: 50%;
+  background-color: #006a81cf;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 4000;
+  box-shadow: 0 0 20px 0 #314c526a;
 }
