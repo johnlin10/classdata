@@ -1,0 +1,17 @@
+{
+    "short_name": "班級資料平台",
+    "name": "班級資料平台 4.0",
+    "icons": [
+      {
+        "src": "school.png",
+        "type": "image/png",
+        "sizes": "1080x1080"
+      }
+    ],
+    "id": "classdata",
+    "start_url": "https://johnlin10.github.io/classdata/4.5/classdata.html",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#ffffff"
+  }
