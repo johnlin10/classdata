@@ -4275,7 +4275,7 @@ textarea.form-control-lg {
     flex-basis: auto;
   }
   .navbar-expand-lg .navbar-toggler {
-    display: none;
+    /*display: none;*/
   }
   .navbar-expand-lg .offcanvas-header {
     display: none;
@@ -11240,7 +11240,7 @@ blockquote {
   }
 }
 
-@media (max-width: 859px) {
+@media (max-width: 1440px) {
   #mainNav {
     transition: background-color 0.15s;
     /* Force Hardware Acceleration in WebKit */
