@@ -7,7 +7,7 @@
 var yes = confirm('此網站已經停止使用，新版班級資料平台已發布！\n！！！按下確定後，請允許彈出式視窗！！！');
 
 if (yes) {
-    window.open('https://johnlin10.github.io/classdata/4.5/classdata.html')
+    window.open('https://johnlin10.github.io/classdata/mobile.html')
 }
 window.addEventListener('DOMContentLoaded', () => {
     let scrollPos = 0;
