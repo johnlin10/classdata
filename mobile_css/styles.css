@@ -11647,6 +11647,16 @@ header.masthead .site-heading .h1 {
   transition: 0.3s;
 }
 
+.table-data-red {
+  color: #702a27a1;
+  background-color: #903a3730;
+  transition: 0.3s;
+}
+.table-data-red:hover {
+  background-color: #903a3745;
+  transition: 0.3s;
+}
+
 .table-data-gray {
   color: #2f2f2f;
 }
@@ -11794,7 +11804,7 @@ header.masthead .site-heading .h1 {
   justify-content: space-evenly;/*水平对齐，两边间距是中间间距的一半*/
   align-items: center;/* 垂直居中对齐 */
   position: fixed;
-  bottom: -1px;;
+  bottom: -1px;
   left:50%;
   transform: translateX(-50%);
   width: 100%;
