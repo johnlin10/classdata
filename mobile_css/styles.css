@@ -11540,6 +11540,54 @@ header.masthead .site-heading .h1 {
   transition: 0.5s;
 }
 
+.post-tag {
+  width: 7rem;
+  height: 2.6rem;
+  border-radius: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b02a37af;   
+  cursor: pointer;
+  animation-timing-function: cubic-bezier(.49,.07,.52,.92);
+}
+.post-tag-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: var(--bs-body-font-family);
+  color: #fff;
+}
+
+.post-tag:hover{
+  /* animation 參數設定 */
+  animation-name: RLmove;    /*動畫名稱，需與 keyframe 名稱對應*/
+  animation-duration: 0.7s;    /*動畫持續時間，單位為秒*/
+  animation-iteration-count: 1;    /*動畫次數*/ 
+}
+@keyframes RLmove {
+  0%{
+  }
+  18%{
+    margin-left: -0.6rem;
+  }
+  29%{
+    margin-left: 0.5rem;
+  }
+  52%{
+    margin-left: -0.4rem;
+  }
+  65%{
+    margin-left: 0.3rem;
+  }
+  83%{
+    margin-left: -0.2rem;
+  }
+  100%{
+    margin-left: 0;
+  }
+}
+
+
 .new-icon {
   background-color: #a52834;
   padding: 0.2rem;
