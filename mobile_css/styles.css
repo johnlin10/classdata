@@ -11649,11 +11649,11 @@ header.masthead .site-heading .h1 {
 
 .table-data-red {
   color: #702a27a1;
-  background-color: #903a3730;
+  background-color: #903a371a;
   transition: 0.3s;
 }
 .table-data-red:hover {
-  background-color: #903a3745;
+  background-color: #903a3735;
   transition: 0.3s;
 }
 
