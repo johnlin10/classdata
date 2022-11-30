@@ -11575,6 +11575,23 @@ header.masthead .site-heading .h1 {
   transition: 0.5s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
+.post-view-view {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 0.7rem;
+  width: auto;
+  transition: 0.5s;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+}
+.space1rem {
+  height: 1rem;
+  width: 100%;
+}
+.post-view-view:hover {
+  box-shadow: 0 0 30px 5px #e1e1e181;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  transition: 0.5s;
+}
 
 .post-view:hover {
   width: 100.2%;
@@ -11585,11 +11602,33 @@ header.masthead .site-heading .h1 {
 }
 
 .post-view:hover > .post-title-view {
-  text-align: center;
   letter-spacing: 0.1rem;
 }
 .post-view:hover > .post-meta {
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.049rem;
+}
+.post-view:hover .prob-title {
+  letter-spacing: 0.1rem;
+}
+.post-view:hover .prob-meta {
+  letter-spacing: 0.046rem;
+}   
+
+.prob-title {
+  text-align: center;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  transition: 0.5s;
+
+}
+.prob-meta {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  transition: 0.5s;
 }
 
 .post-tag, .post-tag-animation2, .post-tag-animation3 {
@@ -11748,6 +11787,9 @@ header.masthead .site-heading .h1 {
 .bg-gray {
   background-color: #f1f1f1;
 }
+.bg-whitegray {
+  background-color: #f9f9f9;
+}
 
 .bg-blue {
   background-color: #e6f3f6;
@@ -11817,14 +11859,14 @@ header.masthead .site-heading .h1 {
   font-weight: 700;
   letter-spacing: 0.1rem;
   background-color: #eeeeee;
-  border-radius: 10px;
+  border-radius: 1rem;
   transition: 0.3s;
 }
 .table-data-test:hover {
   font-weight: 700;
   letter-spacing: 0.1rem;
   background-color: #eeeeee;
-  border-radius: 10px;
+  border-radius: 1rem;
   transition: 0.3s;
 }
 
@@ -11855,7 +11897,7 @@ header.masthead .site-heading .h1 {
 .table-view tr td{
   font-size: 0.9rem;
   height: 3rem;
-  border-radius: 5px;
+  border-radius: 0.8rem;
   padding: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -11982,7 +12024,7 @@ header.masthead .site-heading .h1 {
   position: fixed;
   bottom: -1px;
   width: 100%;
-  height: 4rem;
+  height: 4.4rem;
   box-shadow: 0 0 40px 0 #0000001a;
   z-index: 4000;
 }
@@ -12047,7 +12089,7 @@ header.masthead .site-heading .h1 {
 }
 
 .icon-text {
-  font-size: 0.5rem;
+  font-size: 1rem;
   text-align: center;
   transition: 0.3s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
