@@ -3076,6 +3076,8 @@ textarea.form-control-lg {
   margin-top: 1%;
   margin-right: -1.5%;
   margin-bottom: -1%;
+  letter-spacing: 0.2rem;
+  font-size: 0.95rem;
   border-radius: 1rem 1rem 1rem 1rem;
   animation: bg-animation 3s infinite alternate;
   box-shadow: 0 0 30px 0 #1f9a77a1;
@@ -3087,6 +3089,8 @@ textarea.form-control-lg {
   margin-top: 1%;
   margin-right: -1.5%;
   margin-bottom: -1%;
+  letter-spacing: 0.2rem;
+  font-size: 0.95rem;
   border-radius: 1rem 1rem 1rem 1rem;
   animation: bg-animation 3s infinite alternate;
   box-shadow: 0 0 30px 0 #9a2f1fa1;
@@ -3098,6 +3102,8 @@ textarea.form-control-lg {
   margin-top: 1%;
   margin-right: -1.5%;
   margin-bottom: -1%;
+  letter-spacing: 0.2rem;
+  font-size: 0.95rem;
   border-radius: 1rem 1rem 1rem 1rem;
   animation: bg-animation 3s infinite alternate;
   box-shadow: 0 0 30px 0 #7d7d7da1;
@@ -11342,6 +11348,8 @@ footer {
   padding-bottom: 1.7rem;
 }
 
+
+
 header.masthead {
   position: relative;
   padding-top: calc(8rem + 57px);
@@ -11460,7 +11468,7 @@ header.masthead .site-heading .h1 {
 }
 .post-view > .post-meta {
   font-size: 1.125rem;
-  margin-top: 0.3rem;
+  margin-top: 0.6rem;
   margin-bottom: 0;
 }
 .post-preview > .post-meta > a {
@@ -11475,6 +11483,10 @@ header.masthead .site-heading .h1 {
   }
 }
 
+.post-meta {
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  transition: 0.5s;
+}
 
 .view-title {
   font-size: 2.6rem;
@@ -11521,7 +11533,10 @@ header.masthead .site-heading .h1 {
   cursor:default;
   width: 88%;
   margin-left: 6%;
+  text-align: center;
   font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  transition: 0.5s;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
 
 .post-title-h3 {
@@ -11567,6 +11582,14 @@ header.masthead .site-heading .h1 {
   box-shadow: 0 0 30px 5px #e1e1e181;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
   transition: 0.5s;
+}
+
+.post-view:hover > .post-title-view {
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.post-view:hover > .post-meta {
+  letter-spacing: 0.05rem;
 }
 
 .post-tag, .post-tag-animation2, .post-tag-animation3 {
@@ -11623,8 +11646,8 @@ header.masthead .site-heading .h1 {
   52%{
     width: 7.2rem;
     margin-left: -0.4rem;
-    margin-bottom: -0.2rem;
-    height: 2.8rem;
+    margin-bottom: -0.1rem;
+    height: 2.7rem;
     box-shadow: 0 0 20px 0 #9a2f1f71;
   }
   65%{
