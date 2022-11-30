@@ -12089,7 +12089,7 @@ header.masthead .site-heading .h1 {
 }
 
 .icon-text {
-  font-size: 1rem;
+  font-size: 0.7rem;
   text-align: center;
   transition: 0.3s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
