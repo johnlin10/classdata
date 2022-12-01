@@ -11540,11 +11540,11 @@ header.masthead .site-heading .h1 {
 }
 
 .post-title-h3 {
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-top: 0.4rem;
   margin-bottom: 0.625rem;
-  color: #3f3f3f;
+  color: #5f5f5f;
 }
 
 .post-meta-view {
@@ -12169,4 +12169,68 @@ header.masthead .site-heading .h1 {
   text-align: center;
   z-index: 4000;
   box-shadow: 0 0 20px 0 #314c526a;
+}
+
+.problemform-view {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+textarea{
+  outline-style: none ;
+  font-family: var(--bs-body-font-family);
+  font-weight: 300;
+  color: #3f3f3f;
+  border-width: 0;
+  border-color: #00000000;
+  height: 9.6rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  width:93%;
+  border-radius: 0.7rem;
+  transition: 0.3s;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+}
+textarea:focus {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  border-radius: 1rem;
+  border-width: 0.4rem;
+  border-color: #0085A13f;
+}
+.problemtext {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--bs-body-font-family);
+  color: #9f9f9f;
+}
+.optionlist-view {
+  width: 50%;
+  height: 2.4rem;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  margin-left: 25%;
+  border:0;
+  border-radius: 0.5rem;
+}
+.optionlist-view:checked {
+  border: 0.4rem;
+  border-color: #0085A13f;
+}
+
+.sendoutbtn {
+  border: 0;
+  background-color: #0085A1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #f1f1f1;
+  height: 2rem;
+  width: 4rem;
+  align-items: flex-end;
+  right: 1rem;
 }
