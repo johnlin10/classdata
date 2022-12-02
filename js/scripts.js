@@ -31,4 +31,34 @@ window.addEventListener('DOMContentLoaded', () => {
 setTimeout(() => {
     $(".loading-div").hide(duration=400);
     $('body').css('overflow-y','scroll');
-},700);
+},700); 
+
+
+const btn = document.getElementById('button');
+
+function problemAgan(){
+    btn.value = '送出';
+}
+
+document.getElementById('form')
+  .addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.value = '傳送中...';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_j81x4hm';
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = '已送出';
+        document.getElementById("form").reset();
+        alert("我們已收到你的訊息！")
+      }, (err) => {
+        btn.value = '重新送出';
+        document.getElementById("form").reset();
+        alert(JSON.stringify(err));
+      });
+  });
+
+

@@ -12214,7 +12214,6 @@ textarea:focus {
   height: 2.4rem;
   font-size: 1.2rem;
   padding: 0.4rem;
-  margin-left: 25%;
   border:0;
   border-radius: 0.5rem;
 }
@@ -12233,4 +12232,21 @@ textarea:focus {
   width: 4rem;
   align-items: flex-end;
   right: 1rem;
+}
+
+.problem-type-view {
+  width: auto;
+  height: 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: #00000010;
+  padding: 0.4rem;
+  border:0;
+  border-radius: 0.5rem;
+}
+form > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
