@@ -12010,7 +12010,7 @@ header.masthead .site-heading .h1 {
 }
 
 @supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)){
-  .footer-view, .navbar, .last-div{
+  .footer-view, .navbar, .last-div, .botten-nav {
     -webkit-backdrop-filter:saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     background-color:rgba(255,255,255,0.7)
@@ -12024,15 +12024,23 @@ header.masthead .site-heading .h1 {
   position: fixed;
   bottom: -1px;
   width: 100%;
-  height: 4.4rem;
+  height: 4rem;
+  box-shadow: 0 0 40px 0 #0000001a;
+  z-index: 4000;
+}
+.footer-view-havebtn {
+  display: flex;/*设置弹性盒子*/
+  justify-content: space-evenly;/*水平对齐，两边间距是中间间距的一半*/
+  align-items: center;/* 垂直居中对齐 */
+  position: fixed;
+  bottom: -1px;
+  width: 100%;
+  height: 4rem;
   box-shadow: 0 0 40px 0 #0000001a;
   z-index: 4000;
 }
 
 .footer{
-  /* _____(2)_____;设置弹性盒子 */
-  /* _____(3)_______;水平对齐，两边间距是中间间距的一半 */
-  /* _____(4)______;垂直居中对齐 */
   display: flex;/*设置弹性盒子*/
   justify-content: space-evenly;/*水平对齐，两边间距是中间间距的一半*/
   align-items: center;/* 垂直居中对齐 */
@@ -12048,9 +12056,10 @@ header.masthead .site-heading .h1 {
   text-align: center;
   z-index: 5000;
 }
+
 .footer div{
   width: 80px;
-  margin-bottom: 1rem
+  margin-bottom: 0.7rem
 }
 .footer div i{
   /* ____(5)_______;设置资自定义图标字体 */
@@ -12152,23 +12161,36 @@ header.masthead .site-heading .h1 {
   margin-bottom: 0.5rem;
 }
 
+@keyframes last-divin {
+  0%{
+    right: -7.9rem;
+  }
+  100%{
+    right: -4rem;
+  }
+}
+
 .last-div {
   display: flex;
   position: fixed;
-  bottom: 4.5rem;
-  right: -1.3rem;
-  transform: translateX(-50%);
-  width: 4rem;
+  bottom: 5rem;
+  right: -4rem;
+  width: 8rem;
   height: 4rem;
   font-size: 1.5rem;
+  padding: 1.3rem;
   color: #a7d5df;
-  border-radius: 50%;
-  background-color: #006a81cf;
-  justify-content: center;
+  border-radius: 2rem;
+  background-color: #ffffffaa;
+  justify-content:left;
   align-items: center;
   text-align: center;
-  z-index: 4000;
-  box-shadow: 0 0 20px 0 #314c526a;
+  z-index: 3600;
+  box-shadow: 0 0 20px 0.5rem #006a811a;
+  animation-name: last-divin;
+  animation-duration: 1s;
+  animation-direction: 1;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
 
 .problemform-view {
@@ -12203,13 +12225,14 @@ textarea:focus {
   border-color: #0085A13f;
 }
 .problemtext {
+  font-family: var(--bs-body-font-family);
   width: 100%;
   font-size: 1rem;
   font-weight: 500;
-  font-family: var(--bs-body-font-family);
   color: #9f9f9f;
 }
 .optionlist-view {
+  font-family: var(--bs-body-font-family);
   width: 50%;
   height: 2.4rem;
   font-size: 1.2rem;
@@ -12223,6 +12246,7 @@ textarea:focus {
 }
 
 .sendoutbtn {
+  font-family: var(--bs-body-font-family);
   border: 0;
   background-color: #0085A1;
   border-radius: 0.5rem;
@@ -12235,6 +12259,7 @@ textarea:focus {
 }
 
 .problem-type-view {
+  font-family: var(--bs-body-font-family);
   width: auto;
   height: 3.2rem;
   font-size: 1.8rem;
@@ -12249,4 +12274,68 @@ form > div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes botten-navin {
+  0%{
+    margin-bottom: -3rem;
+    color: #00000000;
+  }
+  100%{
+    margin-bottom: 0;
+  }
+}
+
+.botten-nav {
+  display: flex;/*设置弹性盒子*/
+  justify-content: center;/*水平对齐，两边间距是中间间距的一半*/
+  align-items: flex-start;/* 垂直居中对齐 */
+  position: fixed;
+  bottom: -1px;
+  width: 100%;
+  height: 7rem;
+  margin-bottom: 0rem;
+  background-color:rgba(255,255,255,0.7);
+  box-shadow: 0 0 40px 0 #0000001a;
+  z-index: 3500;
+  animation-name: botten-navin;
+  animation-duration: 1s;
+  animation-direction: 1;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+}
+
+.botten-btn-view {
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  width: auto;
+  max-width: 720px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.botten-btn {
+  height: 3rem;
+  width: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: var(--bs-body-font-family);
+  color: #5f5f5f;
+  background-color: #00000000;
+  transition: 0.7s;
+  transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  animation-name: botten-navin;
+  animation-duration: 1s;
+  animation-direction: 1;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+}
+.botten-btn:hover {
+  letter-spacing: 0.1rem;
+  color: #087990;
+  font-weight: 700;
 }
