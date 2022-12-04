@@ -103,7 +103,7 @@ hr {
   margin: 1rem 0;
   color: inherit;
   background-color: currentColor;
-  border: 0;
+  border: 2px solid #cfcfcf;
   opacity: 0.25;
 }
 
@@ -121,7 +121,7 @@ h1, .h1 {
 
 h1 {
   cursor: pointer;
-  text-shadow: 0.3rem 0.3rem #314c52aa;
+  text-shadow: 0.3rem 0.3rem #314c52cf;
   transition: 0.5s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
@@ -3011,18 +3011,35 @@ textarea.form-control-lg {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  margin-right: -11px;
+  margin-bottom: -11px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background: linear-gradient(70deg, #0085A1, #6fff8e);
   background-size: 300%;
-  border: 0;
+  border: 6px solid #ffffff;
   padding: 1rem 1.75rem;
   font-size: 0.875rem;
-  border-radius: 1rem 0 1.3rem 0;
+  font-weight: 100;
+  border-radius: 0.9rem 0 1.3rem 0;
   transition: 0.3s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+}
+.btn:hover {
+  color: #212529;
+  background-image: linear-gradient(90deg, #0085A1, #6fff8e);
+  background-size: 300%;
+  margin-top: 10px;
+  margin-right: -11px;
+  margin-bottom: -11px;
+  border: 1px solid #ffffff;
+  letter-spacing: 0.1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 1rem 0.5rem 1.5rem 0.5rem;
+  animation: bg-animation 3s infinite alternate;
 }
 
 .btn-red {
@@ -3033,18 +3050,35 @@ textarea.form-control-lg {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  margin-right: -11px;
+  margin-bottom: -11px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background: linear-gradient(70deg, #b24d4d, #e78d3e);
   background-size: 300%;
-  border: 0;
+  border: 6px solid #ffffff;
   padding: 1rem 1.75rem;
   font-size: 0.875rem;
-  border-radius: 1rem 0 1.3rem 0;
+  font-weight: 100;
+  border-radius: 0.9rem 0 1.3rem 0;
   transition: 0.3s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+}
+.btn-red:hover {
+  color: #212529;
+  background: linear-gradient(70deg, #b24d4d, #e78d3e);
+  background-size: 300%;
+  margin-top: 10px;
+  margin-right: -11px;
+  margin-bottom: -11px;
+  border: 1px solid #ffffff;
+  letter-spacing: 0.1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 1rem 0.5rem 1.5rem 0.5rem;
+  animation: bg-animation 3s infinite alternate;
 }
 
 .btn-gray {
@@ -3055,58 +3089,35 @@ textarea.form-control-lg {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  margin-right: -11px;
+  margin-bottom: -11px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background: linear-gradient(70deg, #797979, #b8b8b8);
   background-size: 300%;
-  border: 0;
+  border: 6px solid #ffffff;
   padding: 1rem 1.75rem;
   font-size: 0.875rem;
-  border-radius: 1rem 0 1.3rem 0;
+  font-weight: 100;
+  border-radius: 0.9rem 0 1.3rem 0;
   transition: 0.3s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-}
-
-.btn:hover {
-  color: #212529;
-  background-image: linear-gradient(90deg, #0085A1, #6fff8e);
-  background-size: 300%;
-  margin-top: 1%;
-  margin-right: -1.5%;
-  margin-bottom: -1%;
-  letter-spacing: 0.2rem;
-  font-size: 0.95rem;
-  border-radius: 1rem 1rem 1rem 1rem;
-  animation: bg-animation 3s infinite alternate;
-  box-shadow: 0 0 30px 0 #1f9a77a1;
-}
-.btn-red:hover {
-  color: #212529;
-  background: linear-gradient(70deg, #b24d4d, #e78d3e);
-  background-size: 300%;
-  margin-top: 1%;
-  margin-right: -1.5%;
-  margin-bottom: -1%;
-  letter-spacing: 0.2rem;
-  font-size: 0.95rem;
-  border-radius: 1rem 1rem 1rem 1rem;
-  animation: bg-animation 3s infinite alternate;
-  box-shadow: 0 0 30px 0 #9a2f1fa1;
 }
 .btn-gray:hover {
   color: #212529;
   background: linear-gradient(70deg, #797979, #b8b8b8);
   background-size: 300%;
-  margin-top: 1%;
-  margin-right: -1.5%;
-  margin-bottom: -1%;
-  letter-spacing: 0.2rem;
-  font-size: 0.95rem;
-  border-radius: 1rem 1rem 1rem 1rem;
+  margin-top: 10px;
+  margin-right: -11px;
+  margin-bottom: -11px;
+  border: 1px solid #ffffff;
+  letter-spacing: 0.1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 1rem 0.5rem 1.5rem 0.5rem;
   animation: bg-animation 3s infinite alternate;
-  box-shadow: 0 0 30px 0 #7d7d7da1;
 }
 
 @keyframes bg-animation{
@@ -11277,8 +11288,11 @@ blockquote {
 @media (max-width: 1440px) {
   #mainNav {
     transition: background-color 0.15s;
+    transition: 1s;
     /* Force Hardware Acceleration in WebKit */
     transform: translate3d(0, 0, 0);
+    border-bottom: 1px solid #cfcfcf00;
+    border-radius: 0 0 1.3rem 1.3rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
@@ -11287,9 +11301,11 @@ blockquote {
     position: fixed;
     top: 0px;
     transition: transform 0.2s;
-    border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.72);
+    border-bottom: 1px solid #cfcfcf;
+    border-radius: 0 0 1.3rem 1.3rem;
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 0 40px 0 #0000001f;
+    transition: 0.5s;
   }
   #mainNav.is-fixed .navbar-brand {
     color: #212529;
@@ -11571,20 +11587,22 @@ header.masthead .site-heading .h1 {
 .post-view{
   margin-left: 2%;
   border-radius: 1.3rem;
+  border: 4px solid #7f7f7f;
   width: 96%;
   transition: 0.5s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
 .post-view-view {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
   border-radius: 0.7rem;
+  border: 3px solid #cfcfcf;
   width: auto;
   transition: 0.5s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
 .space1rem {
-  height: 1rem;
+  height: 0.7rem;
   width: 100%;
 }
 .post-view-view:hover {
@@ -11596,7 +11614,7 @@ header.masthead .site-heading .h1 {
 .post-view:hover {
   width: 100.2%;
   margin-left: -0.1%;
-  box-shadow: 0 0 30px 5px #e1e1e181;
+  /*box-shadow: 0 0 30px 5px #e1e1e181;*/
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
   transition: 0.5s;
 }
@@ -11636,9 +11654,12 @@ header.masthead .site-heading .h1 {
   height: 2.6rem;
   border-radius: 1.3rem;
   display: flex;
+  border: 5px solid #fff;
+  margin-left: -1rem;
+  margin-top: -1rem;
   justify-content: center;
   align-items: center;
-  background-color: #b02a37af;   
+  background-color: #c96b72;   
   cursor: pointer;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
   transition: 0.3s;
@@ -11650,15 +11671,16 @@ header.masthead .site-heading .h1 {
   color: #fff;
 }
 
+
 .post-tag:hover{
   animation-name: RLmove;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
 }
 
 .post-tag-animation2:hover {
   animation-name: tag-animation2;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
 }
 
@@ -11672,40 +11694,44 @@ header.masthead .site-heading .h1 {
   0%{
     width: 7rem;
     height: 2.6rem;
+    margin-left: -1rem;
     box-shadow: 0 0 0 0 #9a2f1f00;
   }
   18%{
-    margin-left: -0.6rem;
+    margin-left: -1.6rem;
     box-shadow: 0 0 10px 0 #9a2f1f21;
   }
   29%{
-    margin-left: 0.5rem;
+    margin-left: -0.5rem;
     box-shadow: 0 0 15px 0 #9a2f1f31;
   }
   52%{
     width: 7.2rem;
-    margin-left: -0.4rem;
+    margin-left: -1.4rem;
     margin-bottom: -0.1rem;
     height: 2.7rem;
+    border-radius: 1.35rem;
+    border: 0 solid #ffffff00;
     box-shadow: 0 0 20px 0 #9a2f1f71;
   }
   65%{
-    margin-left: 0.3rem;
+    margin-left: -0.7rem;
     box-shadow: 0 0 15px 0 #9a2f1f31;
   }
   83%{
-    margin-left: -0.2rem;
+    margin-left: -1.2rem;
     box-shadow: 0 0 10px 0 #9a2f1f21;
   }
   100%{
     width: 7rem;
     height: 2.6rem;
-    margin-left: 0;
+    margin-left:-1rem;
     box-shadow: 0 0 0 0 #9a2f1f00;
   }
 }
 @keyframes tag-animation2 {
   0%{
+    border: 5px solid #fff;
     width: 7rem;
     height: 2.6rem;
     transform:rotate(0deg);
@@ -11720,11 +11746,13 @@ header.masthead .site-heading .h1 {
     box-shadow: 0 0 15px 0 #9a2f1f31;
   }
   52%{
-    width: 7.2rem;
+    width: 7.4rem;
     transform:rotate(6deg);
-    margin-bottom: -0.2rem;
-    height: 2.8rem;
+    margin-bottom: -0.4rem;
+    height: 3rem;
+    border-radius: 1.5rem;
     box-shadow: 0 0 20px 0 #9a2f1f71;
+    border: 0 solid #ffffff00;
   }
   65%{
     transform:rotate(-4deg);
@@ -11735,6 +11763,7 @@ header.masthead .site-heading .h1 {
     box-shadow: 0 0 10px 0 #9a2f1f21;
   }
   100%{
+    border: 5px solid #fff;
     width: 7rem;
     height: 2.6rem;
     box-shadow: 0 0 0 0 #9a2f1f00;
@@ -12010,10 +12039,10 @@ header.masthead .site-heading .h1 {
 }
 
 @supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)){
-  .footer-view, .navbar, .last-div, .botten-nav {
+  .footer-view, .navbar, .last-div, .botten-nav, .footer-view-havebtn {
     -webkit-backdrop-filter:saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    background-color:rgba(255,255,255,0.7)
+    background-color:rgba(255,255,255,1)
   }
 }
 
@@ -12025,6 +12054,8 @@ header.masthead .site-heading .h1 {
   bottom: -1px;
   width: 100%;
   height: 4rem;
+  border-radius: 1.3rem 1.3rem 0 0;
+  border-top: 1px solid #cfcfcf;
   box-shadow: 0 0 40px 0 #0000001a;
   z-index: 4000;
 }
@@ -12327,11 +12358,10 @@ form > div {
   font-family: var(--bs-body-font-family);
   color: #5f5f5f;
   background-color: #00000000;
-  transition: 0.7s;
+  transition: 0.5s;
   transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
   animation-name: botten-navin;
   animation-duration: 1s;
-  animation-direction: 1;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
 .botten-btn:hover {
