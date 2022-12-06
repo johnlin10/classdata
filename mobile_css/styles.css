@@ -3003,7 +3003,9 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
-.btn {
+
+/*藍色按鈕*/
+.btn-blue {
   display: inline-block;
   font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
   line-height: 1.5;
@@ -3011,37 +3013,42 @@ textarea.form-control-lg {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  margin-right: -11px;
-  margin-bottom: -11px;
+  margin-right: -4px;
+  margin-bottom: -4px;
+  letter-spacing: 0.1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background: linear-gradient(70deg, #0085A1, #6fff8e);
   background-size: 300%;
-  border: 6px solid #ffffff;
+  border: 4px solid #38586c;
+  box-shadow: 0 0 0 0 #284050;
   padding: 1rem 1.75rem;
   font-size: 0.875rem;
-  font-weight: 100;
+  font-weight: 500;
   border-radius: 0.9rem 0 1.3rem 0;
   transition: 0.3s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
-.btn:hover {
+.btn-blue:hover {
   color: #212529;
   background-image: linear-gradient(90deg, #0085A1, #6fff8e);
   background-size: 300%;
-  margin-top: 10px;
-  margin-right: -11px;
-  margin-bottom: -11px;
-  border: 1px solid #ffffff;
+  margin-top: 5px;
+  margin-right: -9px;
+  margin-bottom: -9px;
+  border: 4px solid #38586c;
+  box-shadow: 0 5px 0 0 #284050;
   letter-spacing: 0.1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  border-radius: 1rem 0.5rem 1.5rem 0.5rem;
+  border-radius: 0.9rem 0.3rem 1.3rem 0.3rem;
   animation: bg-animation 3s infinite alternate;
 }
 
+
+/*紅色按鈕*/
 .btn-red {
   display: inline-block;
   font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
@@ -3050,37 +3057,42 @@ textarea.form-control-lg {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  margin-right: -11px;
-  margin-bottom: -11px;
+  margin-right: -4px;
+  margin-bottom: -4px;
+  letter-spacing: 0.1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background: linear-gradient(70deg, #b24d4d, #e78d3e);
   background-size: 300%;
-  border: 6px solid #ffffff;
+  border: 4px solid #593737;
+  box-shadow: 0 0 0 0 #402929;
   padding: 1rem 1.75rem;
   font-size: 0.875rem;
-  font-weight: 100;
+  font-weight: 500;
   border-radius: 0.9rem 0 1.3rem 0;
   transition: 0.3s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
 .btn-red:hover {
-  color: #212529;
+  color: #292121;
   background: linear-gradient(70deg, #b24d4d, #e78d3e);
   background-size: 300%;
-  margin-top: 10px;
-  margin-right: -11px;
-  margin-bottom: -11px;
-  border: 1px solid #ffffff;
+  margin-top: 5px;
+  margin-right: -9px;
+  margin-bottom: -9px;
+  border: 4px solid #593737;
+  box-shadow: 0 5px 0 0 #402929;
   letter-spacing: 0.1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  border-radius: 1rem 0.5rem 1.5rem 0.5rem;
+  border-radius: 0.9rem 0.3rem 1.3rem 0.3rem;
   animation: bg-animation 3s infinite alternate;
 }
 
+
+/*灰色按鈕*/
 .btn-gray {
   display: inline-block;
   font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
@@ -3089,18 +3101,20 @@ textarea.form-control-lg {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  margin-right: -11px;
-  margin-bottom: -11px;
+  margin-right: -4px;
+  margin-bottom: -4px;
+  letter-spacing: 0.1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background: linear-gradient(70deg, #797979, #b8b8b8);
   background-size: 300%;
-  border: 6px solid #ffffff;
+  border: 4px solid #5f5f5f;
+  box-shadow: 0 0 0 0 #4f4f4f;
   padding: 1rem 1.75rem;
   font-size: 0.875rem;
-  font-weight: 100;
+  font-weight: 500;
   border-radius: 0.9rem 0 1.3rem 0;
   transition: 0.3s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
@@ -3109,14 +3123,15 @@ textarea.form-control-lg {
   color: #212529;
   background: linear-gradient(70deg, #797979, #b8b8b8);
   background-size: 300%;
-  margin-top: 10px;
-  margin-right: -11px;
-  margin-bottom: -11px;
-  border: 1px solid #ffffff;
+  margin-top: 5px;
+  margin-right: -9px;
+  margin-bottom: -9px;
+  border: 4px solid #5f5f5f;
+  box-shadow: 0 5px 0 0 #4f4f4f;
   letter-spacing: 0.1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  border-radius: 1rem 0.5rem 1.5rem 0.5rem;
+  border-radius: 0.9rem 0.3rem 1.3rem 0.3rem;
   animation: bg-animation 3s infinite alternate;
 }
 
@@ -11582,14 +11597,84 @@ header.masthead .site-heading .h1 {
   text-decoration: line-through;
 }
 
+
+/*文章區塊*/
 .post-view{
   margin-left: 2%;
   border-radius: 1.3rem;
-  border: 4px solid #7f7f7f;
   width: 96%;
   transition: 0.5s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
+.post-view:hover {
+  border-radius: 1.4rem;
+  width: 102%;
+  height: 102%;
+  margin-left: -1%;
+  margin-top: -1%;
+  margin-bottom: 1%;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  transition: 0.5s;
+}
+  /*連動文章大標題*/
+  .post-view:hover > .post-title-view {
+    letter-spacing: 0.095rem;
+  }
+  /*連動文章內容*/
+  .post-view:hover > .post-meta {
+    letter-spacing: 0.07rem;
+  }
+  /*連動已知問題區塊標題*/
+  .post-view:hover > .post-view-view > .prob-title {
+    letter-spacing: 0.095rem;
+  }
+  /*連動已知問題區塊內容*/
+  .post-view:hover > .post-view-view > .prob-meta {
+    letter-spacing: 0.07rem;
+  }
+
+/*區塊顏色*/
+  .bg-gray {
+    background-color: #f1f1f1;
+  }
+  .bg-whitegray {
+    background-color: #f9f9f9;
+  }
+  .bg-blue {
+    background-color: #e6f3f6;
+  }
+  .bg-red {
+    background-color: #b02a3714;
+  }
+  /*紅色區塊*/
+    .post-view-red {
+      border: 4px solid #996464;
+      box-shadow: 0 0 0 0 #744e4e;
+    }
+    .post-view-red:hover {
+      border: 4px solid #996464;
+      box-shadow: 0 5px 0 0 #744e4e;
+    }
+  /*藍色區塊*/
+    .post-view-blue {
+      border: 4px solid #7699ae;
+      box-shadow: 0 0 0 0 #49697e;
+    }
+    .post-view-blue:hover {
+      border: 4px solid #7699ae;
+      box-shadow: 0 5px 0 0 #49697e;
+    }
+  /*灰色區塊*/
+    .post-view-gray {
+      border: 4px solid #9f9f9f;
+      box-shadow: 0 0 0 0 #6f6f6f;
+    }
+    .post-view-gray:hover {
+      border: 4px solid #9f9f9f;
+      box-shadow: 0 5px 0 0 #6f6f6f;
+    }
+
+/*已知問題區塊*/
 .post-view-view {
   margin-left: 0.7rem;
   margin-right: 0.7rem;
@@ -11599,54 +11684,36 @@ header.masthead .site-heading .h1 {
   transition: 0.5s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
-.space1rem {
-  height: 0.7rem;
-  width: 100%;
-}
 .post-view-view:hover {
   box-shadow: 0 0 30px 5px #e1e1e181;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
   transition: 0.5s;
 }
+  /*已知問題標題*/
+  .prob-title {
+    text-align: center;
+    animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+    transition: 0.5s;
+  }
+  /*已知問題內容*/
+  .prob-meta {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0.6rem;
+    margin-bottom: 0;
+    font-size: 1.125rem;
+    font-weight: 300;
+    animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+    transition: 0.5s;
+  }
 
-.post-view:hover {
-  width: 100.2%;
-  margin-left: -0.1%;
-  /*box-shadow: 0 0 30px 5px #e1e1e181;*/
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-  transition: 0.5s;
-}
-
-.post-view:hover > .post-title-view {
-  letter-spacing: 0.1rem;
-}
-.post-view:hover > .post-meta {
-  letter-spacing: 0.049rem;
-}
-.post-view:hover .prob-title {
-  letter-spacing: 0.1rem;
-}
-.post-view:hover .prob-meta {
-  letter-spacing: 0.046rem;
-}   
-
-.prob-title {
-  text-align: center;
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-  transition: 0.5s;
-
-}
-.prob-meta {
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 0.6rem;
-  margin-bottom: 0;
-  font-size: 1.125rem;
-  font-weight: 300;
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-  transition: 0.5s;
+/*1rem高度區塊*/
+.space1rem {
+  height: 0.7rem;
+  width: 100%;
 }
 
+/*文章標籤*/
 .post-tag, .post-tag-animation2, .post-tag-animation3 {
   width: 7rem;
   height: 2.6rem;
@@ -11662,138 +11729,101 @@ header.masthead .site-heading .h1 {
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
   transition: 0.3s;
 }
-.post-tag-text {
-  font-size: 1.2rem;
-  font-weight: 700;
-  font-family: var(--bs-body-font-family);
-  color: #fff;
-}
-
-
-.post-tag:hover{
-  animation-name: RLmove;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-
-.post-tag-animation2:hover {
-  animation-name: tag-animation2;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-
-.post-tag-animation3:hover {
-  animation-name: tag-animation3;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-}
-
-@keyframes RLmove {
-  0%{
-    width: 7rem;
-    height: 2.6rem;
-    margin-left: -1rem;
-    box-shadow: 0 0 0 0 #9a2f1f00;
+  /*文章標籤文字*/
+  .post-tag-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: var(--bs-body-font-family);
+    color: #fff;
   }
-  18%{
-    margin-left: -1.6rem;
-    box-shadow: 0 0 10px 0 #9a2f1f21;
-  }
-  29%{
-    margin-left: -0.5rem;
-    box-shadow: 0 0 15px 0 #9a2f1f31;
-  }
-  52%{
-    width: 7.2rem;
-    margin-left: -1.4rem;
-    margin-bottom: -0.1rem;
-    height: 2.7rem;
-    border-radius: 1.35rem;
-    border: 0 solid #ffffff00;
-    box-shadow: 0 0 20px 0 #9a2f1f71;
-  }
-  65%{
-    margin-left: -0.7rem;
-    box-shadow: 0 0 15px 0 #9a2f1f31;
-  }
-  83%{
-    margin-left: -1.2rem;
-    box-shadow: 0 0 10px 0 #9a2f1f21;
-  }
-  100%{
-    width: 7rem;
-    height: 2.6rem;
-    margin-left:-1rem;
-    box-shadow: 0 0 0 0 #9a2f1f00;
-  }
-}
-@keyframes tag-animation2 {
-  0%{
-    border: 5px solid #fff;
-    width: 7rem;
-    height: 2.6rem;
-    transform:rotate(0deg);
-    box-shadow: 0 0 0 0 #9a2f1f00;
-  }
-  18%{
-    transform:rotate(10deg);
-    box-shadow: 0 0 10px 0 #9a2f1f21;
-  }
-  29%{
-    transform:rotate(-8deg);
-    box-shadow: 0 0 15px 0 #9a2f1f31;
-  }
-  52%{
-    width: 7.4rem;
-    transform:rotate(6deg);
-    margin-bottom: -0.4rem;
-    height: 3rem;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 20px 0 #9a2f1f71;
-    border: 0 solid #ffffff00;
-  }
-  65%{
-    transform:rotate(-4deg);
-    box-shadow: 0 0 15px 0 #9a2f1f31;
-  }
-  83%{
-    transform:rotate(2deg);
-    box-shadow: 0 0 10px 0 #9a2f1f21;
-  }
-  100%{
-    border: 5px solid #fff;
-    width: 7rem;
-    height: 2.6rem;
-    box-shadow: 0 0 0 0 #9a2f1f00;
-  }
-}
-@keyframes tag-animation3 {
-  0%{
-    width: 7rem;
-    height: 2.6rem;
-    box-shadow: 0 0 0 0 #9a2f1f00;
-  }
-  40%{
-    width: 100%;
-    height: 100%;
-    margin-bottom: -0.1rem;
-    height: 2.7rem;
-    box-shadow: 0 0 20px 0 #9a2f1f51;
-  }
-  60%{
-    width: 100%;
-    height: 100%;
-    margin-bottom: -0.1rem;
-    height: 2.7rem;
-    box-shadow: 0 0 20px 0 #9a2f1f51;
-  }
-  100%{
-    width: 7rem;
-    height: 2.6rem;
-    box-shadow: 0 0 0 0 #9a2f1f00;
-  }
-}
-
+  /*文章標籤動畫*/
+    /*左右橫擺動畫*/
+    .post-tag:hover{
+      animation-name: RLmove;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+    }@keyframes RLmove {
+      0%{
+        width: 7rem;
+        height: 2.6rem;
+        margin-left: -1rem;
+        box-shadow: 0 0 0 0 #9a2f1f00;
+      }
+      18%{
+        margin-left: -1.6rem;
+        box-shadow: 0 0 10px 0 #9a2f1f21;
+      }
+      29%{
+        margin-left: -0.5rem;
+        box-shadow: 0 0 15px 0 #9a2f1f31;
+      }
+      52%{
+        width: 7.2rem;
+        margin-left: -1.4rem;
+        margin-bottom: -0.1rem;
+        height: 2.7rem;
+        border-radius: 1.35rem;
+        border: 0 solid #ffffff00;
+        box-shadow: 0 0 20px 0 #9a2f1f71;
+      }
+      65%{
+        margin-left: -0.7rem;
+        box-shadow: 0 0 15px 0 #9a2f1f31;
+      }
+      83%{
+        margin-left: -1.2rem;
+        box-shadow: 0 0 10px 0 #9a2f1f21;
+      }
+      100%{
+        width: 7rem;
+        height: 2.6rem;
+        margin-left:-1rem;
+        box-shadow: 0 0 0 0 #9a2f1f00;
+      }}
+    /*左右晃動動畫*/
+    .post-tag-animation2:hover {
+      animation-name: tag-animation2;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+    }@keyframes tag-animation2 {
+      0%{
+        border: 5px solid #fff;
+        width: 7rem;
+        height: 2.6rem;
+        transform:rotate(0deg);
+        box-shadow: 0 0 0 0 #9a2f1f00;
+      }
+      18%{
+        transform:rotate(10deg);
+        box-shadow: 0 0 10px 0 #9a2f1f21;
+      }
+      29%{
+        transform:rotate(-8deg);
+        box-shadow: 0 0 15px 0 #9a2f1f31;
+      }
+      52%{
+        width: 7.4rem;
+        transform:rotate(6deg);
+        margin-bottom: -0.4rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 0 20px 0 #9a2f1f71;
+        border: 0 solid #ffffff00;
+      }
+      65%{
+        transform:rotate(-4deg);
+        box-shadow: 0 0 15px 0 #9a2f1f31;
+      }
+      83%{
+        transform:rotate(2deg);
+        box-shadow: 0 0 10px 0 #9a2f1f21;
+      }
+      100%{
+        border: 5px solid #fff;
+        width: 7rem;
+        height: 2.6rem;
+        box-shadow: 0 0 0 0 #9a2f1f00;
+      }}
 
 .new-icon {
   background-color: #a52834;
@@ -11817,11 +11847,9 @@ header.masthead .site-heading .h1 {
 .bg-whitegray {
   background-color: #f9f9f9;
 }
-
 .bg-blue {
   background-color: #e6f3f6;
 }
-
 .bg-red {
   background-color: #b02a3714;
 }
@@ -12215,10 +12243,14 @@ header.masthead .site-heading .h1 {
   text-align: center;
   z-index: 3600;
   box-shadow: 0 0 20px 0.5rem #006a811a;
+  transition: 0.5s;
   animation-name: last-divin;
   animation-duration: 1s;
   animation-direction: 1;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+}
+.last-div:hover{
+  right: -3rem;
 }
 
 .problemform-view {
@@ -12293,7 +12325,7 @@ textarea:focus {
   font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
-  background-color: #00000010;
+  background-color: #fafafa;
   padding: 0.4rem;
   border:0;
   border-radius: 0.5rem;
