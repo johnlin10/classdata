@@ -12038,7 +12038,11 @@ header.masthead .site-heading .h1 {
   cursor: pointer;
   transition: 0.3s;
 }
-tbody tr td{
+tbody > tr > td[id^=TD] {
+  width: 10rem;
+  color: #fff;
+}
+tbody > tr[id^=TT] > td {
   width: 10rem;
   color: #fff;
 }
@@ -12061,7 +12065,6 @@ tbody tr td{
       font-weight: 300;
       color: #7f7f7f;
       text-align: right;
-      border-bottom: 2px solid ;
     }
   /*課程表內容*/
     .table-data {
