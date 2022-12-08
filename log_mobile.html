@@ -80,6 +80,17 @@
                     <hr class="my-4 hr" />
                     <div class="post-preview">
                         <div class="post-view post-view-gray bg-gray">
+                            <br>
+                            <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
+                            <h2 class="post-title- post-title-view">4.6</h2>
+                            <hr class="my-4 hr" />
+                            <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」，供資訊科、電子科數位邏輯課使用</p>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="post-preview">
+                        <div class="post-view post-view-gray bg-gray">
                             <div class="post-tag">
                                 <span class="post-tag-text">正式版</span>
                             </div>
@@ -457,21 +468,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script>
-            function fun(){
-                var name = document.getElementById("name").value;
-                document.getElementById("test").innerHTML = name;
-            }
-            $(".hide_btn").click(function(){
-                var x =  $(this).siblings("hide")
-                if( x.css("display") == "none"  ){
-                    x.slideDown();
-                    document.getElementById("hide_btn_text").innerHTML = "　收合　";
-                }else{
-                    x.slideUp();
-                    document.getElementById("hide_btn_text").innerHTML = "展開更多";
-                };
-            });
-        </script>
     </body>
 </html>
