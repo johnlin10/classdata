@@ -11228,10 +11228,9 @@ blockquote {
 @media (min-width: 860px) {
   #mainNav {
     border-bottom: 1px solid transparent;
-    background: transparent;
   }
   #mainNav .navbar-brand {
-    color: #cfcfcf;
+    color: #1a1a1a;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.72);
@@ -11274,7 +11273,7 @@ blockquote {
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -11289,26 +11288,26 @@ blockquote {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -87px;
+    top: -57px;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.72);
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: #1a1a1a;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #212529;
+    color: #1a1a1a;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
     color: #0085A1;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -11325,7 +11324,7 @@ blockquote {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: 0px;
+    top: -1px;
     transition: transform 0.2s;
     border-bottom: 1px solid #cfcfcf;
     background-color: rgba(255, 255, 255, 1);
@@ -11333,13 +11332,50 @@ blockquote {
     transition: 0.5s;
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: #1a1a1a;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #212529;
+    color: #1a1a1a;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media (max-width: 4192px) {
+  #mainNav {
+    transition: background-color 0.15s;
+    transition: 1s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    border-bottom: 1px solid #cfcfcf00;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -1px;
+    transition: transform 0.2s;
+    border-bottom: 1px solid #cfcfcf;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 40px 0 #0000001f;
+    transition: 0.5s;
+  }
+  #mainNav.is-fixed .navbar-brand {
+    color: #1a1a1a;
+  }
+  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+    color: #0085A1;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #1a1a1a;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
     color: #0085A1;
@@ -11360,7 +11396,7 @@ blockquote {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: 0px;
+    top: -57px;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.72);
@@ -11379,7 +11415,7 @@ blockquote {
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 100%, 0);
   }
 }
 
