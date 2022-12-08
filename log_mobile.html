@@ -82,6 +82,25 @@
                         <div class="post-view post-view-gray bg-gray">
                             <br>
                             <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
+                            <h2 class="post-title- post-title-view">4.6.3</h2>
+                            <hr class="my-4 hr" />
+                            <p class="post-meta post-meta-view post-meta-gray">・修復「展開/收合」失效問題</p>
+                            <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」換算的操作說明</p>
+                            <p class="post-meta post-meta-view post-meta-gray">・修復「卡諾圖化簡」文字顯示問題</p>
+                            <div class="post-view-view bg-whitegray">
+                                <br>
+                                <h5 class="post-meta-gray prob-title">已知問題</h5>
+                                <p class="prob-meta post-meta-gray"><i class="fa-solid fa-minus"></i> 卡諾圖化簡「換算」功能仍有邏輯錯誤</p>
+                                <br>
+                            </div>
+                            <div class="space1rem"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="post-preview">
+                        <div class="post-view post-view-gray bg-gray">
+                            <br>
+                            <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
                             <h2 class="post-title- post-title-view">4.6</h2>
                             <hr class="my-4 hr" />
                             <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」，供資訊科、電子科數位邏輯課使用</p>
@@ -246,8 +265,8 @@
                                 <h5 class="post-meta-gray post-title-view">2022.11.29</h5>
                                 <h2 class="post-title post-title-view">4.3.4</h2>
                                 <hr class="my-4 hr">
-                                <p class="post-meta post-meta-view post-meta-gray" class="display: none;">建設平台初衷是希望提供 “即時可靠” 的資訊，將資料化繁為簡，快速地獲取所需資訊。</p>
-                                <p class="post-meta post-meta-view post-meta-gray" class="display: none;">所以平台將改名為「班級資訊平台」，專注提供即時可靠的資料。</p>
+                                <p class="post-meta post-meta-view post-meta-gray">建設平台初衷是希望提供 “即時可靠” 的資訊，將資料化繁為簡，快速地獲取所需資訊。</p>
+                                <p class="post-meta post-meta-view post-meta-gray">所以平台將改名為「班級資訊平台」，專注提供即時可靠的資料。</p>
                                 <br>
                             </div>
                         </div>
@@ -468,5 +487,15 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+              $(".hide_btn").click(function(){
+                var x =  $(this).siblings("hide")
+                if( x.css("display") == "none"  ){
+                    x.slideDown(); 
+                }else{
+                    x.slideUp();
+                };
+            });
+        </script>
     </body>
 </html>
