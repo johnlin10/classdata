@@ -12568,7 +12568,7 @@ input[type="radio"]:checked {
   margin-right: 0.3rem;
 }
 
-.container {
+.fluid {
   display: flex;
   justify-content: center;
 }
