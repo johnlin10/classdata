@@ -1,6 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './components/css/index.css';
-import KarnaughMap from './components/KMap.js';
 
-ReactDOM.render(<KarnaughMap key={0} />, document.getElementById("root"));
+var NumberType = dovument.getElementById('NumberType')
+var NumberValue = document.getElementById('NumberChangeValue')
+
+function NumberChange(){
+    parseInt(NumberValue, NumberType);
+}
