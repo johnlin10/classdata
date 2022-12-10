@@ -1,27 +1,37 @@
-// Initialize deferredPrompt for use later to show browser install prompt.
 let deferredPrompt;
+const addBtn = document.querySelector(".addBtn");
 
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent the mini-infobar from appearing on mobile
+window.addEventListener("beforeinstallprompt", (e) => {
+  // 2. 停用 Chrome 67 前的公版提示視窗
   e.preventDefault();
-  // Stash the event so it can be triggered later.
+  // 3. 記得把事件存起來，後續在安裝的流程上會需要
   deferredPrompt = e;
-  // Update UI notify the user they can install the PWA
-  showInstallPromotion();
-  // Optionally, send analytics event that PWA install promo was shown.
-  console.log("'beforeinstallprompt' event was fired.");
-});
+  // 4. 讓 "安裝按鈕" 顯示
+  addBtn.style.display = "block";
 
-var buttonInstall = document.querySelector("#buttonInstall");
-buttonInstall.addEventListener('click', async () => {
-    // Hide the app provided install promotion
-    hideInstallPromotion();
-    // Show the install prompt
+  addBtn.addEventListener("click", (e) => {
+    // 5. 點選後 "安裝按鈕" 隱藏 (也可以停用)
+    addBtn.style.display = "none";
+    // 6. 點選按鈕後才觸發提示視窗
     deferredPrompt.prompt();
-    // Wait for the user to respond to the prompt
-    const { outcome } = await deferredPrompt.userChoice;
-    // Optionally, send analytics event with outcome of user choice
-    console.log(`User response to the install prompt: ${outcome}`);
-    // We've used the prompt, and can't use it again, throw it away
+    // 7. 等待使用者確認或拒絕
+    deferredPrompt.userChoice.then((choiceResult) => {
+      // 8. 從 userChoice 的結果判斷是否安裝成功
+      if (choiceResult.outcome === "accepted") {
+        console.log("User accepted the A2HS prompt");
+      } else {
+        console.log("User dismissed the A2HS prompt");
+      }
+      // 9. 用過就不能再用了
+      deferredPrompt = null;
+    });
+  });
+});
+window.addEventListener("appinstalled", () => {
+    // "安裝按鈕" 隱藏 (也可以停用)
+    addBtn.style.display = "none";
+    // 用過就不能再用了
     deferredPrompt = null;
+    // 安裝成功
+    console.log("PWA was installed");
   });
