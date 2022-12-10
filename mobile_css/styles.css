@@ -11661,7 +11661,7 @@ header.masthead .site-heading .h1 {
 }
 
 .PostTitle {
-  margin-left: -2rem;
+  margin-left: -0.5rem;
   font-size: 2rem;
   font-family: var(--bs-body-font-family);
   color: #006a81;
