@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PWA 應用開發計畫 - 班級資訊平台</title>
+        <link rel="icon" type="image/png" href="../school.png" />
+        <!-- PWA設定 -->
+        <link rel="manifest" href="../manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../mobile_css/styles.css" rel="stylesheet" />
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- 不紀錄快取 -->
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
+        <!-- 禁止網頁縮放 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+    </head>
+    <!-- 主體 -->
+    <body>
+        <!-- 頂部標題欄 -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="mobile.html"><i class="fa-solid fa-school"></i> 班級資訊平台</a>
+                </a>
+            </div>
+        </nav>
+        <!-- 底部導航欄 -->
+        <div class="footer-view">
+            <footer class="footer">
+                <a href="mobile.html"><div class="home"><i class="fa-solid fa-house icon-biger"></i><br><span class="icon-text">首頁</span></div></a>
+                <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off icon-biger"></i><br><span class="icon-text">公告</span></div></a>
+                <a href="資料庫_mobile.html"><div class="folder"><i class="fa-solid fa-folder icon-biger"></i><br><span class="icon-text">資料庫</span></div></a>
+                <a href="log_mobile.html"><div class="log icon-blue"><i class="fa-solid fa-code icon-biger"></i><br><span class="icon-text">開發</span></div></a>
+            </footer>
+        </div>
+        <!-- 標題 -->
+        <header class="masthead" style="background-image: url('images/pwa.webp')" id="top">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>PWA 應用開發計畫</h1>
+                            <span class="subheading"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 返回 -->
+        <a onClick="javascript:history.back()">
+            <div class="last-div"><i class="fa-solid fa-angles-left"></i></div>
+        </a>
+        <!-- 內容區 -->
+        <br>
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- 內容顯示區 -->
+                    <br>
+                    <h2 class="PostTitle"><i class="fa-solid fa-hashtag"></i> 開發計畫</h2>
+                    <p class="post-meta post-meta-view post-meta-gray">PWA 應用的前期建設需要非常深厚的開發基礎，顯然這超出了我目前的能力範圍，但我仍會不斷突破，此功能預計在 5.0 版本中推出，敬請期待！</p>
+                    <br>
+                    <div class="post-preview">
+                        <div class="post-view post-view-blue bg-blue">
+                            <br>
+                            <h5 class="post-meta-blue post-title-view">2022.12.11</h5>
+                            <h2 class="post-title-blue post-title-view">開發進度</h2>
+                            <div class="Progress">
+                                <div class="ProgressBar"></div>
+                            </div>
+                            <span class="ProgressText">開發籌備階段...</span>
+                            <div style="height: 1rem;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <h2 class="PostTitle"><i class="fa-solid fa-hashtag"></i> PWA 簡介</h2>
+                    <p class="post-meta post-meta-view post-meta-gray">PWA，全稱 Progressive Web App。</p>
+                    <p class="post-meta post-meta-view post-meta-gray">擁有極佳的適應能力，可安裝於電腦及行動裝置上，等同於獨立的 APP，安裝佔用極少資源，可一直保持最新狀態，用戶不需手動更新應用，新功能可隨時上線。</p>
+                    <div class="img-view"><img src="images/pww-vs-native.jpg" class="img"></div>
+                    <p class="post-meta post-meta-view post-meta-gray">相比於一般網頁，PWA 應用可提供近於 APP 的使用介面，可離線使用。</p>
+                    <p class="post-meta post-meta-view post-meta-gray">相比於一般 APP，PWA 應用安裝更為便捷，一串網址即可分享，不須到應用商店安裝或更新。</p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        
+          
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="small text-center text-muted fst-italic" id="c">Johnolin10 &copy; 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <br>
+        <br>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+            emailjs.init('o7c3uHOnTzU9CMyHy')
+        </script>
+    </body>
+</html>
