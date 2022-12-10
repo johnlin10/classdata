@@ -1,17 +1,48 @@
 {
-    "short_name": "班級資訊平台",
-    "name": "班級資料平台 4.0",
-    "icons": [
-      {
-        "src": "school.png",
-        "type": "image/png",
-        "sizes": "1080x1080"
-      }
-    ],
-    "id": "ClassData",
-    "start_url": "https://johnlin10.github.io/classdata/mobile.html",
-    "background_color": "#ffffff",
-    "display": "standalone",
-    "scope": "/",
-    "theme_color": "#ffffff"
-  }
+  "short_name": "班級資訊平台",
+  "name": "班級資訊平台 4.0",
+  "icons": [
+    {
+      "src": "school.png",
+      "type": "image/png",
+      "sizes": "1080x1080"
+    }
+  ],
+  "id": "ClassData",
+  "start_url": "https://johnlin10.github.io/classdata/mobile.html",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#0085A1",
+  "shortcuts": [
+    {
+      "name": "課程表",
+      "short_name": "課程表",
+      "description": "提供即時的課程表資訊",
+      "url": "/today?source=pwa",
+      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "How's weather tomorrow?",
+      "short_name": "Tomorrow",
+      "description": "View weather information for tomorrow",
+      "url": "/%E8%AA%B2%E7%A8%8B%E8%A1%A8_mobile.html",
+      "icons": [{ "src": "school.png", "sizes": "1080x1080" }]
+    }
+  ],
+  "description": "班級、學校的即時資訊",
+  "screenshots": [
+    {
+      "src": "/assets/classdata_mobile.html(iPhone SE).png",
+      "type": "image/png",
+      "sizes": "750x1334",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "classdata_mobile.html(iPhone 12 Pro).png",
+      "type": "image/png",
+      "sizes": "1170x2532",
+      "form_factor": "narrow"
+    }
+  ]
+}
