@@ -27,11 +27,3 @@ window.addEventListener("beforeinstallprompt", (e) => {
     });
   });
 });
-window.addEventListener("appinstalled", () => {
-    // "安裝按鈕" 隱藏 (也可以停用)
-    addBtn.style.display = "none";
-    // 用過就不能再用了
-    deferredPrompt = null;
-    // 安裝成功
-    console.log("PWA was installed");
-  });
