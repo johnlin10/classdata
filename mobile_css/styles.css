@@ -12382,7 +12382,7 @@ tbody > tr[id^=TT] > td {
 .FastGo {
   display: flex;
   position: fixed;
-  top: 0.5rem;
+  bottom: 5rem;
   right: -4rem;
   width: 8rem;
   height: 2rem;
@@ -12396,9 +12396,9 @@ tbody > tr[id^=TT] > td {
   justify-content:left;
   align-items: center;
   text-align: center;
-  z-index: 5000;
+  z-index: 7001;
   transition: 0.5s;
-  animation-name: FastGo_in;
+  /* animation-name: FastGo_in; */
   animation-duration: 1s;
   animation-direction: 1;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
@@ -12406,7 +12406,7 @@ tbody > tr[id^=TT] > td {
 .FastGo-hide {
   display: flex;
   position: fixed;
-  top: 0.5rem;
+  bottom: 5rem;
   right: -10rem;
   width: 8rem;
   height: 2rem;
@@ -12420,9 +12420,9 @@ tbody > tr[id^=TT] > td {
   justify-content:left;
   align-items: center;
   text-align: center;
-  z-index: 5000;
+  z-index: 7001;
   transition: 0.5s;
-  animation-name: FastGo_in;
+  /* animation-name: FastGo_in; */
   animation-duration: 1s;
   animation-direction: 1;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
@@ -12756,14 +12756,14 @@ input[type="radio"]:checked {
   height: 100%;
   width: 100%;
   top: 0;
-  z-index: 0;
+  z-index: -10;
   background-color: #00000000;
-  transition: 0.5s;
+  transition:0.5s;
   transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
 }
 
 .cardafter {
