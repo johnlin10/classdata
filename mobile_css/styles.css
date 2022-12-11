@@ -12701,8 +12701,8 @@ input[type="radio"]:checked {
   /*display: flex;
   */z-index: 7000;
   height: auto;
-  width: 90%;
-  max-height: 40%;
+  width: 30%;
+  max-height: 10%;
   max-width: 480px;
   bottom: 5.5rem;
   background-color: #fff;
@@ -12726,6 +12726,8 @@ input[type="radio"]:checked {
 }
   
   #card.open {
+    max-height: 40%;
+    width: 90%;
     right: 5%;
   }
 
