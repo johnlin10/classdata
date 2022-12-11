@@ -12187,7 +12187,7 @@ tbody > tr[id^=TT] > td {
 }
 
 @supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)){
-  .footer-view, .navbar, .last-div, .botten-nav, .footer-view-havebtn {
+  .footer-view, .navbar, .last-div, .botten-nav, .footer-view-havebtn, .cardafter {
     -webkit-backdrop-filter:saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     background-color:rgba(255,255,255,1)
@@ -12377,6 +12377,63 @@ tbody > tr[id^=TT] > td {
 }
 .last-div:hover{
   right: -3rem;
+}
+
+.FastGo {
+  display: flex;
+  position: fixed;
+  top: 0.5rem;
+  right: -4rem;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  color: #fff;
+  border-radius: 2rem;
+  background-color: #5f5f5f;
+  border: 5px solid #3f3f3f;
+  box-shadow: 0 5px 0 0 #000;
+  justify-content:left;
+  align-items: center;
+  text-align: center;
+  z-index: 5000;
+  transition: 0.5s;
+  animation-name: FastGo_in;
+  animation-duration: 1s;
+  animation-direction: 1;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+}
+.FastGo-hide {
+  display: flex;
+  position: fixed;
+  top: 0.5rem;
+  right: -10rem;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  color: #fff;
+  border-radius: 2rem;
+  background-color: #5f5f5f;
+  border: 5px solid #3f3f3f;
+  box-shadow: 0 5px 0 0 #000;
+  justify-content:left;
+  align-items: center;
+  text-align: center;
+  z-index: 5000;
+  transition: 0.5s;
+  animation-name: FastGo_in;
+  animation-duration: 1s;
+  animation-direction: 1;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+}
+@keyframes FastGo_in {
+  0%{
+    right: -10rem;
+  }
+  100%{
+    right: -4rem;
+  }
 }
 
 .problemform-view {
@@ -12634,3 +12691,82 @@ input[type="radio"]:checked {
   display: flex;
   justify-content: center;
 }
+
+#button {
+  font-size: 1rem !important;
+  width: 10rem;
+}
+
+#card {
+  display: flex;
+  z-index: 7000;
+  height: auto;
+  width: 90%;
+  bottom: 5.5rem;
+  background-color: #fff;
+  border: 5px solid #e5e5e5;
+  border-radius:1.5rem;
+  position:fixed;
+  right: -100%;
+  padding: 1rem;
+  transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  transition: 0.5s;
+  -webkit-border-radius:1.5rem;
+  -moz-border-radius:1.5rem;
+  -ms-border-radius:1.5rem;
+  -o-border-radius:1.5rem;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+  
+  #card.open {
+    right: 5%;
+  }
+
+  #card p{
+    font-family: var(--bs-body-font-family);
+    font-weight: 500;
+    color: #5a5a5a;
+  }
+
+#close {
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  bottom: -1rem;
+  right: -1rem;
+  color: #e5c1ca;
+  background-color: #a14555;
+  border: 3px solid #7a3545;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+#cardafter{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 0;
+  background-color: #00000000;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.cardafter {
+  height: 100%;
+  width: 100%;
+  z-index: 3000 !important;
+  background-color: #ffffff3a !important;
+}
+  
+  
