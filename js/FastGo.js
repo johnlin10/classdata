@@ -1,45 +1,29 @@
-var button = document.getElementById("FastGo_button");
-var GoTo = document.getElementById("GoTo");
+var button = document.getElementById("button");
 var card = document.getElementById("card");
-var cardafter = document.getElementById("cardafter");
-var gohome = document.getElementById("GoHome");
-var back = document.getElementById("back");
+var cardafter = document.getElementById("cardafter")
+// var close = document.getElementById("close");
 
-function cardhide() {
-    FastGo_button.classList.remove("FastGo-hide");
-    FastGo_button.classList.add("FastGo");
-    cardafter.classList.remove("cardafter");
-    card.classList.remove("open");
-    gohome.classList.add("GoHome");
-    gohome.classList.remove("GoHome-hide");
-}
-
-FastGo_button.addEventListener("click", function() {
+button.addEventListener("click", function() {
     card.classList.add("open");
-    cardafter.classList.add("cardafter");
-    FastGo_button.classList.remove("FastGo");
-    FastGo_button.classList.add("FastGo-hide");
-    gohome.classList.remove("GoHome");
-    gohome.classList.add("GoHome-hide");
-    back.classList.add("last-hide-div");
-    back.classList.remove("last-div");
+    // close.classList.add("close-in")
+    cardafter.classList.add("cardafter")
+    button.classList.remove("FastGo")
+    button.classList.add("FastGo-hide")
 });
 
-cardafter.addEventListener("click", function () {
-    FastGo_button.classList.remove("FastGo-hide");
-    FastGo_button.classList.add("FastGo");
-    cardafter.classList.remove("cardafter");
-    card.classList.remove("open");
-    gohome.classList.add("GoHome");
-    gohome.classList.remove("GoHome-hide");
-    back.classList.remove("last-hide-div");
-    back.classList.add("last-div");
-});
+// close.addEventListener("click", function() {
+//     card.classList.remove("open");
+//     cardafter.classList.remove("cardafter")
+//     close.classList.remove("close-in")
+//     button.classList.add("FastGo")
+//     button.classList.remove("FastGo-hide")
+// });
 
-GoTo.addEventListener("click", function () {
-    FastGo_button.classList.remove("FastGo-hide");
-    FastGo_button.classList.add("FastGo");
+cardafter.addEventListener("click", function() {
+    button.classList.remove("FastGo-hide");
+    button.classList.add("FastGo");
     cardafter.classList.remove("cardafter");
     card.classList.remove("open");
+    close.classList.remove("close-in");
 });
 
