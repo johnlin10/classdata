@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>科技新聞 - Johnolin10</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- PWA設定 -->
+        <link rel="manifest" href="manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- 不紀錄快取 -->
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
+        <!-- 禁止網頁縮放 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+    </head>
+    <body>
+        <!-- 頂部標題欄 -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">科技新聞</a>
+            </div>
+        </nav>
+        <!-- 捷徑 -->
+        <button id="GoHome" class="GoHome" onclick="window.location.href = 'index.html'"><i class="fa-solid fa-house"></i></button>
+        <button id="FastGo_button" class="FastGo"><i class="fa-solid fa-bars"></i></button>
+        <div id="cardafter"></div>
+        <div id="card">
+            <a href="#inf" onclick="cardhide()">
+                <div id="GoTo-div">
+                    <div class="gototitle">
+                        <span>前言</span>
+                    </div>
+                    <i class="fa-solid fa-share togolink"></i>
+                </div>
+            </a>
+            <a href="#h1" onclick="cardhide()">
+                <div id="GoTo-div">
+                    <div class="gototitle">
+                        <span>圖形解鎖安全性</span>
+                    </div>
+                    <i class="fa-solid fa-share togolink"></i>
+                </div>
+            </a>
+            <a href="#h2" onclick="cardhide()">
+                <div id="GoTo-div">
+                    <div class="gototitle">
+                        <span>公眾測試</span>
+                    </div>
+                    <i class="fa-solid fa-share togolink"></i>
+                </div>
+            </a>
+            <a href="#h3" onclick="cardhide()">
+                <div id="GoTo-div">
+                    <div class="gototitle">
+                        <span>結論</span>
+                    </div>
+                    <i class="fa-solid fa-share togolink"></i>
+                </div>
+            </a>
+        </div>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('images/手機九宮格解鎖.jpeg')" id="top">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>為什麼iPhone沒有九宮格解鎖？</h1>
+                            <h2 class="subheading">解釋蘋果不加入圖形解鎖原因</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+
+        <!--圖片
+            <a href="圖片連結"><img class="img-fluid" src="圖片位址" alt="替代文字" /></a>
+            <span class="caption text-muted">圖片註解</span>
+        -->
+        <!--文章小標
+            <h2 class="section-heading">主要規格</h2>
+        -->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="post-container col-md-10 col-lg-8 col-xl-7">
+                        <a class="target-fix" id="inf"></a>
+                        <br>
+                        <p>儘管 iPhone 已經有 Face ID 臉部辨識和 Touch ID 指紋辨識功能，如果辨識失敗就會需要改用4位或6位數字密碼才能解鎖，還是有不少人好奇，蘋果為何不加入 iPhone 九宮格解鎖（圖形解鎖）功能會比較方便？這功能在 Android 設備經常看見，不少 Android 用戶也認為圖形解鎖比數字密碼更好用又安全。</p>
+                        <p>為什麼iPhone遲遲不加入九宮格解鎖功能，這篇就來分享蘋果為何從來不考慮採用 iPhone 圖形解鎖背後真實原因。</p>
+                        <a href="images/iOS九宮格.jpeg"><img class="img-fluid" src="images/iOS九宮格.jpeg" alt="為什麼iPhone沒有九宮格解鎖？" /></a>
+                        <span class="caption text-muted">為什麼 iPhone 沒有九宮格解鎖？</span>
+                        <a class="target-fix" id="h1"></a>
+                        <br>
+                        <div class="section-heading-view">
+                            <h2 class="section-heading">iPhone 圖形解鎖永遠不會出現原因是為了安全</h2>
+                        </div>
+                        <p>其實蘋果不願意替 iPhone 解鎖功能推出「九宮格解鎖」或「圖形解鎖」，最主要原因就是安全。</p>
+                        <p>挪威科技大學研究員 Marte Loge 發現 Android 九宮格解鎖相比密碼解鎖更不安全，大多數使用者都習慣設定 4 到 5 個節點，而且高達 77% 解鎖圖形都會從左至右或是上到下順序滑動，造成很容易被猜出來，才會造成九宮格解鎖安全度不足。</p>
+                        <a href="images/手機九宮格解鎖.jpeg"><img class="img-fluid" src="images/手機九宮格解鎖.jpeg" alt="為什麼iPhone沒有九宮格解鎖？" /></a>
+                        <span class="caption text-muted">手機九宮格解鎖</span>
+                        <a class="target-fix" id="h2"></a>
+                        <br>
+                        <div class="section-heading-view">
+                            <h2 class="section-heading">公眾測試</h2>
+                        </div>
+                        <p>美國海軍學院和馬里蘭大學巴爾研究人員招募 91 名民眾進行測試，驗證圖形解鎖和密碼解鎖誰比較安全？最終結果顯示，要取得 Android 九宮格解鎖相當容易，只要利用「肩窺」（shoulder surfing）就能輕鬆取得，方法是站在對方身後，監視對方手指解鎖滑動方向，只要監視者看過一次有 64% 成功機率能紀錄下來，要是多看幾次成功率就會提升到80%。</p>
+                        <p>反而 6 位數密碼解鎖，要透過肩窺方式取得，成功機率只有 10% 能夠在短時間辨識和記憶，從實驗結果證實，使用 6 位數字解鎖密碼相比圖形解鎖更安全。</p>
+                        <a href="images/手機九宮格解鎖2.jpeg"><img class="img-fluid" src="images/手機九宮格解鎖2.jpeg" alt="為什麼iPhone沒有九宮格解鎖？" /></a>
+                        <span class="caption text-muted">肩窺測試結果</span>
+                        <a class="target-fix" id="h3"></a>
+                        <br>
+                        <div class="section-heading-view">
+                            <h2 class="section-heading">結論</h2>
+                        </div>
+                        <p>連安全工程領域的研究人員兼任劍橋大學安全工程教授 Ross Anderson 也表示，對於不是安全專家的用戶而言，使用密碼安全度相對會更好。</p>
+                        <p>主要是因為再透過手機點選密碼時，很難看清楚和短時間紀錄下對方點選的數字，反而九宮格圖形解鎖就很容易，滑過的線條還會顯示在手機畫面上，導致更容易被旁邊的人窺視和取得。</p>
+                        <p>由於九宮格圖形解鎖相比解鎖密碼安全性更低，才會導致蘋果不願替 iPhone 加入圖形解鎖功能，畢竟對於蘋果來說，他們追求簡單、實用、安全與更新的解鎖技術，儘管九宮格圖形解鎖看起來很簡單，但是該技術並不安全，才會導致 iPhone 從最初 iOS 到新款版本都不會加入圖形解鎖功能。</p>
+                        <br>
+                        <hr>
+                        <p>
+                            本文轉載自
+                            <a href="https://mrmad.com.tw/why-is-the-iphone-not-unlocked-with-jiugongge" target="_blank">瘋先生</a>
+                            &middot; 
+                            <a href="https://johnlin10.github.io/johnolin10/">@Johnolin10</a>
+                        </p>
+                        <blockquote class="blockquote"></blockquote>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/shoujidaxiaosh" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/profile.php?id=100018725941094" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/johnlin10" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic"><a href="https://johnlin10.github.io/johnolin10/">Johnolin10</a> &copy; 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            jQuery(document).ready(function(e) {
+                var offset = jQuery(':target').offset();
+                var scrollto = offset.top - 60; // minus fixed header height
+                jQuery('html, body').animate({scrollTop:scrollto}, 0);
+            })
+        </script>
+        <script src="js/FastGo.js"></script>
+    </body>
+</html>
