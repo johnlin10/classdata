@@ -677,7 +677,7 @@ function SetValue(Name,Value)
 
 function GenerateTruthTableHTML()
 {
-	var Text = "<table class=\"table-view\" ID=\"TruthTableID\" style=\"text-align:center; width: 90%;margin-left: 5%;\">";
+	var Text = "<table class=\"table-view table-view-kmap\" ID=\"TruthTableID\" style=\"text-align:center; width: 90%;margin-left: 5%;\">";
 	{
 		Text = Text + "<thead style=\"text-align:center\"><tr>";
 		var i=0;
@@ -721,7 +721,7 @@ function GenerateTruthTableHTML()
 
 function GenerateKarnoMapHTML()
 {
-	var Text = "<table class=\"table-view\" style=\"text-align:center; width: 90%;margin-left: 5%;\"><thead><tr>";
+	var Text = "<table class=\"table-view table-view-kmap\" style=\"text-align:center; width: 90%;margin-left: 5%;\"><thead><tr>";
 	var h,w;
 	Text = Text + "<th colspan=\"2\"></th><th style=\"font-weight: 900;text-align:center; color:#228090;border-bottom: 3px solid #228090;\" colspan="+(KMap.Width)+">";
 

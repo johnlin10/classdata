@@ -11695,37 +11695,36 @@ header.masthead .site-heading .h1 {
 
 /*文章區塊*/
 .post-view{
-  margin-left: 2%;
+  margin-left: 1%;
   border-radius: 1.3rem;
-  width: 96%;
+  width: 98%;
   transition: 0.5s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
 .post-view:hover {
   border-radius: 1.4rem;
-  width: 102%;
-  height: 102%;
-  margin-left: -1%;
-  margin-top: -1%;
-  margin-bottom: 1%;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
   transition: 0.5s;
 }
   /*連動文章大標題*/
   .post-view:hover > .post-title-view {
-    letter-spacing: 0.095rem;
+    letter-spacing: 0.05rem;
   }
   /*連動文章內容*/
   .post-view:hover > .post-meta {
-    letter-spacing: 0.07rem;
+    letter-spacing: 0.02rem;
   }
   /*連動已知問題區塊標題*/
   .post-view:hover > .post-view-view > .prob-title {
-    letter-spacing: 0.095rem;
+    letter-spacing: 0.05rem;
   }
   /*連動已知問題區塊內容*/
   .post-view:hover > .post-view-view > .prob-meta {
-    letter-spacing: 0.07rem;
+    letter-spacing: 0.02rem;
   }
 
 /*區塊顏色*/
@@ -12052,7 +12051,18 @@ header.masthead .site-heading .h1 {
 /*******************************************/
 /*通用表格設定*/
 .table-view {
-  display: block;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  width: 100%;
+  border: 0px;
+  border-color: #fff;
+  border-spacing: 0.3rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.table-view-kmap {
+  display: block !important;
   justify-content:center;
   align-items: center;
   width: 100%;
@@ -12073,7 +12083,7 @@ header.masthead .site-heading .h1 {
 /*卡諾圖表格內容*/
 .table-view .thody tr td{
   font-size: 0.9rem;
-  height: 3rem;
+  height: 2.8rem;
   width: 3rem;
   border-radius: 0.8rem;
   padding: 5px;
@@ -12091,15 +12101,15 @@ tbody > tr[id^=TT] > td {
 .header-color {
   text-align: center;
 }
+.table-content-one {
+  width: 80% !important;
+}
   /*課程表頂部標題*/
     .table-top {
       width: 100%;
       font-weight: 300;
       color: #7f7f7f;
       text-align: center;
-    }
-    .table-top-content {
-      width: 27%;
     }
   /*課程表側邊標題*/
     .table-top-left {
@@ -12170,7 +12180,28 @@ tbody > tr[id^=TT] > td {
       transition: 0.3s;
     }
 /*******************************************/
+/* 開發 */
+#DevelopmentUpdates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding-left: 6%;
+  padding-right: 6%;
+}
+#DevelopmentUpdates .UpdatesContent {
+  margin-left: 1%;
+  border-radius: 1.3rem;
+  width: 98%;
+  transition: 0.5s;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+}
+#DevelopmentUpdates .UpdatesContent p{
+  font-size:1.2rem;
+  margin-top:0.4rem;
+  margin-bottom:0.4rem;
+}
 
+/*******************************************/
 .bigtitle {
   margin-top: 3rem;
 }
@@ -12852,7 +12883,7 @@ input[type="radio"]:checked {
   margin-right: 0.8rem;
 }
 
-#card .icon {
+#card .icon, .icon {
   width: 3rem;
   height: 3rem;
   border-radius: 0.7rem;
@@ -12861,6 +12892,7 @@ input[type="radio"]:checked {
   -ms-border-radius: 0.7rem;
   -o-border-radius: 0.7rem;
 }
+
   
 
 .display-none {
