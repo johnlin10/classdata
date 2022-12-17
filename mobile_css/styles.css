@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Orbitron:wght@400;500;600;700;800;900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --bs-primary-rgb: 0, 133, 161;
@@ -16,10 +15,10 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: 'Montserrat', 'Noto Sans TC', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-font-sans-serif: 'Prompt', /*'Josefin Sans', 'Orbitron', 'Nunito', */'Noto Sans TC';
+  --bs-font-monospace: 'Prompt', /*'Josefin Sans', 'Orbitron', 'Nunito', */'Noto Sans TC';
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: 'Prompt', /*'Josefin Sans', 'Orbitron', 'Nunito', */'Noto Sans TC';
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -77,7 +76,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 900;
+  font-family: 'Nunito', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 900;
   line-height: 1.2;
 }
 
@@ -2959,7 +2958,7 @@ textarea.form-control-lg {
 /*一般按鈕*/
 .btn {
   display: inline-block;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
+  font-family: 'Nunito', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   text-align: center;
@@ -3002,7 +3001,7 @@ textarea.form-control-lg {
 /*藍色按鈕*/
 .btn-blue {
   display: inline-block;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
+  font-family: 'Nunito', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   text-align: center;
@@ -3046,7 +3045,7 @@ textarea.form-control-lg {
 /*紅色按鈕*/
 .btn-red {
   display: inline-block;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
+  font-family: 'Nunito', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   text-align: center;
@@ -3090,7 +3089,7 @@ textarea.form-control-lg {
 /*灰色按鈕*/
 .btn-gray {
   display: inline-block;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
+  font-family: 'Nunito', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   text-align: center;
@@ -3757,7 +3756,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 860px) {
   .dropdown-menu-lg-start {
-    --bs-position: start;
+    --bs-position: center;
   }
   .dropdown-menu-lg-start[data-bs-popper] {
     right: auto;
@@ -4536,7 +4535,7 @@ textarea.form-control-lg {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: #dae9ec;
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
@@ -4559,7 +4558,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
+  color: #b3d8df;
   border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
@@ -5643,7 +5642,7 @@ textarea.form-control-lg {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-style: normal;
+  font-family: 'Nunito', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
@@ -5743,7 +5742,7 @@ textarea.form-control-lg {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-style: normal;
+  font-family: var(--bs-body-font-family);
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
@@ -11202,15 +11201,16 @@ blockquote {
   left: 0;
   right: 0;
   z-index: 5000;
-  border-bottom: 1px solid #dee2e6;
-  background-color: #ffffffc1;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;}
+  border: 0;
+  background-color: #006a81;
+  font-family: var(--bs-body-font-family);
+}
 #mainNav .navbar-brand {
   font-weight: 500;
 }
 #mainNav .navbar-toggler {
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 300;
   padding: 0.5rem;
   text-transform: uppercase;
   transition: 0.5s;
@@ -11230,7 +11230,7 @@ blockquote {
     border-bottom: 1px solid transparent;
   }
   #mainNav .navbar-brand {
-    color: #1a1a1a;
+    color: #dae9ec;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.72);
@@ -11253,14 +11253,14 @@ blockquote {
   }
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
+    /* position: fixed;
     top: -57px;
     transition: transform 0.5s;
     border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.72);
+    background-color: rgba(255, 255, 255, 0.72); */
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: #dae9ec;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
@@ -11273,7 +11273,7 @@ blockquote {
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 0, 0);
+    /* transform: translate3d(0, 0, 0); */
   }
 }
 
@@ -11287,14 +11287,14 @@ blockquote {
   }
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
+    /* position: fixed;
     top: -57px;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.72);
+    background-color: rgba(255, 255, 255, 0.72); */
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #1a1a1a;
+    color: #dae9ec;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
@@ -11307,7 +11307,7 @@ blockquote {
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 0, 0);
+    /* transform: translate3d(0, 0, 0); */
   }
 }
 
@@ -11323,16 +11323,16 @@ blockquote {
   }
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
+    /* position: fixed;
     top: -1px;
     transition: transform 0.2s;
     border-bottom: 1px solid #cfcfcf;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 0 40px 0 #0000001f;
-    transition: 0.5s;
+    transition: 0.5s; */
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #1a1a1a;
+    color: #dae9ec;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
@@ -11345,7 +11345,7 @@ blockquote {
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 0, 0);
+    /* transform: translate3d(0, 0, 0); */
   }
 }
 @media (max-width: 4192px) {
@@ -11360,16 +11360,16 @@ blockquote {
   }
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
+    /* position: fixed;
     top: -1px;
     transition: transform 0.2s;
     border-bottom: 1px solid #cfcfcf;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 0 40px 0 #0000001f;
-    transition: 0.5s;
+    transition: 0.5s; */
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #1a1a1a;
+    color: #dae9ec;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
@@ -11381,9 +11381,12 @@ blockquote {
     color: #0085A1;
   }
   #mainNav.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 0, 0);
-  }
+    /*iftheuserchangesthescrollingdirection,weshowtheheader*/transform: translate3d(0, 0, 0);
+    /* -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0); */
+}
 }
 @media (max-width: 240px) {
   #mainNav {
@@ -11395,14 +11398,14 @@ blockquote {
   }
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
+    /* position: fixed;
     top: -57px;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.72);
+    background-color: rgba(255, 255, 255, 0.72); */
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: #dae9ec;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
@@ -11415,7 +11418,7 @@ blockquote {
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 100%, 0);
+    /* transform: translate3d(0, 100%, 0); */
   }
 }
 
@@ -11465,7 +11468,8 @@ header.masthead .site-heading .subheading {
   line-height: 1.1;
   display: block;
   margin-top: 0.625rem;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;}
+  font-family: var(--bs-body-font-family);
+}
 header.masthead .post-heading h1, header.masthead .post-heading .h1 {
   font-size: 2.25rem;
 }
@@ -11478,12 +11482,14 @@ header.masthead .post-heading .subheading {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0.75rem 0 2rem;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;}
+  font-family: var(--bs-body-font-family);
+}
 header.masthead .post-heading .meta {
   font-size: 1.25rem;
   font-weight: 300;
   font-style: italic;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;}
+  font-family: var(--bs-body-font-family);
+}
 header.masthead .post-heading .meta a {
   color: #fff;
 }
@@ -11615,7 +11621,7 @@ header.masthead .site-heading .h1 {
   width: 88%;
   margin-left: 6%;
   text-align: center;
-  font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: var(--bs-body-font-family);
   transition: 0.5s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
@@ -12180,6 +12186,56 @@ tbody > tr[id^=TT] > td {
       transition: 0.3s;
     }
 /*******************************************/
+/* 課程表 */
+#ClassListView {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.ClassList {
+  width: 95%;
+  min-width: 720px;
+  display: flex;
+  justify-content: flex-start;
+}
+.Left-ListView {
+  width: 10%;
+  text-align: right;
+}
+.Top-ListContent{
+  font-size: 0.8rem;
+}
+.Left-Top-ListContent{
+  font-size: 0.8rem;
+}
+.ListView {
+  width: 18%;
+  text-align: center;
+}
+.ClassList div div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 2rem;
+  margin: 0.2rem;
+  padding: 0.3rem;
+}
+.ListContent {
+  font-size: 1rem;
+  background-color: #e1e1e1;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+
+
+/*******************************************/
 /* 開發 */
 #DevelopmentUpdates {
   display: flex;
@@ -12189,7 +12245,6 @@ tbody > tr[id^=TT] > td {
   padding-right: 6%;
 }
 #DevelopmentUpdates .UpdatesContent {
-  margin-left: 1%;
   border-radius: 1.3rem;
   width: 98%;
   transition: 0.5s;
@@ -12214,16 +12269,33 @@ tbody > tr[id^=TT] > td {
   }
 }
 
-.footer-view {
-  display: flex;/*设置弹性盒子*/
-  justify-content: space-evenly;/*水平对齐，两边间距是中间间距的一半*/
-  align-items: center;/* 垂直居中对齐 */
-  position: fixed;
+.footer-top-view {
+  display: flex;
+  /*设置弹性盒子*/justify-content: center;
+  /*水平对齐，两边间距是中间间距的一半*/align-items: center;
+  /*垂直居中对齐*/position: fixed;
   bottom: -1px;
   width: 100%;
+  z-index: 7999;
+}
+.footer-view {
+  display: flex;
+  /*设置弹性盒子*/justify-content: space-evenly;
+  /*水平对齐，两边间距是中间间距的一半*/align-items: center;
+  /*垂直居中对齐*/position: fixed;
+  bottom: 0px;
+  width: 100%;
+  max-width: 1080px;
   height: 4rem;
-  border-top: 1px solid #cfcfcf;
-  z-index: 4000;
+  border: 0;
+  border-radius: 1.2rem 1.2rem 0 0;
+  background-color: #b9d8df;
+  box-shadow: 0 0 40px 0 #0000001a;
+  z-index: 8000;
+  -webkit-border-radius: 1.2rem 1.2rem 0 0;
+  -moz-border-radius: 1.2rem 1.2rem 0 0;
+  -ms-border-radius: 1.2rem 1.2rem 0 0;
+  -o-border-radius: 1.2rem 1.2rem 0 0;
 }
 .footer-view-havebtn {
   display: flex;/*设置弹性盒子*/
@@ -12234,17 +12306,13 @@ tbody > tr[id^=TT] > td {
   width: 100%;
   height: 4rem;
   box-shadow: 0 0 40px 0 #0000001a;
-  z-index: 4000;
+  z-index: 8000;
 }
 
 .footer{
   display: flex;/*设置弹性盒子*/
   justify-content: space-evenly;/*水平对齐，两边间距是中间间距的一半*/
-  align-items: center;/* 垂直居中对齐 */
-  position: fixed;
-  bottom: -1px;
-  left:50%;
-  transform: translateX(-50%);
+  align-items: center;
   width: 100%;
   height: 20px;
   max-width: 640px;
@@ -12255,15 +12323,60 @@ tbody > tr[id^=TT] > td {
 }
 
 .footer div{
-  width: 80px;
-  margin-bottom: 0.7rem
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  height: 3.5rem;
+  width: 3.5rem;
 }
-.footer div i{
+.footer a div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer div svg{
   /* ____(5)_______;设置资自定义图标字体 */
   font-family:var(--bs-body-font-family);/*设置资自定义图标字体*/
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-style: normal;
   display: block;
+  margin-bottom: 0.3rem;
+  width: 100%;
+}
+
+.FooterAnimation {
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  background-color: #e7f5f8;
+  border: 5px solid #b9d8df;
+  margin-bottom: 2.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation-name: FooterAnimation;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes FooterAnimation {
+  0%{
+    margin-bottom: 0;
+    background-color: #b9d8df;
+    border: 0 solid #b9d8df;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  100%{
+    margin-bottom: 2.5rem;
+    border: 5px solid #b9d8df;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
 }
 
 .icon-blue {
@@ -12272,34 +12385,69 @@ tbody > tr[id^=TT] > td {
 }
 
 .icon-biger {
+  color: #00404e;
   font-size: 1rem;
   transition: 0.3s;
+}
+.iconBigerAni {
+  color: #00404e;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  animation-name: iconBiger;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes iconBiger {
+  0%{
+    color: #00404e;
+  }
+  100%{
+    font-size: 1.2rem !important;
+    color: #0a667b;
+  }
+}
+.icon-text {
+  color: #00404e;
+  font-size: 0.6rem;
+  text-align: center;
+  transition: 0.3s;
+}
+.iconTextAni {
+  color: #00404e;
+  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  animation-name: iconTextAni;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes iconTextAni {
+  0%{
+    color: #00404e;
+  }
+  100%{
+    font-size: 0.8rem;
+    color: #0a667b;
+  }
 }
 
 .home:hover .icon-biger {
-  font-size: 1.8rem;
-  margin-top: 1rem;
+  font-size: 1.8rem !important;
+  margin-top: 1.2rem !important;
 }
 .post:hover .icon-biger {
-  font-size: 1.8rem;
-  margin-top: 1rem;
+  font-size: 1.8rem !important;
+  margin-top: 1.2rem !important;
 }
 .folder:hover .icon-biger {
-  font-size: 1.8rem;
-  margin-top: 1rem;
+  font-size: 1.8rem !important;
+  margin-top: 1.2rem !important;
 }
 .log:hover .icon-biger {
-  font-size: 1.8rem;
-  margin-top: 1rem;
+  font-size: 1.8rem !important;
+  margin-top: 1.2rem !important;
 }
 
-.icon-text {
-  font-size: 0.7rem;
-  text-align: center;
-  transition: 0.3s;
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-}
+
 
 .home:hover .icon-text {
   bottom: -0.5rem;
@@ -12418,10 +12566,7 @@ tbody > tr[id^=TT] > td {
   text-align: center;
   z-index: 7004;
   transition: 0.5s;
-  /* animation-name: FastGo_in; */
-  animation-duration: 1s;
-  animation-direction: 1;
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
 .FastGo-hide {
   display: flex;
@@ -12442,18 +12587,7 @@ tbody > tr[id^=TT] > td {
   text-align: center;
   z-index: 7004;
   transition: 0.5s;
-  /* animation-name: FastGo_in; */
-  animation-duration: 1s;
-  animation-direction: 1;
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-}
-@keyframes FastGo_in {
-  0%{
-    right: -10rem;
-  }
-  100%{
-    right: -4rem;
-  }
+  transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
 
 .problemform-view {
@@ -12718,8 +12852,7 @@ input[type="radio"]:checked {
 }
 
 #card {
-  /*display: flex;
-  */z-index: 7000;
+  z-index: 7000;
   height: auto;
   width: 30%;
   max-height: 10%;
@@ -12749,6 +12882,7 @@ input[type="radio"]:checked {
     max-height: 40%;
     width: 90%;
     right: 5%;
+    transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
   }
 
   #card p{
@@ -12777,40 +12911,6 @@ input[type="radio"]:checked {
     -moz-border-radius: 0.2rem;
     -ms-border-radius: 0.2rem;
     -o-border-radius: 0.2rem;
-}
-
-.close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: fixed;
-  height: 3rem;
-  width: 3rem;
-  bottom: 5rem;
-  right: -3rem;
-  color: #e5c1ca;
-  box-shadow: 2px 2px 0 0 #a19595;
-  background-color: #a14555;
-  border: 5px solid #7a3545;
-  border-radius: 1.5rem;
-  z-index: 7002;
-  transition: 0.5s;
-  transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-  -webkit-border-radius: 1.5rem;
-  -moz-border-radius: 1.5rem;
-  -ms-border-radius: 1.5rem;
-  -o-border-radius: 1.5rem;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-.close-in {
-  height: 3rem !important;
-  width: 3rem !important;
-  bottom: 5rem !important;
-  right: 4% !important;
 }
 
 #cardafter{
@@ -12850,6 +12950,7 @@ input[type="radio"]:checked {
   -ms-border-radius: 0.9rem;
   -o-border-radius: 0.9rem;
   transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -12897,4 +12998,23 @@ input[type="radio"]:checked {
 
 .display-none {
   display: none;
+}
+
+.MainPageFastDivView{
+  
+}
+.MainPageFastDiv {
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.FastDiv {
+  flex: 0 0 auto;
+  width: 90%;
+  margin-left: 1%;
+  margin-right: 1%;
+  max-width: 480px;
+  order: 1;
+  scroll-snap-align: center;
 }

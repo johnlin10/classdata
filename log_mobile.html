@@ -45,13 +45,15 @@
             </div>
         </nav>
         <!-- 底部導航欄 -->
-        <div class="footer-view">
-            <footer class="footer">
-                <a href="mobile.html"><div class="home"><i class="fa-solid fa-house icon-biger"></i><br><span class="icon-text">首頁</span></div></a>
-                <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off icon-biger"></i><br><span class="icon-text">公告</span></div></a>
-                <a href="資料庫_mobile.html"><div class="folder"><i class="fa-solid fa-folder icon-biger"></i><br><span class="icon-text">資料庫</span></div></a>
-                <a href="log_mobile.html"><div class="log icon-blue"><i class="fa-solid fa-code icon-biger"></i><br><span class="icon-text">開發</span></div></a>
-            </footer>
+        <div class="footer-top-view">
+            <div class="footer-view">
+                <footer class="footer">
+                    <a href="mobile.html"><div class="home"><i class="fa-solid fa-house icon-biger"></i><span class="icon-text">首頁</span></div></a>
+                    <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off icon-biger"></i><span class="icon-text iconTextAni">公告</span></div></a>
+                    <a href="資料庫_mobile.html"><div class="folder"><i class="fa-solid fa-folder icon-biger"></i><span class="icon-text">資料庫</span></div></a>
+                    <a href="log_mobile.html"><div class="log icon-blue FooterAnimation"><i class="fa-solid fa-code icon-biger iconBigerAni"></i><span class="icon-text iconTextAni">開發</span></div></a>
+                </footer>
+            </div>
         </div>
         <!-- 標題 -->
         <header class="masthead" style="background-image: url('images/日誌.png')" id="top">
@@ -91,16 +93,44 @@
                                 <span class="post-tag-text">當前版本</span>
                             </div>
                             <br>
-                            <h5 class="post-meta-red post-title-view">2022.12.13</h5>
-                            <h2 class="post-title-red post-title-view">4.7.3</h2>
+                            <h5 class="post-meta-red post-title-view">2022.12.17</h5>
+                            <h2 class="post-title-red post-title-view">4.7.9</h2>
+                            <hr class="my-4 hr" />
+                            <!-- <div id="DevelopmentUpdates">
+                                <div class="UpdatesContent"> -->
+                                    <p class="post-meta post-meta-view post-meta-red">・新增 “橫向滑動區塊”</p>
+                                    <p class="post-meta post-meta-view post-meta-red">・新增 “底部導航欄” 彈出動效</p>
+                                    <p class="post-meta post-meta-view post-meta-red">・調整網站主色調</p>
+                                    <p class="post-meta post-meta-view post-meta-red">・開發日誌預設最多顯示 3 個歷史版本</p>
+                                    <p class="post-meta post-meta-view post-meta-red">・優化部分動效細節</p>
+                                    <p class="post-meta post-meta-view post-meta-red">・修復自適應調節錯誤</p>
+                                    <p class="post-meta post-meta-view post-meta-red">・修復開發日誌中 “展開收合按鈕” 文案顯示錯誤</p>
+                                <!-- </div>
+                            </div> -->
+                            <br>
+                            <div class="post-view-view bg-whitegray">
+                                <br>
+                                <h5 class="post-meta-gray prob-title">已知問題</h5>
+                                <p class="prob-meta post-meta-gray"><i class="fa-solid fa-minus"></i> “底部導航欄” 缺少收回動效</p>
+                                <br>
+                            </div>
+                            <div class="space1rem"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="post-preview">
+                        <div class="post-view post-view-gray bg-gray">
+                            <br>
+                            <h5 class="post-meta-gray post-title-view">2022.12.13</h5>
+                            <h2 class="post-title post-title-view">4.7.3</h2>
                             <hr class="my-4 hr" />
                             <div id="DevelopmentUpdates">
                                 <div>
                                     <a href="images/圖標標準/圖標標準.001.png" target="_blank"><img style="width: 5.5rem; box-shadow: 0 0 10px 0 #a1a1a151;border-radius: 1.2rem;" src="images/圖標標準/圖標標準.001.png"></a>
                                 </div>
                                 <div class="UpdatesContent">
-                                    <p class="post-meta post-meta-view post-meta-red">・圖標標準化</p>
-                                    <p class="post-meta post-meta-view post-meta-red">・優化動效</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・圖標標準化</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・優化動效</p>
                                 </div>
                             </div>
                             <br>
@@ -126,90 +156,93 @@
                         </div>
                     </div>
                     <br>
-                    <div class="post-preview">
-                        <div class="post-view post-view-gray bg-gray">
-                            <div class="post-tag post-tag-RLmove-red">
-                                <span class="post-tag-text">實驗性</span>
-                            </div>
-                            <br>
-                            <h5 class="post-meta-gray post-title-view">2022.12.11</h5>
-                            <h2 class="post-title post-title-view">4.6.7</h2>
-                            <hr class="my-4 hr" />
-                            <p class="post-meta post-meta-view post-meta-gray">・新增「捷徑」功能（實驗中）</p>
-                            <br>
-                        </div>
-                    </div>
+
+                    <!-- 移動這個區塊 -->
+                    <div class="d-flex justify-content-end hide_btn"><a id="hide_btn_text" class="btn btn-primary text-uppercase">展開全部</a></div>
                     <br>
-                    <div class="post-preview">
-                        <div class="post-view post-view-gray bg-gray">
-                            <br>
-                            <h5 class="post-meta-gray post-title-view">2022.12.10</h5>
-                            <h2 class="post-title post-title-view">4.6.6</h2>
-                            <hr class="my-4 hr" />
-                            <p class="post-meta post-meta-view post-meta-gray">・於頂部欄新增「問題回報」</p>
-                            <p class="post-meta post-meta-view post-meta-gray">・「卡諾圖化簡器」介面調整</p>
-                            <br>
-                        </div>
-                    </div>
                     <br>
-                    <div class="post-preview">
-                        <div class="post-view post-view-gray bg-gray">
-                            <br>
-                            <h5 class="post-meta-gray post-title-view">2022.12.9</h5>
-                            <h2 class="post-title post-title-view">4.6.4</h2>
-                            <hr class="my-4 hr" />
-                            <p class="post-meta post-meta-view post-meta-gray">・修復表格文字顯示問題</p>
-                            <br>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="post-preview">
-                        <div class="post-view post-view-gray bg-gray">
-                            <br>
-                            <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
-                            <h2 class="post-title- post-title-view">4.6.3</h2>
-                            <hr class="my-4 hr" />
-                            <p class="post-meta post-meta-view post-meta-gray">・修復「展開/收合」失效問題</p>
-                            <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」換算的操作說明</p>
-                            <p class="post-meta post-meta-view post-meta-gray">・修復「卡諾圖化簡」文字顯示問題</p>
-                            <br>
-                            <div class="post-view-view bg-whitegray">
+                    <hide id="hide-div" class="hide-div container px-4 px-lg-5">
+                    <!-- --- -->
+                    
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <div class="post-tag post-tag-RLmove-red">
+                                    <span class="post-tag-text">實驗性</span>
+                                </div>
                                 <br>
-                                <h5 class="post-meta-gray prob-title">已知問題</h5>
-                                <p class="prob-meta post-meta-gray"><i class="fa-solid fa-minus"></i> 卡諾圖化簡「換算」功能仍有邏輯錯誤</p>
+                                <h5 class="post-meta-gray post-title-view">2022.12.11</h5>
+                                <h2 class="post-title post-title-view">4.6.7</h2>
+                                <hr class="my-4 hr" />
+                                <p class="post-meta post-meta-view post-meta-gray">・新增「捷徑」功能（實驗中）</p>
                                 <br>
                             </div>
-                            <div class="space1rem"></div>
                         </div>
-                    </div>
-                    <br>
-                    <div class="post-preview">
-                        <div class="post-view post-view-gray bg-gray">
-                            <br>
-                            <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
-                            <h2 class="post-title- post-title-view">4.6</h2>
-                            <hr class="my-4 hr" />
-                            <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」，供資訊科、電子科數位邏輯課使用</p>
-                            <br>
+                        <br>
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <br>
+                                <h5 class="post-meta-gray post-title-view">2022.12.10</h5>
+                                <h2 class="post-title post-title-view">4.6.6</h2>
+                                <hr class="my-4 hr" />
+                                <p class="post-meta post-meta-view post-meta-gray">・於頂部欄新增「問題回報」</p>
+                                <p class="post-meta post-meta-view post-meta-gray">・「卡諾圖化簡器」介面調整</p>
+                                <br>
+                            </div>
                         </div>
-                    </div>
-                    <br>
-                    <div class="post-preview">
-                        <div class="post-view post-view-gray bg-gray">
-                            <br>
-                            <h5 class="post-meta-gray post-title-view">2022.12.6</h5>
-                            <h2 class="post-title- post-title-view">4.5.10</h2>
-                            <hr class="my-4 hr" />
-                            <p class="post-meta post-meta-view post-meta-gray">・扁平化新風格改造完成</p>
-                            <p class="post-meta post-meta-view post-meta-gray">・新增「展開/收合」功能</p>
-                            <br>
+                        <br>
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <br>
+                                <h5 class="post-meta-gray post-title-view">2022.12.9</h5>
+                                <h2 class="post-title post-title-view">4.6.4</h2>
+                                <hr class="my-4 hr" />
+                                <p class="post-meta post-meta-view post-meta-gray">・修復表格文字顯示問題</p>
+                                <br>
+                            </div>
                         </div>
-                    </div>
-                    <br>
-                    <div class="d-flex justify-content-end hide_btn"><a id="hide_btn_text" class="btn btn-primary text-uppercase">展開更多</a></div>
-                    <br>
-                    <br>
-                    <hide id="hide-div" class="hide-div">
+                        <br>
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <br>
+                                <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
+                                <h2 class="post-title- post-title-view">4.6.3</h2>
+                                <hr class="my-4 hr" />
+                                <p class="post-meta post-meta-view post-meta-gray">・修復「展開/收合」失效問題</p>
+                                <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」換算的操作說明</p>
+                                <p class="post-meta post-meta-view post-meta-gray">・修復「卡諾圖化簡」文字顯示問題</p>
+                                <br>
+                                <div class="post-view-view bg-whitegray">
+                                    <br>
+                                    <h5 class="post-meta-gray prob-title">已知問題</h5>
+                                    <p class="prob-meta post-meta-gray"><i class="fa-solid fa-minus"></i> 卡諾圖化簡「換算」功能仍有邏輯錯誤</p>
+                                    <br>
+                                </div>
+                                <div class="space1rem"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <br>
+                                <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
+                                <h2 class="post-title- post-title-view">4.6</h2>
+                                <hr class="my-4 hr" />
+                                <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」，供資訊科、電子科數位邏輯課使用</p>
+                                <br>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <br>
+                                <h5 class="post-meta-gray post-title-view">2022.12.6</h5>
+                                <h2 class="post-title- post-title-view">4.5.10</h2>
+                                <hr class="my-4 hr" />
+                                <p class="post-meta post-meta-view post-meta-gray">・扁平化新風格改造完成</p>
+                                <p class="post-meta post-meta-view post-meta-gray">・新增「展開/收合」功能</p>
+                                <br>
+                            </div>
+                        </div>
                         <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
@@ -575,8 +608,10 @@
                 var x =  $(this).siblings("hide")
                 if( x.css("display") == "none"  ){
                     x.slideDown(); 
+                    document.getElementById('hide_btn_text').innerHTML = '　收合　';
                 }else{
                     x.slideUp();
+                    document.getElementById('hide_btn_text').innerHTML = '展開全部';
                 };
             });
         </script>
