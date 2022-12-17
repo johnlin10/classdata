@@ -10,12 +10,12 @@
   ],
   "id": "ClassData",
   "start_url": "/mobile.html",
-  "background_color": "#ffffff",
+  "background_color": "#006a81",
   "purpose": "any",
   "display": "fullscreen",
   "scope": "/",
   "orientation": "portrait",
-  "theme_color": "#b9d8df",
+  "theme_color": "#006a81",
   "shortcuts": [
     {
       "name": "課程表",
