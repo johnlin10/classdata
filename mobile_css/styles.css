@@ -649,12 +649,12 @@ progress {
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 640px;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
+    max-width: 760px;
   }
 }
 @media (min-width: 860px) {
@@ -11217,7 +11217,7 @@ blockquote {
 }
 
 .navbar-toggler:hover {
-  background-color: #f1f1f1;
+  background-color: #f1f1f111;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
@@ -11722,7 +11722,7 @@ header.masthead .site-heading .h1 {
   }
   /*連動文章內容*/
   .post-view:hover > .post-meta {
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.0235rem;
   }
   /*連動已知問題區塊標題*/
   .post-view:hover > .post-view-view > .prob-title {
@@ -12008,7 +12008,13 @@ header.masthead .site-heading .h1 {
       }}
 
 #hide-div {
+  border-radius: 2.5rem;
+  background-color: #fafafa;
   display: none;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
 }
 
 .new-icon {
@@ -12283,19 +12289,13 @@ tbody > tr[id^=TT] > td {
   /*设置弹性盒子*/justify-content: space-evenly;
   /*水平对齐，两边间距是中间间距的一半*/align-items: center;
   /*垂直居中对齐*/position: fixed;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
-  max-width: 1080px;
   height: 4rem;
-  border: 0;
-  border-radius: 1.2rem 1.2rem 0 0;
+  border-top: 5px solid #3e90a3;
   background-color: #006a81;
   box-shadow: 0 0 40px 0 #0000001a;
   z-index: 8000;
-  -webkit-border-radius: 1.2rem 1.2rem 0 0;
-  -moz-border-radius: 1.2rem 1.2rem 0 0;
-  -ms-border-radius: 1.2rem 1.2rem 0 0;
-  -o-border-radius: 1.2rem 1.2rem 0 0;
 }
 .footer-view-havebtn {
   display: flex;/*设置弹性盒子*/
@@ -12363,22 +12363,32 @@ tbody > tr[id^=TT] > td {
 }
 @keyframes FooterAnimation {
   0%{
+    border-radius: 45%;
     font-size: 1rem;
     margin-bottom: 0;
     background-color: #006a81;
     border: 0 solid #006a81;
     height: 3.5rem;
     width: 3.5rem;
-  }
+    -webkit-border-radius: 45%;
+    -moz-border-radius: 45%;
+    -ms-border-radius: 45%;
+    -o-border-radius: 45%;
+}
   100%{
-    margin-bottom: 2.5rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
     border: 5px solid #006a81;
-    height: 4.5rem;
-    width: 4.5rem;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    height: 4rem;
+    width: 4rem;
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
     font-size: 1.8rem !important;
-  }
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
 }
 
 .icon-blue {
@@ -12421,7 +12431,7 @@ tbody > tr[id^=TT] > td {
 }
 .icon-text {
   color: #94c1cc;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   text-align: center;
   transition: 0.3s;
 }
