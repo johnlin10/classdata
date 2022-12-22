@@ -314,6 +314,7 @@
 }
 
 body {
+  overscroll-behavior-y: contain;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -11980,7 +11981,7 @@ header.masthead .site-heading .h1 {
 
 .ProgressBar {
   height: 0.8rem;
-  width: 3%;
+  width: 10%;
   min-width: 0.8rem;
   margin-left: 0.4rem;
   margin-right: 0.4rem;
