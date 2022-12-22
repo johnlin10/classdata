@@ -1,20 +1,22 @@
-// 注冊 Service Worker
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-      .then(function(registration) {
-        console.log('Service Worker 註冊成功');
-      })
-      .catch(function(err) {
-        console.log('Service Worker 註冊失敗：', err);
+const registerServiceWorker = async () => {
+  if ("serviceWorker" in navigator) {
+    try {
+      const registration = await navigator.serviceWorker.register("/sw.js", {
+        scope: "/",
       });
+      if (registration.installing) {
+        console.log("Service worker installing");
+      } else if (registration.waiting) {
+        console.log("Service worker installed");
+      } else if (registration.active) {
+        console.log("Service worker active");
+      }
+    } catch (error) {
+      console.error(`Registration failed with ${error}`);
+    }
   }
-  
-  // 定義 Service Worker 腳本
-  self.addEventListener('install', function(event) {
-    console.log('Service Worker 安裝成功');
-  });
-  
-  self.addEventListener('fetch', function(event) {
-    console.log('Service Worker 攔截網絡請求：', event.request.url);
-  });
-  
+};
+
+// …
+
+registerServiceWorker();
