@@ -1,25 +1,25 @@
-//sw.js
+// 檢查餅刪除舊快取
 const deleteCache = async (key) => {
   await caches.delete(key);
 };
 const deleteOldCaches = async () => {
-  const cacheKeepList = ["v2.1"];
+  const cacheKeepList = ["v4.9"];
   const keyList = await caches.keys();
   const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
   await Promise.all(cachesToDelete.map(deleteCache));
 };
 
-
+// 通過版本控制更新
 const addResourcesToCache = async (resources) => {
-  const cache = await caches.open("v2.1");
+  const cache = await caches.open("v4.9");
   await cache.addAll(resources);
 };
 const putInCache = async (request, response) => {
-  const cache = await caches.open("v2.1");
+  const cache = await caches.open("v4.9");
   await cache.put(request, response);
 };
 
-
+// 啟動 Service Worker
 const cacheFirst = async ({ request, preloadResponsePromise, fallbackUrl }) => {
   // First try to get the resource from the cache
   const responseFromCache = await caches.match(request);
@@ -58,7 +58,7 @@ const cacheFirst = async ({ request, preloadResponsePromise, fallbackUrl }) => {
   }
 };
 
-// Enable navigation preload
+// 導航欄預載
 const enableNavigationPreload = async () => {
   if (self.registration.navigationPreload) {
     await self.registration.navigationPreload.enable();
@@ -68,14 +68,19 @@ const enableNavigationPreload = async () => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(enableNavigationPreload());
 });
+
+// 刪除舊快取
 self.addEventListener("activate", (event) => {
   event.waitUntil(deleteOldCaches());
+  location.reload();
 });
 
+// 安裝資源
 self.addEventListener("install", (event) => {
+  self.skipWaiting();
   event.waitUntil(
     addResourcesToCache([
-      // "/mobile.html",
+      "/mobile.html",
       "/manifest.json",
       "/js/scripts.js",
       "/js/FastGo.js",
