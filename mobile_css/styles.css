@@ -11510,9 +11510,6 @@ blockquote {
   #mainNav {
     border-bottom: 1px solid transparent;
   }
-  #mainNav .navbar-brand {
-    color: #dae9ec;
-  }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.72);
   }
@@ -11539,9 +11536,6 @@ blockquote {
     transition: transform 0.5s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.72); */
-  }
-  #mainNav.is-fixed .navbar-brand {
-    color: #dae9ec;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
@@ -11673,9 +11667,6 @@ blockquote {
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.72); */
-  }
-  #mainNav.is-fixed .navbar-brand {
-    color: #dae9ec;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
