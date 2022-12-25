@@ -46,6 +46,8 @@
             </div>
         </nav>
 
+        <!-- 堆積雪 -->
+        <div class="snow"></div>
         <!-- 底部導航欄 -->
         <div class="footer-top-view">
             <div class="footer-view">
@@ -280,7 +282,7 @@
         <script type="text/javascript">
             (function($){
                 $.fn.snow = function(options){
-                var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),
+                var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9000', 'top': '-50px'}).html('&#10052;'),
                 documentHeight 	= $(document).height(),
                 documentWidth	= $(document).width(),
                 defaults = {
