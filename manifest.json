@@ -3,7 +3,7 @@
   "name": "班級資訊平台 4.0",
   "icons": [
     {
-      "src": "/school.png",
+      "src": "/classdata/school.png",
       "type": "/image/png",
       "sizes": "1080x1080"
     }
@@ -28,13 +28,13 @@
   "description": "班級、學校的即時資訊",
   "screenshots": [
     {
-      "src": "/assets/classdata_mobile.html(iPhone SE).png",
+      "src": "/classdata/assets/classdata_mobile.html(iPhone SE).png",
       "type": "image/png",
       "sizes": "750x1334",
       "form_factor": "narrow"
     },
     {
-      "src": "/assets/classdata_mobile.html(iPhone 12 Pro).png",
+      "src": "/classdata/assets/classdata_mobile.html(iPhone 12 Pro).png",
       "type": "image/png",
       "sizes": "1170x2532",
       "form_factor": "narrow"
