@@ -9,7 +9,7 @@
     }
   ],
   "id": "ClassData",
-  "start_url": "/classdata/mobile.html",
+  "start_url": "https://johnlin10.github.io/classdata/mobile.html",
   "background_color": "#006a81",
   "purpose": "any",
   "display": "fullscreen",
@@ -21,8 +21,8 @@
       "name": "課程表",
       "short_name": "課程表",
       "description": "提供即時的課程表資訊",
-      "url": "/%E8%AA%B2%E7%A8%8B%E8%A1%A8_mobile.html",
-      "icons": [{ "src": "/school.png", "type": "/image/png", "sizes": "1080x1080" }]
+      "url": "https://johnlin10.github.io/classdata/%E8%AA%B2%E7%A8%8B%E8%A1%A8_mobile.html",
+      "icons": [{ "src": "https://johnlin10.github.io/classdata/school.png", "type": "/image/png", "sizes": "1080x1080" }]
     }
   ],
   "description": "班級、學校的即時資訊",
