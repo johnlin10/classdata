@@ -12603,7 +12603,7 @@ tbody > tr[id^=TT] > td {
   /*垂直居中对齐*/position: fixed;
   bottom: -1px;
   width: 100%;
-  z-index: 7999;
+  z-index: 9910;
 }
 .footer-view {
   display: flex;
