@@ -13358,7 +13358,7 @@ input[type="radio"]:checked {
   left: 0;
   width: 100%;
   height: 290px;
-  background-image: url('images/堆積雪/堆積雪001.png'); 
+  background-image: url('../images/堆積雪/堆積雪001.png'); 
   background-size: 400px;
   background-position: bottom;
   z-index: 9950;
@@ -13371,7 +13371,7 @@ input[type="radio"]:checked {
   left: 0;
   width: 100%;
   height: 290px;
-  background-image: url('images/堆積雪/堆積雪001.png'); 
+  background-image: url('../images/堆積雪/堆積雪001.png'); 
   background-size: 400px;
   background-position: bottom;
   z-index: 9950;
