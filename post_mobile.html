@@ -7,6 +7,7 @@
 
         <!-- Javascript -->
         <script src="js/scripts.js"></script>
+        <script src="js/ChristmasDay.js"></script>
 
         <!-- PWA設定 -->
         <link rel="manifest" href="manifest.json">
@@ -48,10 +49,10 @@
         <div class="footer-top-view">
             <div class="footer-view">
                 <footer class="footer">
-                    <a href="mobile.html"><div class="home"><i class="fa-solid fa-house icon-biger"></i><span class="icon-text">首頁</span></div></a>
-                    <a href="post_mobile.html"><div class="post icon-blue FooterAnimation"><i class="fa-solid fa-volume-off icon-biger iconBigerAni"></i><span class="icon-text iconTextAni">公告</span></div></a>
-                    <a href="資料庫_mobile.html"><div class="folder"><i class="fa-solid fa-folder icon-biger"></i><span class="icon-text">資料庫</span></div></a>
-                    <a href="log_mobile.html"><div class="log"><i class="fa-solid fa-code icon-biger"></i><span class="icon-text">開發</span></div></a>
+                    <a href="mobile.html"><div class="home"><i class="fa-solid fa-house"></i></div></a>
+                    <a href="post_mobile.html"><div class="post icon-blue"><i class="fa-solid fa-volume-off"></i></div></a>
+                    <a href="資料庫_mobile.html"><div class="folder"><i class="fa-solid fa-folder"></i></div></a>
+                    <a href="log_mobile.html"><div class="log"><i class="fa-solid fa-code"></i></div></a>
                 </footer>
             </div>
         </div>
@@ -174,16 +175,18 @@
                                 <p class="post-meta post-meta-view post-meta-red">請同學於 08:30 前攜帶手提袋、平板電腦、文具及環保餐具到校參加活動。</p>
                                 <p class="post-meta post-meta-view post-meta-red">本次研習邀請業界專業人士到校指導，請同學認真學習參與活動，提升自我技能。</p>
                                 <br>
-                                <table class="table-view justify-content-center">
-                                    <tr>
-                                        <td class="table-top-left">09:00~12:00</td>
-                                        <td class="table-data table-data-red" colspan="3">專業類科師生增能研習</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-top-left">13:30~15:30</td>
-                                        <td class="table-data table-data-red" colspan="3">機械手臂研習及創客工作坊研習</td>
-                                    </tr>
-                                </table>
+                                <div id="TableDiv">
+                                    <div class="Table_TitleRows">
+                                        <div class="Table_TopTitle">　</div>
+                                        <div class="Table_LeftTitle">第一節</div>
+                                        <div class="Table_LeftTitle">第二節</div>
+                                    </div>
+                                    <div class="Table_Rows">
+                                        <div class="Table_TopTitle">　</div>
+                                        <div class="Table_Data">專業類科師生增能研習</div>
+                                        <div class="Table_Data">機械手臂研習及創客工作坊研習</div>
+                                    </div>
+                                </div>
                                 <div style="width: 100%;display: flex;justify-content: center;">
                                 </div>
                                 <br>
@@ -214,7 +217,7 @@
                                 <br>
                                 <h5 class="post-meta-red post-title-view">2022.12.10 SAT</h5>
                                 <h2 class="post-title-red post-title-view">快篩通知</h2>
-                                <p class="post-meta post-meta-view post-meta-red">請於今晚 7:00 前，完成快篩，並將快篩結果寄到<br> <a href="mailto:kh1223@khvs.tc.edu.tw" target="_blank">kh1223@khvs.tc.edu.tw</a><br><a href="mailto:t11027@khvs.tc.edu.tw" target="_blank">t11027@khvs.tc.edu.tw</a> </p>
+                                <p class="post-meta post-meta-view post-meta-red">請於今晚 7:00 前，完成快篩，並將快篩結果寄到<br> <a href="mailto:t11027@khvs.tc.edu.tw" target="_blank">t11027@khvs.tc.edu.tw</a> </p>
                                 <div style="width: 100%;display: flex;justify-content: center;">
                                 </div>
                                 <br>
@@ -287,5 +290,49 @@
             </div>
         </div>
         <script src="js/FastGo.js"></script>
+        <script src="js/ChristmasDay.js"></script>
+        <script type="text/javascript">
+            (function($){
+                $.fn.snow = function(options){
+                var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),
+                documentHeight 	= $(document).height(),
+                documentWidth	= $(document).width(),
+                defaults = {
+                    minSize		: 10,
+                    maxSize		: 20,
+                    newOn		: 1000,
+                    flakeColor	: "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+                },
+                options	= $.extend({}, defaults, options);
+                var interval= setInterval( function(){
+                var startPositionLeft = Math.random() * documentWidth - 100,
+                startOpacity = 0.5 + Math.random(),
+                sizeFlake = options.minSize + Math.random() * options.maxSize,
+                endPositionTop = documentHeight - 200,
+                endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+                durationFall = documentHeight * 10 + Math.random() * 5000;
+                $flake.clone().appendTo('body').css({
+                    left: startPositionLeft,
+                    opacity: startOpacity,
+                    'font-size': sizeFlake,
+                    color: options.flakeColor
+                }).animate({
+                    top: endPositionTop,
+                    left: endPositionLeft,
+                    opacity: 0.2
+                },durationFall,'linear',function(){
+                    $(this).remove()
+                });
+                }, options.newOn);
+                };
+            })(jQuery);
+            $(function(){
+                $.fn.snow({ 
+                    minSize: 5, /* 定义雪花最小尺寸 */
+                    maxSize: 50,/* 定义雪花最大尺寸 */
+                    newOn: 1000  /* 定义密集程度，数字越小越密集 */
+                });
+            });
+            </script>
     </body>
 </html>

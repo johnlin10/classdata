@@ -43,10 +43,10 @@
         <div class="footer-top-view">
             <div class="footer-view">
                 <footer class="footer">
-                    <a href="mobile.html"><div class="home"><i class="fa-solid fa-house icon-biger"></i><span class="icon-text">首頁</span></div></a>
-                    <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off icon-biger"></i><span class="icon-text">公告</span></div></a>
-                    <a href="資料庫_mobile.html"><div class="folder icon-blue FooterAnimation"><i class="fa-solid fa-folder icon-biger iconBigerAni"></i><span class="icon-text iconTextAni">資料庫</span></div></a>
-                    <a href="log_mobile.html"><div class="log"><i class="fa-solid fa-code icon-biger"></i><span class="icon-text">開發</span></div></a>
+                    <a href="mobile.html"><div class="home"><i class="fa-solid fa-house"></i></div></a>
+                    <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off"></i></div></a>
+                    <a href="資料庫_mobile.html"><div class="folder icon-blue"><i class="fa-solid fa-folder"></i></div></a>
+                    <a href="log_mobile.html"><div class="log"><i class="fa-solid fa-code"></i></div></a>
                 </footer>
             </div>
         </div>
@@ -198,7 +198,7 @@
                     <div class="post-preview">
                         <div class="post-view post-view-gray bg-gray">
                             <br>
-                            <h2 class="post-title-gray post-title-view">學校行程</h2>
+                            <h2 class="post-title post-title-view">學校行程</h2>
                             <p class="post-meta post-meta-view post-meta-gray">一個日歷訂閱項目，可使用 Google 日曆、Apple 行事曆等 App 訂閱。（測試中）</p>
                             <br>
                             <div class="d-flex justify-content-end"><a class="btn-gray btn-primary text-uppercase" href="webcal://p38-caldav.icloud.com/published/2/MjAxMjA1MTU0ODIyMDEyMKYkcttLsUTi1DHtRrVO4uGYU9h1O43ZkPvOWEP1nFOCkGNg2Vi8qIiWWzq14-3pMBGTFlMLUSF0Io9rDYSR3DI" target="_blank">訂閱</a></div>
@@ -217,5 +217,49 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/FastGo.js"></script>
+        <script src="js/ChristmasDay.js"></script>
+        <script type="text/javascript">
+            (function($){
+                $.fn.snow = function(options){
+                var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),
+                documentHeight 	= $(document).height(),
+                documentWidth	= $(document).width(),
+                defaults = {
+                    minSize		: 10,
+                    maxSize		: 20,
+                    newOn		: 1000,
+                    flakeColor	: "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+                },
+                options	= $.extend({}, defaults, options);
+                var interval= setInterval( function(){
+                var startPositionLeft = Math.random() * documentWidth - 100,
+                startOpacity = 0.5 + Math.random(),
+                sizeFlake = options.minSize + Math.random() * options.maxSize,
+                endPositionTop = documentHeight - 200,
+                endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+                durationFall = documentHeight * 10 + Math.random() * 5000;
+                $flake.clone().appendTo('body').css({
+                    left: startPositionLeft,
+                    opacity: startOpacity,
+                    'font-size': sizeFlake,
+                    color: options.flakeColor
+                }).animate({
+                    top: endPositionTop,
+                    left: endPositionLeft,
+                    opacity: 0.2
+                },durationFall,'linear',function(){
+                    $(this).remove()
+                });
+                }, options.newOn);
+                };
+            })(jQuery);
+            $(function(){
+                $.fn.snow({ 
+                    minSize: 5, /* 定义雪花最小尺寸 */
+                    maxSize: 50,/* 定义雪花最大尺寸 */
+                    newOn: 1000  /* 定义密集程度，数字越小越密集 */
+                });
+            });
+            </script>
     </body>
 </html>

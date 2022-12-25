@@ -780,7 +780,7 @@ function GenerateEquationHTML()
 	var i;
 	for (i=0; i<Equation.UsedLength; )
 	{
-		var Text = "<p class=\"post-title-blue post-title-view\">";
+		var Text = "<p class=\"post-title post-title-view\">";
 		for (j=0; (j < 8) && (i<Equation.UsedLength); j++)
 		{
 			if (i==0) Text+= "<b>"+FunctionText + " = ";
