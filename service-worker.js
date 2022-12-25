@@ -3,7 +3,7 @@ const deleteCache = async (key) => {
   await caches.delete(key);
 };
 const deleteOldCaches = async () => {
-  const cacheKeepList = ["v4.9"];
+  const cacheKeepList = ["v4.10.2"];
   const keyList = await caches.keys();
   const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
   await Promise.all(cachesToDelete.map(deleteCache));
@@ -11,11 +11,11 @@ const deleteOldCaches = async () => {
 
 // 通過版本控制更新
 const addResourcesToCache = async (resources) => {
-  const cache = await caches.open("v4.9");
+  const cache = await caches.open("v4.10.2");
   await cache.addAll(resources);
 };
 const putInCache = async (request, response) => {
-  const cache = await caches.open("v4.9");
+  const cache = await caches.open("v4.10.2");
   await cache.put(request, response);
 };
 
@@ -96,6 +96,24 @@ self.addEventListener("install", (event) => {
       "/classdata/Karnaugh%20Map%20Builder%20and%20Solver_files/app.js",
       "/classdata/Karnaugh%20Map%20Builder%20and%20Solver_files/equation.js",
       "/classdata/Karnaugh%20Map%20Builder%20and%20Solver_files/style.css",
+
+      // "/mobile.html",
+      // "/manifest.json",
+      // "/js/scripts.js",
+      // "/js/FastGo.js",
+      // "/mobile_css/styles.css",
+      // "/post_mobile.html",
+      // "/資料庫_mobile.html",
+      // "/log_mobile.html",
+      // "/Post/PWA.html",
+      // "/課程表_mobile.html",
+      // "/考程表_mobile.html",
+      // "/啦啦隊比賽_mobile.html",
+      // "/ReportProblem.html",
+      // "/Karnaugh%20Map%20Builder%20and%20Solver.html",
+      // "/Karnaugh%20Map%20Builder%20and%20Solver_files/app.js",
+      // "/Karnaugh%20Map%20Builder%20and%20Solver_files/equation.js",
+      // "/Karnaugh%20Map%20Builder%20and%20Solver_files/style.css",
     ])
   );
 });
@@ -105,7 +123,7 @@ self.addEventListener("fetch", (event) => {
     cacheFirst({
       request: event.request,
       preloadResponsePromise: event.preloadResponse,
-      fallbackUrl: "/school.png",
+      fallbackUrl: "/classdata/school.png",
     })
   );
 });
