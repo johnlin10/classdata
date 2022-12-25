@@ -5,7 +5,8 @@
     {
       "src": "https://johnlin10.github.io/classdata/school.png",
       "type": "/image/png",
-      "sizes": "1080x1080"
+      "sizes": "1080x1080",
+      "purpose": "any"
     }
   ],
   "id": "ClassData",
@@ -13,7 +14,7 @@
   "background_color": "#006a81",
   "purpose": "any",
   "display": "fullscreen",
-  "scope": "/",
+  "scope": "https://johnlin10.github.io/classdata/",
   "orientation": "portrait",
   "theme_color": "#006a81",
   "shortcuts": [
