@@ -29,7 +29,7 @@
 
   --Problem-form-title: #fafafa;
   --Problem-form-stitle: #a5a5a5;
-  --Problem-Select-bg:#fff;
+  --Problem-Select-bg:rgb(222, 222, 222);
 
   --PageBottom-borderTop: #dee2e6;
 
@@ -167,9 +167,9 @@
 
     --PageBottom-borderTop: #454648;
 
-    --Problem-form-title-bg: #adadad;
+    --Problem-form-title-bg: #476979;
     --Problem-form-stitle: #5f5f5f;
-    --Problem-Select-bg:#c7c7c7;
+    --Problem-Select-bg:#476979;
 
 
     /*網站個人文章*/
@@ -3263,7 +3263,7 @@ textarea.form-control-lg {
   user-select: none;
   background: #157fb0;
   background-size: 300%;
-  /*border: 4px solid var(--btn-redBorder);*/
+  border: 0;
   box-shadow: 0 5px 0 0 #116b95;
   padding: 1rem 1.75rem;
   font-size: 0.875rem;
@@ -3286,7 +3286,7 @@ textarea.form-control-lg {
   margin-top: 2px;
   margin-right: 10px;
   margin-bottom: 13px;
-  box-shadow: 0 3px 0 0 #12719d;
+  box-shadow: 0 3px 0 0 #116b95;
   border-radius:0.7rem;
   -moz-border-radius:0.7rem;
   -ms-border-radius:0.7rem;
@@ -3296,7 +3296,7 @@ textarea.form-control-lg {
 .btn-blue:focus {
   margin-top: 5px;
   margin-bottom: 10px;
-  box-shadow: 0 0 0 0 #12719d;
+  box-shadow: 0 0 0 0 #116b95;
 }
 
 
@@ -3319,7 +3319,7 @@ textarea.form-control-lg {
   user-select: none;
   background: #ad3335;
   background-size: 300%;
-  /*border: 4px solid var(--btn-redBorder);*/
+  border: 0;
   box-shadow: 0 5px 0 0 #952b2c;
   padding: 1rem 1.75rem;
   font-size: 0.875rem;

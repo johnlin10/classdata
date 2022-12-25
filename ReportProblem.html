@@ -63,7 +63,7 @@
                     <!-- 內容顯示區 -->
                     <p class="post-meta post-meta-view PostMeta">在這裡，你不需登入帳號以及任何個資，就可以回報網站各類問題，或是將建議提供給開發者。</p>
                     <div class="post-preview">
-                        <div class="post-view post-view-gray bg-gray">
+                        <div class="post-view post-view-nobg">
                             <br>
                             <form id="form">
                                 <div>
@@ -75,7 +75,7 @@
                                         </optgroup>
                                     </select>
                                 </div>
-                                <hr class="hr-gray" />
+                                <hr class="hr-bg" />
                                 <div class="problemtext">
                                     <span>類型</span>
                                 </div>
@@ -202,7 +202,7 @@
         <script type="text/javascript">
             (function($){
                 $.fn.snow = function(options){
-                var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),
+                var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9000', 'top': '-50px'}).html('&#10052;'),
                 documentHeight 	= $(document).height(),
                 documentWidth	= $(document).width(),
                 defaults = {
@@ -238,7 +238,7 @@
                 $.fn.snow({ 
                     minSize: 5, /* 定义雪花最小尺寸 */
                     maxSize: 50,/* 定义雪花最大尺寸 */
-                    newOn: 3000  /* 定义密集程度，数字越小越密集 */
+                    newOn: 8000  /* 定义密集程度，数字越小越密集 */
                 });
             });
             </script>

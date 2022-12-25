@@ -102,7 +102,23 @@
                             <hr class="hr-red">
                             <!-- <div id="DevelopmentUpdates">
                                 <div class="UpdatesContent"> -->
-                                    <p class="post-meta post-meta-view post-meta-red">・優化節日特效顯示效能</p>
+                                    <p class="post-meta post-meta-view post-meta-red">・大幅減少雪花出現概率（因消耗性能過多）</p>
+                                    <p class="post-meta post-meta-view post-meta-red">・修復一些顯示 Bug</p>
+                                <!-- </div>
+                            </div> -->
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="post-preview">
+                        <div class="post-view post-view-gray bg-gray">
+                            <br>
+                            <h5 class="post-meta-gray post-title-view">2022.12.25</h5>
+                            <h2 class="post-title post-title-view">4.10.3</h2>
+                            <hr class="hr-gray">
+                            <!-- <div id="DevelopmentUpdates">
+                                <div class="UpdatesContent"> -->
+                                    <p class="post-meta post-meta-view post-meta-gray">・優化節日特效顯示效能</p>
                                 <!-- </div>
                             </div> -->
                             <br>
@@ -115,27 +131,8 @@
                             <h5 class="post-meta-gray post-title-view">2022.12.25</h5>
                             <h2 class="post-title post-title-view">4.10.1</h2>
                             <hr class="hr-gray">
-                            <!-- <div id="DevelopmentUpdates">
-                                <div class="UpdatesContent"> -->
-                                    <p class="post-meta post-meta-view post-meta-gray">・新增節日專屬樣式</p>
-                                    <p class="post-meta post-meta-view post-meta-gray">・重繪介面樣式（目前尚未完工）</p>
-                                <!-- </div>
-                            </div> -->
-                            <br>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="post-preview">
-                        <div class="post-view post-view-gray bg-gray">
-                            <br>
-                            <h5 class="post-meta-gray post-title-view">2022.12.23</h5>
-                            <h2 class="post-title post-title-view">4.9</h2>
-                            <hr class="hr-gray">
-                            <!-- <div id="DevelopmentUpdates">
-                                <div class="UpdatesContent"> -->
-                                    <p class="post-meta post-meta-view post-meta-gray">・支持「離線緩存」（實驗中）</p>
-                                <!-- </div>
-                            </div> -->
+                                <p class="post-meta post-meta-view post-meta-gray">・新增節日專屬樣式</p>
+                                <p class="post-meta post-meta-view post-meta-gray">・重繪介面樣式（目前尚未完工）</p>
                             <br>
                         </div>
                     </div>
@@ -148,6 +145,21 @@
                     <hide id="hide-div" class="hide-div container px-4 px-lg-5">
                     <!-- --- -->
                         
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <br>
+                                <h5 class="post-meta-gray post-title-view">2022.12.23</h5>
+                                <h2 class="post-title post-title-view">4.9</h2>
+                                <hr class="hr-gray">
+                                <!-- <div id="DevelopmentUpdates">
+                                    <div class="UpdatesContent"> -->
+                                        <p class="post-meta post-meta-view post-meta-gray">・支持「離線緩存」（實驗中）</p>
+                                    <!-- </div>
+                                </div> -->
+                                <br>
+                            </div>
+                        </div>
+                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
                                 <br>
@@ -721,7 +733,7 @@
         <script type="text/javascript">
             (function($){
                 $.fn.snow = function(options){
-                var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),
+                var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9000', 'top': '-50px'}).html('&#10052;'),
                 documentHeight 	= $(document).height(),
                 documentWidth	= $(document).width(),
                 defaults = {
@@ -757,7 +769,7 @@
                 $.fn.snow({ 
                     minSize: 5, /* 定义雪花最小尺寸 */
                     maxSize: 50,/* 定义雪花最大尺寸 */
-                    newOn: 3000  /* 定义密集程度，数字越小越密集 */
+                    newOn: 8000  /* 定义密集程度，数字越小越密集 */
                 });
             });
             </script>
