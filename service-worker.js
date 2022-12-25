@@ -3,7 +3,7 @@ const deleteCache = async (key) => {
   await caches.delete(key);
 };
 const deleteOldCaches = async () => {
-  const cacheKeepList = ["v4.10.3.4"];
+  const cacheKeepList = ["v4.10.3.6"];
   const keyList = await caches.keys();
   const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
   await Promise.all(cachesToDelete.map(deleteCache));
@@ -11,11 +11,11 @@ const deleteOldCaches = async () => {
 
 // 通過版本控制更新
 const addResourcesToCache = async (resources) => {
-  const cache = await caches.open("v4.10.3.4");
+  const cache = await caches.open("v4.10.3.6");
   await cache.addAll(resources);
 };
 const putInCache = async (request, response) => {
-  const cache = await caches.open("v4.10.3.4");
+  const cache = await caches.open("v4.10.3.6");
   await cache.put(request, response);
 };
 
@@ -58,12 +58,21 @@ const cacheFirst = async ({ request, preloadResponsePromise, fallbackUrl }) => {
   }
 };
 
-// 導航欄預載
+// 導航預載
 const enableNavigationPreload = async () => {
   if (self.registration.navigationPreload) {
     await self.registration.navigationPreload.enable();
   }
 };
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    cacheFirst({
+      request: event.request,
+      preloadResponsePromise: event.preloadResponse,
+      fallbackUrl: "/classdata/school.png",
+    })
+  );
+});
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(enableNavigationPreload());
@@ -118,14 +127,3 @@ self.addEventListener("install", (event) => {
   );
 });
 
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    cacheFirst({
-      request: event.request,
-      preloadResponsePromise: event.preloadResponse,
-      fallbackUrl: "/classdata/school.png",
-    }).then((response) => {
-      return response;
-    })
-  );
-});
