@@ -3,7 +3,7 @@
   "name": "班級資訊平台 4.0",
   "icons": [
     {
-      "src": "/classdata/school.png",
+      "src": "https://johnlin10.github.io/classdata/school.png",
       "type": "/image/png",
       "sizes": "1080x1080"
     }
