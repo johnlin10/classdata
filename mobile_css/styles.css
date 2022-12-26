@@ -11975,6 +11975,11 @@ header.masthead .site-heading .h1 {
   color: var(--post-title-bg);
 }
 
+.post-title-gray {
+  font-weight: var(--post-title-FontWeight);
+  color: var(--post-title-gray);
+}
+
 .post-title-blue {
   font-weight: var(--post-title-FontWeight);
   color: var(--post-title-blue);
@@ -12429,7 +12434,8 @@ header.masthead .site-heading .h1 {
 
 #hide-div {
   border-radius: 2.5rem;
-  padding: 5vw;
+  padding-top: 1.3vw;
+  width: 100%;
   background-color: var(--hide-div-bg);
   display: none;
   -webkit-border-radius: 2.5rem;
