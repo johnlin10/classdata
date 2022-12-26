@@ -3,7 +3,7 @@ const deleteCache = async (key) => {
   await caches.delete(key);
 };
 const deleteOldCaches = async () => {
-  const cacheKeepList = ["v4.10.3.11"];
+  const cacheKeepList = ["v4.11"];
   const keyList = await caches.keys();
   const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
   await Promise.all(cachesToDelete.map(deleteCache));
@@ -11,11 +11,11 @@ const deleteOldCaches = async () => {
 
 // 通過版本控制更新
 const addResourcesToCache = async (resources) => {
-  const cache = await caches.open("v4.10.3.11");
+  const cache = await caches.open("v4.11");
   await cache.addAll(resources);
 };
 const putInCache = async (request, response) => {
-  const cache = await caches.open("v4.10.3.11");
+  const cache = await caches.open("v4.11");
   await cache.put(request, response);
 };
 
