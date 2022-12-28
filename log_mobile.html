@@ -30,7 +30,7 @@
     <body>
         <!-- 頂部標題欄 -->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-            <div class="container px-4 px-lg-5">
+            <div id="TopNavbar">
                 <a class="navbar-brand" href="mobile.html"><i class="fa-solid fa-school"></i> 班級資訊平台</a>
             </div>
         </nav>
@@ -95,143 +95,134 @@
                     <!-- 內容顯示區 -->
                     <div class="post-preview">
                         <div class="post-view post-view-red bg-red">
-                            <h5 class="post-meta-red post-title-view">2022.12.26</h5>
-                            <h2 class="post-title-red post-title-view">4.11.1</h2>
-                            <hr class="hr-red">
-                            <!-- <div id="DevelopmentUpdates">
-                                <div class="UpdatesContent"> -->
-                                    <p class="post-meta post-meta-view post-meta-red">・增強網站自適應橫向內容擴展能力（實驗中）</p>
-                                    <p class="post-meta post-meta-view post-meta-red">・修整部分區塊結構</p>
-                                <!-- </div>
-                            </div> -->
+                            <div>
+                                <h5 class="post-meta-red post-title-view">2022.12.29</h5>
+                                <h2 class="post-title-red post-title-view">4.11.4</h2>
+                                <hr class="hr-red">
+                                <p class="post-meta post-meta-view post-meta-red">・「公告區」重建，平台、校務公告，合併分離顯示</p>
+                                <p class="post-meta post-meta-view post-meta-red">・「公告區」重建，平台、校務公告，合併分離顯示</p>
+                                <p class="post-meta post-meta-view post-meta-red">・新增板塊背景圖樣</p>    
+                            </div>
+                            <br>
                         </div>
                     </div>
                     <div class="post-preview">
                         <div class="post-view post-view-gray bg-gray">
-                            <h5 class="post-meta-gray post-title-view">2022.12.25</h5>
-                            <h2 class="post-title post-title-view">4.10.3</h2>
-                            <hr class="hr-gray">
-                            <!-- <div id="DevelopmentUpdates">
-                                <div class="UpdatesContent"> -->
-                                    <p class="post-meta post-meta-view post-meta-gray">・大幅減少雪花出現概率（因消耗性能過多）</p>
-                                    <p class="post-meta post-meta-view post-meta-gray">・修復一些顯示 Bug</p>
-                                <!-- </div>
-                            </div> -->
+                            <div>
+                                <h5 class="post-meta-gray post-title-view">2022.12.26</h5>
+                                <h2 class="post-title post-title-view">4.11.1</h2>
+                                <hr class="hr-gray">
+                                <p class="post-meta post-meta-view post-meta-gray">・增強網站自適應橫向內容擴展能力（實驗中）</p>
+                                <p class="post-meta post-meta-view post-meta-gray">・修整部分區塊結構</p>
+                            </div>
+                            <br>
                         </div>
                     </div>
                     <div class="post-preview">
                         <div class="post-view post-view-gray bg-gray">
-                            <h5 class="post-meta-gray post-title-view">2022.12.25</h5>
-                            <h2 class="post-title post-title-view">4.10.2</h2>
-                            <hr class="hr-gray">
-                            <!-- <div id="DevelopmentUpdates">
-                                <div class="UpdatesContent"> -->
-                                    <p class="post-meta post-meta-view post-meta-gray">・優化節日特效顯示效能</p>
-                                <!-- </div>
-                            </div> -->
+                            <div>
+                                <h5 class="post-meta-gray post-title-view">2022.12.25</h5>
+                                <h2 class="post-title post-title-view">4.10.3</h2>
+                                <hr class="hr-gray">
+                                <p class="post-meta post-meta-view post-meta-gray">・大幅減少雪花出現概率（因消耗性能過多）</p>
+                                <p class="post-meta post-meta-view post-meta-gray">・修復一些顯示 Bug</p>    
+                            </div>
+                            <br>
                         </div>
                     </div>
-                    <br>
 
                     <!-- 移動這個區塊 -->
-                    <div class="d-flex justify-content-end hide_btn"><a id="hide_btn_text" class="btn btn-primary text-uppercase">展開全部</a></div>
                     <br>
+                    <div class="d-flex hide_btn"><a id="hide_btn_text" class="btn-gray text-uppercase">展開全部</a></div>
                     <br>
-                    <hide id="hide-div" class="hide-div container px-4 px-lg-5">
+                    <hide id="hide-div" class="hide-div">
+                    <br>
                     <!-- --- -->
                     
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.25</h5>
+                                    <h2 class="post-title post-title-view">4.10.2</h2>
+                                    <hr class="hr-gray">
+                                    <p class="post-meta post-meta-view post-meta-gray">・優化節日特效顯示效能</p>    
+                                </div>
                                 <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.25</h5>
-                                <h2 class="post-title post-title-view">4.10.1</h2>
-                                <hr class="hr-gray">
+                            </div>
+                        </div>
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.25</h5>
+                                    <h2 class="post-title post-title-view">4.10.1</h2>
+                                    <hr class="hr-gray">
                                     <p class="post-meta post-meta-view post-meta-gray">・新增節日專屬樣式</p>
                                     <p class="post-meta post-meta-view post-meta-gray">・重繪介面樣式（目前尚未完工）</p>
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.23</h5>
-                                <h2 class="post-title post-title-view">4.9</h2>
-                                <hr class="hr-gray">
-                                <!-- <div id="DevelopmentUpdates">
-                                    <div class="UpdatesContent"> -->
-                                        <p class="post-meta post-meta-view post-meta-gray">・支持「離線緩存」（實驗中）</p>
-                                    <!-- </div>
-                                </div> -->
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.23</h5>
+                                    <h2 class="post-title post-title-view">4.9</h2>
+                                    <hr class="hr-gray">
+                                    <p class="post-meta post-meta-view post-meta-gray">・支持「離線緩存」（實驗中）</p>
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.22</h5>
-                                <h2 class="post-title post-title-view">4.8</h2>
-                                <hr class="hr-gray">
-                                <!-- <div id="DevelopmentUpdates">
-                                    <div class="UpdatesContent"> -->
-                                        <p class="post-meta post-meta-view post-meta-gray">・新增「自適應深色模式」</p>
-                                    <!-- </div>
-                                </div> -->
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.22</h5>
+                                    <h2 class="post-title post-title-view">4.8</h2>
+                                    <hr class="hr-gray">
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增「自適應深色模式」</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.19</h5>
-                                <h2 class="post-title post-title-view">4.7.14</h2>
-                                <hr class="hr-gray">
-                                <!-- <div id="DevelopmentUpdates">
-                                    <div class="UpdatesContent"> -->
-                                        <p class="post-meta post-meta-view post-meta-gray">・調整橫向佈局區塊樣式</p>
-                                        <p class="post-meta post-meta-view post-meta-gray">・修復區塊自適應顯示問題</p>
-                                        <p class="post-meta post-meta-view post-meta-gray">・修復標題文字自適應顯示問題</p>
-                                    <!-- </div>
-                                </div> -->
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.19</h5>
+                                    <h2 class="post-title post-title-view">4.7.14</h2>
+                                    <hr class="hr-gray">
+                                    <p class="post-meta post-meta-view post-meta-gray">・調整橫向佈局區塊樣式</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復區塊自適應顯示問題</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復標題文字自適應顯示問題</p>
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.18</h5>
-                                <h2 class="post-title-gray post-title-view">4.7.11</h2>
-                                <hr class="hr-gray" />
-                                <!-- <div id="DevelopmentUpdates">
-                                    <div class="UpdatesContent"> -->
-                                        <p class="post-meta post-meta-view post-meta-gray">・調整底部菜單欄動效</p>
-                                        <p class="post-meta post-meta-view post-meta-gray">・修復若干顯示問題</p>
-                                    <!-- </div>
-                                </div> -->
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.18</h5>
+                                    <h2 class="post-title-gray post-title-view">4.7.11</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・調整底部菜單欄動效</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復若干顯示問題</p>
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.17</h5>
-                                <h2 class="post-title post-title-view">4.7.9</h2>
-                                <hr class="hr-gray" />
-                                <!-- <div id="DevelopmentUpdates">
-                                    <div class="UpdatesContent"> -->
-                                        <p class="post-meta post-meta-view post-meta-gray">・新增 “橫向滑動區塊”</p>
-                                        <p class="post-meta post-meta-view post-meta-gray">・新增 “底部導航欄” 彈出動效</p>
-                                        <p class="post-meta post-meta-view post-meta-gray">・調整網站主色調</p>
-                                        <p class="post-meta post-meta-view post-meta-gray">・開發日誌預設最多顯示 3 個歷史版本</p>
-                                        <p class="post-meta post-meta-view post-meta-gray">・優化部分動效細節</p>
-                                        <p class="post-meta post-meta-view post-meta-gray">・修復自適應調節錯誤</p>
-                                        <p class="post-meta post-meta-view post-meta-gray">・修復開發日誌中 “展開收合按鈕” 文案顯示錯誤</p>
-                                    <!-- </div>
-                                </div> -->
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.17</h5>
+                                    <h2 class="post-title post-title-view">4.7.9</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增 “橫向滑動區塊”</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增 “底部導航欄” 彈出動效</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・調整網站主色調</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・開發日誌預設最多顯示 3 個歷史版本</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・優化部分動效細節</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復自適應調節錯誤</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復開發日誌中 “展開收合按鈕” 文案顯示錯誤</p>    
+                                </div>
                                 <br>
                                 <div class="post-view-view bg-whitegray">
                                     <br>
@@ -242,12 +233,12 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.13</h5>
-                                <h2 class="post-title post-title-view">4.7.3</h2>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.13</h5>
+                                    <h2 class="post-title post-title-view">4.7.3</h2>
+                                </div>
                                 <hr class="hr-gray" />
                                 <div id="DevelopmentUpdates">
                                     <div>
@@ -268,67 +259,62 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
-                        <br>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.11</h5>
-                                <h2 class="post-title post-title-view">4.7.1</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・完善「捷徑」功能</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・修復「捷徑」功能操作 Bug</p>
-                                <br>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="post-preview">
-                            <div class="post-view post-view-gray bg-gray">
-                                <div class="post-tag post-tag-RLmove-red">
-                                    <span class="post-tag-text">實驗性</span>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.11</h5>
+                                    <h2 class="post-title post-title-view">4.7.1</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・完善「捷徑」功能</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復「捷徑」功能操作 Bug</p>    
                                 </div>
                                 <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.11</h5>
-                                <h2 class="post-title post-title-view">4.6.7</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・新增「捷徑」功能（實驗中）</p>
+                            </div>
+                        </div>
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.11</h5>
+                                    <h2 class="post-title post-title-view">4.6.7</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增「捷徑」功能（實驗中）</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.10</h5>
-                                <h2 class="post-title post-title-view">4.6.6</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・於頂部欄新增「問題回報」</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・「卡諾圖化簡器」介面調整</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.10</h5>
+                                    <h2 class="post-title post-title-view">4.6.6</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・於頂部欄新增「問題回報」</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・「卡諾圖化簡器」介面調整</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.9</h5>
-                                <h2 class="post-title post-title-view">4.6.4</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・修復表格文字顯示問題</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.9</h5>
+                                    <h2 class="post-title post-title-view">4.6.4</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復表格文字顯示問題</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
-                                <h2 class="post-title- post-title-view">4.6.3</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・修復「展開/收合」失效問題</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」換算的操作說明</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・修復「卡諾圖化簡」文字顯示問題</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
+                                    <h2 class="post-title post-title-view">4.6.3</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復「展開/收合」失效問題</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」換算的操作說明</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復「卡諾圖化簡」文字顯示問題</p>    
+                                </div>
                                 <br>
                                 <div class="post-view-view bg-whitegray">
                                     <br>
@@ -339,58 +325,52 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
-                                <h2 class="post-title- post-title-view">4.6</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」，供資訊科、電子科數位邏輯課使用</p>
-                                <br>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="post-preview">
-                            <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.6</h5>
-                                <h2 class="post-title- post-title-view">4.5.10</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・扁平化新風格改造完成</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・新增「展開/收合」功能</p>
-                                <br>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="post-preview">
-                            <div class="post-view post-view-gray bg-gray">
-                                <div class="post-tag post-tag-RLmove-red">
-                                    <span class="post-tag-text">實驗性</span>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.8</h5>
+                                    <h2 class="post-title post-title-view">4.6</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增「卡諾圖化簡」，供資訊科、電子科數位邏輯課使用</p>    
                                 </div>
                                 <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.6</h5>
-                                <h2 class="post-title- post-title-view">4.5.8</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・「課程表」新風格改造</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・「考程表」新風格改造</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・「啦啦隊比賽」新風格改造</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・「安裝說明」新風格改造</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・新風格色彩調整</p>
+                            </div>
+                        </div>
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.6</h5>
+                                    <h2 class="post-title post-title-view">4.5.10</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・扁平化新風格改造完成</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增「展開/收合」功能</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <div class="post-tag post-tag-RLmove-red">
-                                    <span class="post-tag-text">實驗性</span>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.6</h5>
+                                    <h2 class="post-title post-title-view">4.5.8</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・「課程表」新風格改造</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・「考程表」新風格改造</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・「啦啦隊比賽」新風格改造</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・「安裝說明」新風格改造</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・新風格色彩調整</p>    
                                 </div>
                                 <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.6</h5>
-                                <h2 class="post-title- post-title-view">4.5.4</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・網站扁平化風格修整</p>
+                            </div>
+                        </div>
+                        <div class="post-preview">
+                            <div class="post-view post-view-gray bg-gray">
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.6</h5>
+                                    <h2 class="post-title post-title-view">4.5.4</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・網站扁平化風格修整</p>    
+                                </div>
                                 <br>
                                 <div class="post-view-view bg-whitegray">
                                     <br>
@@ -401,18 +381,15 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <div class="post-tag post-tag-RLmove-red">
-                                    <span class="post-tag-text">實驗性</span>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.4</h5>
+                                    <h2 class="post-title post-title-view">4.5.3</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・扁平化風格測試</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・全站禁用強制縮放</p>    
                                 </div>
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.4</h5>
-                                <h2 class="post-title- post-title-view">4.5.3</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・扁平化風格測試</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・全站禁用強制縮放</p>
                                 <br>
                                 <div class="post-view-view bg-whitegray">
                                     <br>
@@ -423,40 +400,40 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.3</h5>
-                                <h2 class="post-title- post-title-view">4.5.1</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・新增「快速導航欄」，提供在頁面中快速跳轉</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・修正一些細節</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.3</h5>
+                                    <h2 class="post-title post-title-view">4.5.1</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增「快速導航欄」，提供在頁面中快速跳轉</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修正一些細節</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.12.3</h5>
-                                <h2 class="post-title- post-title-view">4.4</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・新增「問題反饋與建議」版塊</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.12.3</h5>
+                                    <h2 class="post-title post-title-view">4.4</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增「問題反饋與建議」版塊</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.30</h5>
-                                <h2 class="post-title- post-title-view">4.3.15</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・調整底部菜單欄文字大小</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・調整表格圓角大小</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・微調動態消息文字隨欄位動態拉伸效果</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・新增已知問題獨立區塊</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.30</h5>
+                                    <h2 class="post-title post-title-view">4.3.15</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・調整底部菜單欄文字大小</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・調整表格圓角大小</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・微調動態消息文字隨欄位動態拉伸效果</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增已知問題獨立區塊</p>    
+                                </div>
                                 <br>
                                 <div class="post-view-view bg-whitegray">
                                     <br>
@@ -467,64 +444,64 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.30</h5>
-                                <h2 class="post-title- post-title-view">4.3.11</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・文章標題改以置中顯示</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・修改部分動態效果</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・動態消息文字隨欄位動態拉伸效果（為解決欄位拉伸後，文字換行顯示問題）</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・修復考程表頁面底部空間不足導致返回鍵遮擋問題</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・修復課程表未出現返回鍵問題</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.30</h5>
+                                    <h2 class="post-title post-title-view">4.3.11</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・文章標題改以置中顯示</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修改部分動態效果</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・動態消息文字隨欄位動態拉伸效果（為解決欄位拉伸後，文字換行顯示問題）</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復考程表頁面底部空間不足導致返回鍵遮擋問題</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復課程表未出現返回鍵問題</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.30</h5>
-                                <h2 class="post-title post-title-view">4.3.6</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・增加 互動動態效果</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.30</h5>
+                                    <h2 class="post-title post-title-view">4.3.6</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・增加 互動動態效果</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.29</h5>
-                                <h2 class="post-title post-title-view">4.3.4</h2>
-                                <hr class="hr-gray">
-                                <p class="post-meta post-meta-view post-meta-gray">建設平台初衷是希望提供 “即時可靠” 的資訊，將資料化繁為簡，快速地獲取所需資訊。</p>
-                                <p class="post-meta post-meta-view post-meta-gray">所以平台將改名為「班級資訊平台」，專注提供即時可靠的資料。</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.29</h5>
+                                    <h2 class="post-title post-title-view">4.3.4</h2>
+                                    <hr class="hr-gray">
+                                    <p class="post-meta post-meta-view post-meta-gray">建設平台初衷是希望提供 “即時可靠” 的資訊，將資料化繁為簡，快速地獲取所需資訊。</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">所以平台將改名為「班級資訊平台」，專注提供即時可靠的資料。</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.29</h5>
-                                <h2 class="post-title post-title-view">4.3.3</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・修復 圖層陰影遮擋問題</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.29</h5>
+                                    <h2 class="post-title post-title-view">4.3.3</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復 圖層陰影遮擋問題</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.28</h5>
-                                <h2 class="post-title post-title-view">4.3.2</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・修復 寬屏瀏覽頂部欄顯示異常問題</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・修復 考程表 1400px 內表格未置中問題</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.28</h5>
+                                    <h2 class="post-title post-title-view">4.3.2</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復 寬屏瀏覽頂部欄顯示異常問題</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復 考程表 1400px 內表格未置中問題</p>    
+                                </div>
                                 <br>
                                 <div class="post-view-view bg-whitegray">
                                     <br>
@@ -535,27 +512,27 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.27</h5>
-                                <h2 class="post-title post-title-view">4.3</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・新增「返回鍵」，在特定頁面下出現</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・更改背景圖</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.27</h5>
+                                    <h2 class="post-title post-title-view">4.3</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增「返回鍵」，在特定頁面下出現</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・更改背景圖</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.26</h5>
-                                <h2 class="post-title post-title-view">4.2.1</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・新增頂部、底部導航欄背景模糊效果</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・修復一些 Bug</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.26</h5>
+                                    <h2 class="post-title post-title-view">4.2.1</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增頂部、底部導航欄背景模糊效果</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復一些 Bug</p>    
+                                </div>
                                 <br>
                                 <div class="post-view-view bg-whitegray">
                                     <br>
@@ -567,27 +544,27 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.26</h5>
-                                <h2 class="post-title post-title-view">4.1.3</h2>
-                                <hr class="my-4 hr" />
-                                <p class="post-meta post-meta-view post-meta-gray">・讓網頁更新更即時</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・修復一些 Bug</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.26</h5>
+                                    <h2 class="post-title post-title-view">4.1.3</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・讓網頁更新更即時</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復一些 Bug</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.26</h5>
-                                <h2 class="post-title post-title-view">4.1.2</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・新增考程表頂部欄快捷操作</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・修復一些 Bug</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.26</h5>
+                                    <h2 class="post-title post-title-view">4.1.2</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增考程表頂部欄快捷操作</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・修復一些 Bug</p>    
+                                </div>
                                 <br>
                                 <div class="post-view-view bg-whitegray">
                                     <br>
@@ -600,39 +577,39 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.26</h5>
-                                <h2 class="post-title post-title-view">4.1.1</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・新增「安裝說明」，說明如何安裝網頁應用</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・新增頂部欄操作</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.26</h5>
+                                    <h2 class="post-title post-title-view">4.1.1</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增「安裝說明」，說明如何安裝網頁應用</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增頂部欄操作</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.25</h5>
-                                <h2 class="post-title- post-title-view">4.1</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・新增「考程表」</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.25</h5>
+                                    <h2 class="post-title post-title-view">4.1</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增「考程表」</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.25</h5>
-                                <h2 class="post-title- post-title-view">4.0.2</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・字體適配完成</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・增強底部導航欄自適應</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・新增頁面刷新鍵</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.25</h5>
+                                    <h2 class="post-title post-title-view">4.0.2</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・字體適配完成</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・增強底部導航欄自適應</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・新增頁面刷新鍵</p>    
+                                </div>
                                 <br>
                                 <div class="post-view-view bg-whitegray">
                                     <br>
@@ -643,15 +620,15 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.25</h5>
-                                <h2 class="post-title- post-title-view">4.0.1</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・修正一些細節</p>
-                                <p class="post-meta post-meta-view post-meta-gray">・加快網頁加載</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.25</h5>
+                                    <h2 class="post-title post-title-view">4.0.1</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・修正一些細節</p>
+                                    <p class="post-meta post-meta-view post-meta-gray">・加快網頁加載</p>    
+                                </div>
                                 <br>
                                 <div class="post-view-view bg-whitegray">
                                     <br>
@@ -662,19 +639,17 @@
                                 <div class="space1rem"></div>
                             </div>
                         </div>
-                        <br>
                         <div class="post-preview">
                             <div class="post-view post-view-gray bg-gray">
-                                <br>
-                                <h5 class="post-meta-gray post-title-view">2022.11.25</h5>
-                                <h2 class="post-title- post-title-view">4.0</h2>
-                                <hr class="hr-gray" />
-                                <p class="post-meta post-meta-view post-meta-gray">・建立 PWA 網站應用基礎架構</p>
+                                <div>
+                                    <h5 class="post-meta-gray post-title-view">2022.11.25</h5>
+                                    <h2 class="post-title post-title-view">4.0</h2>
+                                    <hr class="hr-gray" />
+                                    <p class="post-meta post-meta-view post-meta-gray">・建立 PWA 網站應用基礎架構</p>    
+                                </div>
                                 <br>
                             </div>
                         </div>
-                        <br>
-                        <br>
                     </hide>
                     <br>
                     <br>

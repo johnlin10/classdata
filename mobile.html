@@ -32,12 +32,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0," />
     </head>
 
-    <!-- 主體 -->
     <body>
-
         <!-- 頂部標題欄 -->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-            <div class="container px-4 px-lg-5">
+            <div id="TopNavbar">
                 <a class="navbar-brand" href="mobile.html"><i class="fa-solid fa-school"></i> 班級資訊平台</a>
                 <a href="ReportProblem.html">
                     <button class="navbar-toggler" type="button" >
@@ -149,7 +147,7 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
                             <h1>班級資訊平台</h1>
-                            <span class="subheading">4.11.1</span>
+                            <span class="subheading">4.11.4</span>
                         </div>
                     </div>
                 </div>
@@ -161,6 +159,7 @@
             <div class="MainPageFastDiv">
                 <div class="post-preview FastDiv" onclick="location.href='https://drive.google.com/uc?export=download&id=1jGdZkov-nI3hbjrOSOi-eEv4XvhtQ6w8';">
                     <div class="post-view post-view-Gray bg-gray">
+                        <div class="PostIcon-ssm"><i class="fa-solid fa-file-pdf"></i></div>
                         <div>
                             <h2 class="post-title-gray post-title-view">112.1月自主體溫表.pdf</h2>
                             <hr class="hr-gray">
@@ -172,6 +171,7 @@
                 </div>
                 <div class="post-preview FastDiv" onclick="location.href='課程表_mobile.html';">
                     <div class="post-view post-view-Blue bg-blue">
+                        <div class="PostIcon-ssm"><i class="fa-regular fa-calendar-days"></i></div>
                         <div>
                             <h2 class="post-title-blue post-title-view">課程表</h2>
                             <hr class="hr-blue">
@@ -182,6 +182,7 @@
                 </div>
                 <div class="post-preview FastDiv" onclick="location.href='Karnaugh Map Builder and Solver.html';">
                     <div class="post-view post-view-Blue bg-blue">
+                        <div class="PostIcon-ssm"><i class="fa-solid fa-calculator"></i></div>
                         <div>
                             <h2 class="post-title-blue post-title-view">卡諾圖化簡</h2>
                             <hr class="hr-blue">
@@ -192,10 +193,10 @@
                 </div>
             </div>
         </div>
-        <div class="PageContent-BigTitle">
-            <h1>平台公告</h1>    
-        </div>
-        <div class="container">
+
+        <!-- 內容待定 -->
+        <div style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; color:var(--PostMeta);"><i class="fa-solid fa-shapes"></i>　內容規劃中...</div>
+        <!-- <div class="container">
             <div class="DisplayFlex-Center">
                 <div id="MainView" class="col-md-10 col-lg-11 col-xl-9">
                     <div class="post-preview">
@@ -218,84 +219,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-preview">
-                        <div class="post-view post-view-red bg-red">
-                            <div>
-                                <h5 class="post-meta-red post-title-view">2022.12.22 THU</h5>
-                                <h2 class="post-title-red post-title-view">深色模式已上線</h2>
-                                <p class="post-meta post-meta-view post-meta-red">趕緊開啟系統的深色模式來看看網站有什麼變化吧！</p>
-                                <br>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-preview">
-                        <div class="post-view post-view-nobg">
-                            <div>
-                                <h5 class="PostMeta post-title-view">2022.12.10 SAT</h5>
-                                <h2 class="post-title-gray post-title-view">網站開發新方向</h2>
-                                <p class="post-meta post-title-gray post-title-view">PWA 獨立應用，可離線訪問</p>
-                                <br>    
-                            </div>
-                            <div class="d-flex justify-content-end"><a class="btn-bg text-uppercase" href="Post/PWA.html">開發進度</a></div>
-                        </div>
-                    </div>
-                    <div class="post-preview">
-                        <div class="post-view post-view-nobg">
-                            <div>
-                                <h5 class="PostMeta post-title-view">2022.12.9 FRI</h5>
-                                <h2 class="post-title-gray post-title-view">卡諾圖化簡器</h2>
-                                <p class="post-meta post-title-gray post-title-view">新功能上線！</p>
-                                <p class="post-meta post-meta-view PostMeta">互動式的卡諾圖化簡器，滑鼠、手指輕點，即可快速獲得化簡式！</p>
-                                <p class="post-meta post-meta-view PostMeta">（目前只提供 SOP 化簡）</p>
-                                <br>    
-                            </div>
-                            <div class="d-flex justify-content-end"><a class="btn-bg text-uppercase" href="Karnaugh Map Builder and Solver.html">前往化簡</a></div>
-                        </div>
-                    </div>
-                    <div class="post-preview">
-                        <div class="post-view post-view-nobg">
-                            <div>
-                                <h5 class="PostMeta post-title-view">2022.12.3 SAT</h5>
-                                <h2 class="post-title-gray post-title-view">問題反饋與建議</h2>
-                                <p class="post-meta post-title-gray post-title-view">新功能上線！</p>
-                                <p class="post-meta post-meta-view PostMeta">本平台目標是提供即時可靠的資訊，即便再三確認，仍可能有閃失。</p>
-                                <p class="post-meta post-meta-view PostMeta">為了能夠達成目標，「問題反饋與建議」的上線，就是為了能夠讓任何人都能夠共同來維護資訊平台，使其能發揮最大效用！</p>
-                                <br>    
-                            </div>
-                            <div class="d-flex justify-content-end"><a class="btn-bg text-uppercase" href="ReportProblem.html">前往反饋</a></div>
-                        </div>
-                    </div>
-                    <div class="post-preview">
-                        <div class="post-view post-view-nobg">
-                            <div>
-                                <h5 class="PostMeta post-title-view">2022.11.25</h5>
-                                <h2 class="post-title-gray post-title-view">班級資訊平台 4.0</h2>
-                                <p class="post-meta post-meta-view PostMeta">升級成可安裝於手機上的網頁應用。</p>
-                                <br>    
-                            </div>
-                            <div class="d-flex justify-content-end"><a class="btn-bg text-uppercase" href="安裝說明.html">安裝說明</a></div>
-                        </div>
-                    </div>
-                    <div class="post-preview">
-                        <div class="post-view post-view-nobg">
-                            <div>
-                                <h5 class="PostMeta post-title-view">2022.11.25 FRI</h5>
-                                <h2 class="post-title-gray post-title-view">手機版網頁應用即將上線！</h2>
-                                <p class="post-meta post-meta-view PostMeta">更貼近於 App 的使用體驗，無需繁瑣的尋找連結，加入到主畫面，即可安裝「班級資料平台」網頁應用。</p>
-                                <br>    
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-        <br>
+        </div> -->
+        <!-- <div id="MainViewBody">
+            <div id="Main-MainView">
+                <div id="MainView-Flex">
+                </div>
+            </div>    
+        </div> -->
         <br>
         <br>
         <br>
         <br>
         <script src="js/FastGo.js"></script>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             (function($){
                 $.fn.snow = function(options){
                 var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9000', 'top': '-50px'}).html('&#10052;'),
@@ -338,6 +276,6 @@
                 });
             });
             </script>
-            <script src="js/ChristmasDay.js"></script>
+            <script src="js/ChristmasDay.js"></script> -->
     </body>
 </html>
