@@ -401,14 +401,14 @@
 #canvas{
 	cursor: crosshair;
 	display: block;
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   pointer-events: none;
 }
 .canvas-point{
 	cursor: crosshair;
 	display: block;
-  position: absolute;
+  position: fixed;
   z-index: 10 !important;
   pointer-events:visible !important;
 }
@@ -1035,7 +1035,9 @@ progress {
   margin-left: auto;
 }
 
-
+.footer-view {
+  overflow-y: scroll;
+}
 
 @media (min-width: 150px) {
   #MainView {
@@ -1121,14 +1123,14 @@ progress {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 3rem;
+    height: 100%;
     z-index: 9910;
     transition: height 0.2s, width 0.7s, left 0.2s;
     -webkit-transition: height 0.2s, width 0.7s, left 0.2s;
     -moz-transition: height 0.2s, width 0.7s, left 0.2s;
     -ms-transition: height 0.2s, width 0.7s, left 0.2s;
     -o-transition: height 0.2s, width 0.7s, left 0.2s;
-}
+  }
   .footer-view {
     display: flex;
     justify-content: space-evenly;
@@ -1472,7 +1474,7 @@ progress {
     bottom: 0;
     left: 0;
     width: 72px;
-    height: 100vh;
+    height: 100%;
     z-index: 9910;
     background-color: var(--bottomNav-bg);
     transition: height 0.7s, width 0.2s, left 0.2s;
@@ -1681,7 +1683,7 @@ progress {
     top: 0;
     left: 0;
     width: 200px;
-    height: 100vh;
+    height: 100%;
     z-index: 9910;
     background-color: var(--bottomNav-bg);
     transition: height 0.7s, width 0.2s, left 0.2s;
@@ -1697,7 +1699,7 @@ progress {
     align-items: center;
     width: 190px;
     left: 10px;
-    height: 100vh;
+    height: 100%;
     bottom: 0;
     border-top: 0;
     border-right: 5px solid var(--bottomNav-Border);
