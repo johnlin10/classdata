@@ -786,7 +786,7 @@ function GenerateEquationHTML()
 			if (i==0) Text+= "<b>"+FunctionText + " = ";
 			Text += "<span class=\"blue half-bottom kmap-bottom\" id=\""+Equation[i].ButtonUIName + "\" onMouseOver=\"SetShowRect(Equation["+i+"],"+i+");\" onMouseOut=\"SetShowRect(null);\" style=\"font-size: 2rem;\">";
 			Text += "<b>" + Equation[i].Expression + "</span>";
-			if (i<Equation.UsedLength-1) Text +=" <span> + </span>";
+			if (i<Equation.UsedLength-1) Text +=" <span style=\"font-size: 2rem;font-weight:700;\"> + </span>";
 			i++;
 		}	
 		Text += "</p>"

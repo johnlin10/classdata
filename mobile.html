@@ -33,6 +33,12 @@
     </head>
 
     <body>
+        <!-- 堆積雪 -->
+        <div class="snow"></div>
+        <!-- 2023 -->
+        <canvas id="canvas"></canvas>
+        <script src="js/2023.js"></script>
+
         <!-- 頂部標題欄 -->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div id="TopNavbar">
@@ -45,17 +51,20 @@
             </div>
         </nav>
 
-        <!-- 堆積雪 -->
-        <div class="snow"></div>
         <!-- 底部導航欄 -->
         <div class="footer-top-view">
             <div class="footer-view">
                 <footer class="footer">
-                    <a href="mobile.html"><div class="home icon-blue"><i class="fa-solid fa-house"></i></div></a>
-                    <a href="post_mobile.html"><div class="post"><i class="fa-solid fa-volume-off"></i></div></a>
-                    <a href="資料庫_mobile.html"><div class="folder"><i class="fa-solid fa-folder"></i></div></a>
-                    <a href="log_mobile.html"><div class="log"><i class="fa-solid fa-code"></i></div></a>
+                    <a href="mobile.html" class="footer-title"><div class="footer-icon"><i class="fa-solid fa-school"></i><span>班級資訊平台</span></div></a>
+                    <hr style="width: 80%; margin-left: calc(10% - 5px); color: #ffffff10;">
+                    <a href="mobile.html" class="footer-list"><div><i class="fa-solid fa-house"></i><span>首頁</span></div></a>
+                    <a href="pages/POST.html" class="footer-list"><div><i class="fa-solid fa-volume-off"></i><span>公告</span></div></a>
+                    <a href="pages/FOLDER.html" class="footer-list"><div><i class="fa-solid fa-folder"></i><span>資訊庫</span></div></a>
+                    <a href="pages/LOG.html" class="footer-list"><div><i class="fa-solid fa-code"></i><span>開發日誌</span></div></a>
+                    <hr style="width: 80%; margin-left: calc(10% - 5px); color: #ffffff10;">
+                    <a href="pages/HappyNewYear.html" class="footer-list"><div><i class="fa-brands fa-first-order-alt"></i><span>新年特區</span></div></a>
                 </footer>
+                <div style="position: relative; left: -3px; margin-right: 5px;"><img src="images/2023/2023.001.png" alt="2023 新年快樂！" style="width:40px;"></div>
             </div>
         </div>
         
@@ -140,142 +149,71 @@
             <br>
         </div>
 
-        <!-- 標題 -->
-        <header class="masthead" style="background-image: url('images/主頁.jpg')">
-            <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-                            <h1>班級資訊平台</h1>
-                            <span class="subheading">4.11.4</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
 
-        <!-- 內容區 -->
-        <div class="MainPageFastDivView">
-            <div class="MainPageFastDiv">
-                <div class="post-preview FastDiv" onclick="location.href='https://drive.google.com/uc?export=download&id=1jGdZkov-nI3hbjrOSOi-eEv4XvhtQ6w8';">
-                    <div class="post-view post-view-Gray bg-gray">
-                        <div class="PostIcon-ssm"><i class="fa-solid fa-file-pdf"></i></div>
-                        <div>
-                            <h2 class="post-title-gray post-title-view">112.1月自主體溫表.pdf</h2>
-                            <hr class="hr-gray">
-                            <p class="post-meta post-meta-view post-meta-gray"><i class="fa-solid fa-comment"></i> 收到反饋，1 月 7 日有補課，現已補齊。</p> 
-                            <p class="post-meta post-meta-view post-meta-gray">點擊此版塊立即下載</p>    
+        <div id="MainBody">
+            <div id="Main-Content">
+                <!-- 標題 -->
+                <header class="masthead" style="background-image: url('images/主頁.jpg')">
+                    <div class="container position-relative px-4 px-lg-5">
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-md-10 col-lg-8 col-xl-10">
+                                <div class="site-heading">
+                                    <h1>班級資訊平台</h1>
+                                    <span class="subheading">4.12</span>
+                                </div>
+                            </div>
                         </div>
-                        <br>
+                    </div>
+                </header>
+
+            <!-- 內容區 -->
+                <div class="MainPageFastDivView">
+                    <div class="MainPageFastDiv">
+                        <div class="post-preview FastDiv" onclick="location.href='https://drive.google.com/uc?export=download&id=1jGdZkov-nI3hbjrOSOi-eEv4XvhtQ6w8';">
+                            <div class="post-view post-view-Gray bg-gray">
+                                <div class="PostIcon-ssm"><i class="fa-solid fa-file-pdf"></i></div>
+                                <div>
+                                    <h2 class="post-title-gray post-title-view">112.1月自主體溫表.pdf</h2>
+                                    <hr class="hr-gray">
+                                    <p class="post-meta post-meta-view post-meta-gray"><i class="fa-solid fa-comment"></i> 收到反饋，1 月 7 日有補課，現已補齊。</p> 
+                                    <p class="post-meta post-meta-view post-meta-gray">點擊此版塊立即下載</p>    
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="post-preview FastDiv" onclick="location.href='pages/CourseSchedule.html';">
+                            <div class="post-view post-view-Blue bg-blue">
+                                <div class="PostIcon-ssm"><i class="fa-regular fa-calendar-days"></i></div>
+                                <div>
+                                    <h2 class="post-title-blue post-title-view">課程表</h2>
+                                    <hr class="hr-blue">
+                                    <p class="post-meta post-meta-view post-meta-blue">二年甲班各科課程表</p>    
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="post-preview FastDiv" onclick="location.href='pages/Karnaugh Map Builder and Solver.html';">
+                            <div class="post-view post-view-Blue bg-blue">
+                                <div class="PostIcon-ssm"><i class="fa-solid fa-calculator"></i></div>
+                                <div>
+                                    <h2 class="post-title-blue post-title-view">卡諾圖化簡</h2>
+                                    <hr class="hr-blue">
+                                    <p class="post-meta post-meta-view post-meta-blue">互動式的卡諾圖化簡器！</p>    
+                                </div>
+                                <br>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="post-preview FastDiv" onclick="location.href='課程表_mobile.html';">
-                    <div class="post-view post-view-Blue bg-blue">
-                        <div class="PostIcon-ssm"><i class="fa-regular fa-calendar-days"></i></div>
-                        <div>
-                            <h2 class="post-title-blue post-title-view">課程表</h2>
-                            <hr class="hr-blue">
-                            <p class="post-meta post-meta-view post-meta-blue">二年甲班各科課程表</p>    
-                        </div>
-                        <br>
-                    </div>
-                </div>
-                <div class="post-preview FastDiv" onclick="location.href='Karnaugh Map Builder and Solver.html';">
-                    <div class="post-view post-view-Blue bg-blue">
-                        <div class="PostIcon-ssm"><i class="fa-solid fa-calculator"></i></div>
-                        <div>
-                            <h2 class="post-title-blue post-title-view">卡諾圖化簡</h2>
-                            <hr class="hr-blue">
-                            <p class="post-meta post-meta-view post-meta-blue">互動式的卡諾圖化簡器！</p>    
-                        </div>
-                        <br>
-                    </div>
-                </div>
+
+                <!-- 內容待定 -->
+                <div style="width: 100%; height: 500px; display: flex; justify-content: center; align-items: center; color:var(--PostMeta);"><i class="fa-solid fa-shapes"></i>　內容規劃中...</div>
             </div>
         </div>
-
-        <!-- 內容待定 -->
-        <div style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; color:var(--PostMeta);"><i class="fa-solid fa-shapes"></i>　內容規劃中...</div>
-        <!-- <div class="container">
-            <div class="DisplayFlex-Center">
-                <div id="MainView" class="col-md-10 col-lg-11 col-xl-9">
-                    <div class="post-preview">
-                        <div class="post-view post-view-red bg-red">
-                            <div>
-                                <h5 class="post-meta-red post-title-view">2022.12.26 MON</h5>
-                                <h2 class="post-title-red post-title-view">橫向擴展顯示</h2>
-                                <p class="post-meta post-meta-view post-meta-red">平台正在努力的達到顯示效率與設計的平衡，現在在寬屏顯示下可以顯示更多內容了！</p>
-                                <br>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-preview">
-                        <div class="post-view post-view-red bg-red">
-                            <div>
-                                <h5 class="post-meta-red post-title-view">2022.12.25 SUN</h5>
-                                <h2 class="post-title-red post-title-view">節慶專屬樣式</h2>
-                                <p class="post-meta post-meta-view post-meta-red">現在平台會在重要節慶變身了，敬請期待後續節慶活動吧！</p>
-                                <br>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div id="MainViewBody">
-            <div id="Main-MainView">
-                <div id="MainView-Flex">
-                </div>
-            </div>    
-        </div> -->
         <br>
         <br>
         <br>
         <br>
         <script src="js/FastGo.js"></script>
-        <script type="text/javascript">
-            (function($){
-                $.fn.snow = function(options){
-                var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9000', 'top': '-50px'}).html('&#10052;'),
-                documentHeight 	= $(document).height(),
-                documentWidth	= $(document).width(),
-                defaults = {
-                    minSize		: 10,
-                    maxSize		: 20,
-                    newOn		: 1000,
-                    flakeColor	: "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
-                },
-                options	= $.extend({}, defaults, options);
-                var interval= setInterval( function(){
-                var startPositionLeft = Math.random() * documentWidth - 100,
-                startOpacity = 0.5 + Math.random(),
-                sizeFlake = options.minSize + Math.random() * options.maxSize,
-                endPositionTop = documentHeight - 200,
-                endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
-                durationFall = documentHeight * 10 + Math.random() * 5000;
-                $flake.clone().appendTo('body').css({
-                    left: startPositionLeft,
-                    opacity: startOpacity,
-                    'font-size': sizeFlake,
-                    color: options.flakeColor
-                }).animate({
-                    top: endPositionTop,
-                    left: endPositionLeft,
-                    opacity: 0.2
-                },durationFall,'linear',function(){
-                    $(this).remove()
-                });
-                }, options.newOn);
-                };
-            })(jQuery);
-            $(function(){
-                $.fn.snow({ 
-                    minSize: 5, /* 定义雪花最小尺寸 */
-                    maxSize: 50,/* 定义雪花最大尺寸 */
-                    newOn: 8000  /* 定义密集程度，数字越小越密集 */
-                });
-            });
-            </script>
-            <script src="js/ChristmasDay.js"></script>
     </body>
 </html>
