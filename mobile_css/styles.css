@@ -1123,7 +1123,7 @@ progress {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 3rem;
     z-index: 9910;
     transition: height 0.2s, width 0.7s, left 0.2s;
     -webkit-transition: height 0.2s, width 0.7s, left 0.2s;
