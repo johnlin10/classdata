@@ -80,7 +80,7 @@ function Firework( sx, sy, tx, ty ) {
 	}
 	this.angle = Math.atan2( ty - sy, tx - sx );
 	this.speed = 2;
-	this.acceleration = 1.05;
+	this.acceleration = 1.04;
 	this.brightness = random( 50, 70 );
 	// circle target indicator radius
 	this.targetRadius = 1;
@@ -150,7 +150,7 @@ function Particle( x, y ) {
 	this.angle = random( 0, Math.PI * 2 );
 	this.speed = random( 1, 10 );
 	// friction will slow the particle down
-	this.friction = 0.95;
+	this.friction = 0.98;
 	// gravity will be applied and pull the particle down
 	this.gravity = 1;
 	// set the hue to a random number +-50 of the overall hue variable
@@ -158,7 +158,7 @@ function Particle( x, y ) {
 	this.brightness = random( 50, 80 );
 	this.alpha = 1;
 	// set how fast the particle fades out
-	this.decay = random( 0.015, 0.03 );
+	this.decay = random( 0.001, 0.005 );
 }
 
 // update particle
@@ -216,7 +216,7 @@ function loop() {
 	// setting the composite operation to destination-out will allow us to clear the canvas at a specific opacity, rather than wiping it entirely
 	ctx.globalCompositeOperation = 'destination-out';
 	// decrease the alpha property to create more prominent trails
-	ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+	ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
 	ctx.fillRect( 0, 0, cw, ch );
 	// change the composite operation back to our main mode
 	// lighter creates bright highlight points as the fireworks and particles overlap each other
