@@ -1424,8 +1424,8 @@ progress {
 
 
   .container {
-    width: 85%;
-    max-width: 740px;
+    width: 90%;
+    max-width: 820px;
   }
   .container div #MainView {
     display: flex;
@@ -1643,7 +1643,7 @@ progress {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1100px;
     padding: 2rem;
   }
   #MainView-Flex {
@@ -1822,8 +1822,8 @@ progress {
   }
 
   .container {
-    width: 70%;
-    max-width: 1400px;
+    width: 90%;
+    max-width: 900px;
   }
   .container div #MainView {
     display: flex;
@@ -1846,7 +1846,7 @@ progress {
     padding: 3.2rem 30px 6.4rem;
   }
 }
-@media (min-width: 1450px) {
+@media (min-width: 1600px) {
   #MainView {
     display: flex;
     flex-direction: row;
@@ -1854,7 +1854,7 @@ progress {
     flex-wrap: wrap;
   }
   #MainView .post-preview {
-    width: calc(100%);
+    width: calc(50% - 2rem);
     margin: 1rem 1rem;
   }
   #MainView .post-preview .post-view {
@@ -1868,7 +1868,7 @@ progress {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1800px;
     padding: 2rem;
   }
   #MainView-Flex {
