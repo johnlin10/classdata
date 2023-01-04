@@ -19,6 +19,15 @@ const putInCache = async (request, response) => {
   await cache.put(request, response);
 };
 
+// 新版本緩存後，自動刷新頁面
+self.addEventListener('activate', event => {
+  event.waitUntil(clients.claim());
+});
+self.skipWaiting().then(() => {
+  console.log('Activated new service worker...');
+});
+
+
 // 啟動 Service Worker
 const cacheFirst = async ({ request, preloadResponsePromise, fallbackUrl }) => {
   // First try to get the resource from the cache
