@@ -217,13 +217,10 @@
 
     /* 文章標題 */
     --post-title-white: #e4e4e4;
-    --post-title-gray: #ffffff;
-    --post-title-red: #ffffff;
+    --post-title-red: #ffe8e8;
     --post-title-blue: #ffffff;
-    --post-title-Red: #ffffff;
-    --post-title-Blue: #ffffff;
-    --post-title-Gray: #5b5b5b;
-    --post-title-bg: #5c8ea7;
+    --post-title-bg: #d5f0fd;
+    --post-title-whitegray: #dbdbdb;
     --post-title-FontWeight: 700;
 
 
@@ -231,6 +228,7 @@
     --post-meta-red: #dd8585;
     --post-meta-blue: #79bcdb;
     --post-meta-gray: #b1b1b1;
+    --post-meta-bg: #476e82;
 
     --pmkn:#1886b9;
 
@@ -340,13 +338,10 @@
 
     /* 文章標題 */
     --post-title-white: #e4e4e4;
-    --post-title-gray: #ffffff;
-    --post-title-red: #ffffff;
+    --post-title-red: #ffe8e8;
     --post-title-blue: #ffffff;
-    --post-title-Red: #ffffff;
-    --post-title-Blue: #ffffff;
-    --post-title-Gray: #5b5b5b;
-    --post-title-bg: #5c8ea7;
+    --post-title-bg: #d5f0fd;
+    --post-title-whitegray: #dbdbdb;
     --post-title-FontWeight: 700;
 
 
@@ -354,6 +349,7 @@
     --post-meta-red: #dd8585;
     --post-meta-blue: #79bcdb;
     --post-meta-gray: #b1b1b1;
+    --post-meta-bg: #476e82;
 
     --pmkn:#1886b9;
 
@@ -12563,9 +12559,6 @@ hr {
   opacity: 1;
 }
 
-p {
-  margin: 1.5rem 0;
-}
 p a {
   text-decoration: underline;
 }
@@ -12976,45 +12969,18 @@ header.masthead .site-heading .h1 {
   cursor: default;
 }
 
-.post-title {
-  font-weight: var(--post-title-FontWeight);
-  color: var(--post-title-gray);
-}
-.post-title-Gray {
-  font-weight: var(--post-title-FontWeight);
-  color: var(--post-title-bg);
+
+/* ------------------深色主題------------------ */
+@media screen and (prefers-color-scheme: dark) {
+  :root{
+    --post-title-gray: #ffffff;
+  }
 }
 
-.post-title-gray {
-  font-weight: var(--post-title-FontWeight);
-  color: var(--post-title-gray);
-}
 
-.post-title-blue {
-  font-weight: var(--post-title-FontWeight);
-  color: var(--post-title-blue);
-}
 
-.post-title-red {
-  font-weight: var(--post-title-FontWeight);
-  color: var(--post-title-red);
-}
 
-.post-Title {
-  font-weight: var(--post-title-FontWeight);
-  color: var(--post-title-white);
-}
-
-.post-title-Blue {
-  font-weight: var(--post-title-FontWeight);
-  color: var(--post-title-Blue);
-}
-
-.post-title-Red {
-  font-weight: var(--post-title-FontWeight);
-  color: var(--post-title-Red);
-}
-
+/* 標題區塊樣式 */
 .post-title-view {
   opacity: 80%;
   cursor:default;
@@ -13025,7 +12991,6 @@ header.masthead .site-heading .h1 {
   transition: 0.5s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
 }
-
 .post-title-h3 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -13034,446 +12999,322 @@ header.masthead .site-heading .h1 {
   color: #5f5f5f;
 }
 
+/* 標題色彩 */
+  /* 背景標題 */
+  .post-title-bg {
+    font-weight: var(--post-title-FontWeight);
+    color: var(--post-title-bg);
+  }
+
+  /* 白色標題 */
+  .post-title-white {
+    font-weight: var(--post-title-FontWeight);
+    color: var(--post-title-white);
+  }
+
+  /* 灰色標題 */
+  .post-title-gray {
+    font-weight: var(--post-title-FontWeight);
+    color: var(--post-title-gray);
+  }
+
+  /* 藍色標題 */
+  .post-title-blue {
+    font-weight: var(--post-title-FontWeight);
+    color: var(--post-title-blue);
+  }
+
+  /* 紅色標題 */
+  .post-title-red {
+    font-weight: var(--post-title-FontWeight);
+    color: var(--post-title-red);
+  }
+
+  /* 淺灰色標題 */
+  .post-title-whitegray {
+    font-weight: var(--post-title-FontWeight);
+    color: var(--post-title-whitegray)
+  }
+
+/* 區塊內容區塊樣式 */
 .post-meta-view {
   width: 88%;
   margin-left: 6%;
   font-weight: 400;
   cursor: default;
 }
-.post-meta-blue {
-  color: var(--post-meta-blue);
-}
-.post-meta-red {
-  color: var(--post-meta-red);
-}
 
-.post-meta-gray {
-  color: var(--post-meta-gray);
-}
-
-.post-meta-Blue {
-  color: var(--post-meta-Blue);
-}
-.post-meta-Red {
-  color: var(--post-meta-Red);
-}
-
-.post-meta-Gray {
-  color: var(--post-meta-Gray);
-}
-
-.text-line-through {
-  text-decoration: line-through;
-}
-
-.PostTitle {
-  margin-top: 3rem;
-  margin-left: -0.5rem;
-  font-size: 2rem;
-  font-family: var(--bs-body-font-family);
-  color: var(--PostTitle);
-}
-.PostMeta {
-  font-size: 1.125rem;
-  margin: 1rem 0;
-  padding: 0 clamp(10px, 5vw, 3rem);
-  color: var(--PostMeta);
-}
-
-.Progress {
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-  width: 95%;
-  height: 1.4rem;
-  margin-left: 2.5%;
-  margin-top: 1rem;
-  border-radius: 0.7rem;
-  background-color: var(--Progress-bg);
-  -webkit-border-radius: 0.7rem;
-  -moz-border-radius: 0.7rem;
-  -ms-border-radius: 0.7rem;
-  -o-border-radius: 0.7rem;
-}
-
-.ProgressBar {
-  height: 0.8rem;
-  width: 10%;
-  min-width: 0.8rem;
-  margin-left: 0.4rem;
-  margin-right: 0.4rem;
-  border-radius: 0.4rem;
-  background-color: var(--Progress-bar-bg);
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
-}
-
-.ProgressText {
-  font-size: 0.7rem;
-  font-family: var(--bs-body-font-family);
-  color: var(--Progress-text);
-  margin-left: 1.3rem;
-}
-
-/*文章區塊*/
-.post-view{
-  border-radius: 1.3rem;
-  width: 100%;
-  transition: 0.2s;
-  padding: 2rem 0.7rem 0.7rem 0.7rem;
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-}
-.post-view:hover {
-  border-radius: 1.4rem;
-  width: 100%;
-  margin-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-}
-
-/*區塊顏色*/
-  .bg-gray {
-    background-color: var(--bg-gray);
+/* 區塊內容色彩 */
+  /* 灰色內容 */
+  .post-meta-gray {
+    color: var(--post-meta-gray);
   }
-  .bg-whitegray {
-    background-color: var(--bg-whitegray);
+
+  /* 藍色內容 */
+  .post-meta-blue {
+    color: var(--post-meta-blue);
   }
-  .bg-blue {
-    background-color: var(--bg-blue);
+
+  /* 紅色內容 */
+  .post-meta-red {
+    color: var(--post-meta-red);
   }
-  .bg-red {
-    background-color: var(--bg-red);
+
+  /* 背景色內容 */
+  .post-meta-bg {
+    color: var(--post-meta-bg);
   }
-  .bg-Blue {
-    background-color: var(--bg-Blue);
+
+  /* 刪除線 */
+  .text-line-through {
+    text-decoration: line-through;
   }
-  .bg-Red {
-    background-color: var(--bg-Red);
+
+
+/* 文章頁面樣式 */
+  /* 文章標題樣式 */
+  .PostTitle {
+    margin-top: 3rem;
+    margin-left: -0.5rem;
+    font-size: 2rem;
+    font-family: var(--bs-body-font-family);
+    color: var(--PostTitle);
   }
-  .bg-Gray {
-    background-color: var(--bg-Gray);
+
+  /* 文章內容樣式 */
+  .PostMeta {
+    font-size: 1.125rem;
+    margin: 1rem 0;
+    padding: 0 clamp(10px, 5vw, 3rem);
+    color: var(--PostMeta);
   }
-  /*紅色區塊*/
+
+/* 進度條樣式 */
+  /* 進度條外圈 */
+  .Progress {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 95%;
+    height: 1.4rem;
+    margin-left: 2.5%;
+    margin-top: 1rem;
+    border-radius: 0.7rem;
+    background-color: var(--Progress-bg);
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+  }
+
+  /* 進度條進度 */
+  .ProgressBar {
+    /* 進度於 html 內個別定義：<div style="width: 50%;"> ... </div> */
+    height: 0.8rem;
+    min-width: 0.8rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    border-radius: 0.4rem;
+    background-color: var(--Progress-bar-bg);
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+  }
+
+  /* 進度詳細信息 */
+  .ProgressText {
+    font-size: 0.7rem;
+    font-family: var(--bs-body-font-family);
+    color: var(--Progress-text);
+    margin-left: 1.3rem;
+  }
+
+/*板塊區塊樣式*/
+  /* 板塊本身 */
+  .post-view{
+    border-radius: 1.3rem;
+    width: 100%;
+    transition: 0.2s;
+    padding: 2rem 0.7rem 0.7rem 0.7rem;
+    animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  /* 板塊本身觸發動畫 */
+  .post-view:hover {
+    border-radius: 1.4rem;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+
+
+/* 區塊樣式 */
+  /*區塊背景顏色*/
+
+
+  /* 區塊陰影 */
+    /*紅色區塊*/
     .post-view-red {
       box-shadow: 0 7px 0 0 var(--post-view-redBoxShadow);
     }
-    .post-view-Red {
-      box-shadow: 0 7px 0 0 var(--post-view-redBoxShadow);
-    }
-    .post-view-Red:hover {
-      margin-top: 4px;
-      margin-bottom: -4px;
-      box-shadow: 0 3px 0 0 var(--post-view-redBoxShadow);
-    }
-  /*藍色區塊*/
+      /* 紅色背景 */
+      .bg-red {
+        background-color: var(--bg-red);
+      }
+      /* 紅色區塊 - 可按壓 */
+      .post-view-red-pressable {
+        box-shadow: 0 7px 0 0 var(--post-view-redBoxShadow);
+      }
+      .post-view-red-pressable:hover {
+        margin-top: 4px;
+        margin-bottom: -4px;
+        box-shadow: 0 3px 0 0 var(--post-view-redBoxShadow);
+      }
+      .post-view-red-pressable:focus {
+        margin-top: 7px;
+        margin-bottom: -7px;
+        box-shadow: 0 0 0 0 var(--post-view-redBoxShadow);
+      }
+      
+
+    /*藍色區塊*/
     .post-view-blue {
       box-shadow: 0 7px 0 0 var(--post-view-blueBoxShadow);
     }
-    .post-view-Blue {
-      box-shadow: 0 5px 0 0 var(--post-view-blueBoxShadow);
-    }
-    .post-view-Blue:hover {
-      margin-top: 2px;
-      margin-bottom: -2px;
-      box-shadow: 0 3px 0 0 var(--post-view-blueBoxShadow);
-    }
-  /*灰色區塊*/
+      /* 藍色背景 */
+      .bg-blue {
+        background-color: var(--bg-blue);
+      }
+      /* 藍色區塊 - 可按壓 */
+      .post-view-blue-pressable {
+        box-shadow: 0 7px 0 0 var(--post-view-blueBoxShadow);
+      }
+      .post-view-blue-pressable:hover {
+        margin-top: 4px;
+        margin-bottom: -4px;
+        box-shadow: 0 3px 0 0 var(--post-view-blueBoxShadow);
+      }
+      .post-view-blue-pressable:focus {
+        margin-top: 7px;
+        margin-bottom: -7px;
+        box-shadow: 0 0 0 0 var(--post-view-blueBoxShadow);
+      }
+
+    /*灰色區塊*/
     .post-view-gray {
       box-shadow: 0 7px 0 0 var(--post-view-grayBoxShadow);
     }
-    .post-view-Gray {
-      box-shadow: 0 5px 0 0 var(--post-view-grayBoxShadow);
-    }
-    .post-view-Gray:hover {
-      margin-top: 2px;
-      margin-bottom: -2px;
-      box-shadow: 0 3px 0 0 var(--post-view-grayBoxShadow);
-    }
+      /* 淺灰色背景 */
+      .bg-whitegray {
+        background-color: var(--bg-whitegray);
+      }
+      /* 灰色背景 */
+      .bg-gray {
+        background-color: var(--bg-gray);
+      }
+      /* 灰色區塊 - 可按壓 */
+      .post-view-gray-pressable {
+        box-shadow: 0 5px 0 0 var(--post-view-grayBoxShadow);
+      }
+      .post-view-gray-pressable:hover {
+        margin-top: 2px;
+        margin-bottom: -2px;
+        box-shadow: 0 3px 0 0 var(--post-view-grayBoxShadow);
+      }
+      .post-view-gray-pressable:focus {
+        margin-top: 2px;
+        margin-bottom: -2px;
+        box-shadow: 0 3px 0 0 var(--post-view-grayBoxShadow)
+      }
+    
+    /*已知問題區塊*/
+      /* 區塊樣式 */
+      .prob-post-view {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        border-radius: 0.7rem;
+        box-shadow: 0 3px 0 0 var(--post-view-whitegrayBorder) inset;
+        width: auto;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+      }
+      .prob-post-view:hover {
+        box-shadow: 0 -3px 0 0 var(--post-view-whitegrayBorder) inset;
+        margin-top: -3px;
+        margin-bottom: 3px;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+      }
+        /*已知問題標題*/
+        .prob-title {
+          text-align: center;
+          animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+          transition: 0.5s;
+        }
+        /*已知問題內容*/
+        .prob-meta {
+          width: 90%;
+          margin-left: 5%;
+          margin-top: 0.6rem;
+          margin-bottom: 0;
+          font-size: 1.125rem;
+          font-weight: 300;
+          animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+          transition: 0.5s;
+        }
 
+    /* 無背景區塊 */
     .post-view-nobg {
       border: 3px solid var(--post-view-BoxShadow-bg);
       box-shadow: 0 7px 0 0 var(--post-view-BoxShadow-bg);
     }
 
-/*已知問題區塊*/
-.post-view-view {
-  margin-left: 0.7rem;
-  margin-right: 0.7rem;
-  border-radius: 0.7rem;
-  box-shadow: 0 3px 0 0 var(--post-view-whitegrayBorder) inset;
-  width: auto;
-  transition: 0.3s;
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-.post-view-view:hover {
-  box-shadow: 0 -3px 0 0 var(--post-view-whitegrayBorder) inset;
-  margin-top: -3px;
-  margin-bottom: 3px;
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-  /*已知問題標題*/
-  .prob-title {
-    text-align: center;
-    animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-    transition: 0.5s;
-  }
-  /*已知問題內容*/
-  .prob-meta {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 0.6rem;
-    margin-bottom: 0;
-    font-size: 1.125rem;
-    font-weight: 300;
-    animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-    transition: 0.5s;
-  }
-
-/*1rem高度區塊*/
-.space1rem {
-  height: 0.7rem;
+    /* 隱藏區塊 */
+      /* 隱藏按鈕 */
+      .hide_btn {
+        margin: 1rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+        /* 隱藏內容區塊 */
+        #hide-div {
+          border-radius: 2.5rem;
+          width: 100%;
+          display: none;
+          -webkit-border-radius: 2.5rem;
+          -moz-border-radius: 2.5rem;
+          -ms-border-radius: 2.5rem;
+          -o-border-radius: 2.5rem;
+        }
+        
+/* 間隔區塊 */
+.space-view {
+  /* 間隔大小在 html 中個別設定：<div class="space-view" style="height: {高度};"> */
   width: 100%;
 }
 
-/*文章標籤*/
-.post-tag {
-  position:relative;
-  width: 7rem;
-  height: 2.6rem;
-  border-radius: 1.3rem;
-  display: flex;
-  left: -0.7rem;
-  top: -0.5rem;
-  justify-content: center;
-  align-items: center;
-  background-color: #c96b72;   
-  cursor: pointer;
-  animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
-  transition: 0.3s;
-}
-.post-redTag {
-  background-color: #c34141; 
-  box-shadow: 0 5px 0 0 #ac3939;
-}
-.post-blueTag {
-  background-color: #1886b9;
-  box-shadow: 0 5px 0 0 #1474a1;
-}
-  /*文章標籤文字*/
-  .post-tag-text {
-    font-size: 1.2rem;
-    font-weight: 700;
-    font-family: var(--bs-body-font-family);
-    color: #fff;
-  }
-  /*文章標籤動畫*/
-    /*紅色左右橫擺動畫*/
-    .post-tag-RLmove-red:hover{
-      animation-name: RLmove-red;
-      animation-duration: 1s;
-      animation-iteration-count: 1;
-    }@keyframes RLmove-red {
-      0%{
-        width: 7rem;
-        height: 2.6rem;
-        left: -0.7rem;
-        box-shadow: 0 5px 0 0 #ac3939;
-        border: 0px solid #ac3939;
-      }
-      18%{
-        left: -1.2rem;
-      }
-      29%{
-        left: -0.3rem;
-      }
-      52%{
-        width: 7.2rem;
-        top: -0.5rem;
-        left: -1rem;
-        margin-bottom: -3px;
-        height: 2.8rem;
-        border-radius: 1.35rem;
-        border: 0 solid #ffffff00;
-        border: 5px solid #ac3939;
-        box-shadow: 0 5px 0 0 #ac3939;
-      }
-      65%{
-        left: -0.5rem;
-      }
-      83%{
-        left: -0.8rem;
-      }
-      100%{
-        width: 7rem;
-        height: 2.6rem;
-        left:-0.7rem;
-        border: 0px solid #ac3939;
-        box-shadow: 0 5px 0 0 #ac3939;
-      }}
-    /*藍色左右橫擺動畫*/
-    .post-tag-RLmove-blue:hover{
-      animation-name: RLmove-blue;
-      animation-duration: 1s;
-      animation-iteration-count: 1;
-    }@keyframes RLmove-blue {
-      0%{
-        width: 7rem;
-        height: 2.6rem;
-        margin-left: -1rem;
-        box-shadow: 0 0 0 0 #4b7a89;
-      }
-      18%{
-        margin-left: -1.6rem;
-      }
-      29%{
-        margin-left: -0.5rem;
-      }
-      52%{
-        width: 7.2rem;
-        margin-top: -1rem;
-        margin-left: -1.4rem;
-        margin-bottom: 0.3rem;
-        height: 2.8rem;
-        border-radius: 1.35rem;
-        border: 0 solid #ffffff00;
-        border: 5px solid #4b7a89;
-        box-shadow: 0 4px 0 0 #4b7a89;
-      }
-      65%{
-        margin-left: -0.7rem;
-      }
-      83%{
-        margin-left: -1.2rem;
-      }
-      100%{
-        width: 7rem;
-        height: 2.6rem;
-        margin-left:-1rem;
-        box-shadow: 0 0 0 0 #4b7a89;
-      }}
-    /*紅色左右晃動動畫*/
-    .post-tag-animation2-red:hover {
-      animation-name: tag-animation2-red;
-      animation-duration: 1s;
-      animation-iteration-count: 1;
-    }@keyframes tag-animation2-red {
-      0%{
-        width: 7rem;
-        height: 2.6rem;
-        transform:rotate(0deg);
-        border: 0px solid #ac3939;
-        box-shadow: 0 5px 0 0 #ac3939;
-      }
-      18%{
-        transform:rotate(10deg);
-      }
-      29%{
-        transform:rotate(-8deg);
-      }
-      52%{
-        width: 7.4rem;
-        transform:rotate(6deg);
-        top: -0.5rem;
-        margin-bottom: -0.5rem;
-        left: -0.9rem;
-        height: 3.1rem;
-        border-radius: 1.5rem;
-        border: 5px solid #ac3939;
-        box-shadow: 0 4px 0 0 #ac3939;
-      }
-      65%{
-        transform:rotate(-4deg);
-      }
-      83%{
-        transform:rotate(2deg);
-      }
-      100%{
-        width: 7rem;
-        height: 2.6rem;
-        border: 0px solid #ac3939;
-        box-shadow: 0 5px 0 0 #ac3939;
-      }}
-    /*藍色左右晃動動畫*/
-    .post-tag-animation2-blue:hover {
-      animation-name: tag-animation2-blue;
-      animation-duration: 1s;
-      animation-iteration-count: 1;
-    }@keyframes tag-animation2-blue {
-      0%{
-        width: 7rem;
-        height: 2.6rem;
-        transform:rotate(0deg);
-        border: 0px solid #1474a1;
-        box-shadow: 0 5px 0 0 #1474a1;
-      }
-      18%{
-        transform:rotate(10deg);
-      }
-      29%{
-        transform:rotate(-8deg);
-      }
-      52%{
-        width: 7.4rem;
-        transform:rotate(6deg);
-        top: -0.5rem;
-        margin-bottom: -0.5rem;
-        left: -0.9rem;
-        height: 3.1rem;
-        border-radius: 1.5rem;
-        border: 5px solid #1474a1;
-        box-shadow: 0 5px 0 0 #1474a1;
-      }
-      65%{
-        transform:rotate(-4deg);
-      }
-      83%{
-        transform:rotate(2deg);
-      }
-      100%{
-        width: 7rem;
-        height: 2.6rem;
-        border: 0px solid #1474a1;
-        box-shadow: 0 5px 0 0 #1474a1;
-      }
-    }
+/* 區塊標籤 */
+  /* 新區塊標籤：規劃中... */
 
-#hide-div {
-  border-radius: 2.5rem;
-  width: 100%;
-  /* background-color: var(--hide-div-bg); */
-  display: none;
-  -webkit-border-radius: 2.5rem;
-  -moz-border-radius: 2.5rem;
-  -ms-border-radius: 2.5rem;
-  -o-border-radius: 2.5rem;
-}
-.hide_btn {
-  margin: 1rem 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+
 
 .new-icon {
   background-color: #a52834;
