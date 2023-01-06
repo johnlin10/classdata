@@ -461,7 +461,8 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: 'Nunito', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;  font-weight: 900;
+  font-family: var(--bs-body-font-family);
+  font-weight: 900;
   line-height: 1.2;
 }
 
@@ -473,8 +474,12 @@ h1, .h1 {
 h1 {
   cursor: pointer;
   text-shadow: 0.2rem 0.2rem #3e656dcf;
-  transition: 0.5s;
+  transition: 0.3s;
   animation-timing-function: cubic-bezier(0.71, 0, 0.34, 1);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 h1:hover {
@@ -13075,7 +13080,7 @@ header.masthead .site-heading .h1 {
 /* 文章頁面樣式 */
   /* 文章標題樣式 */
   .PostTitle {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-left: -0.5rem;
     font-size: 2rem;
     font-family: var(--bs-body-font-family);
@@ -13086,6 +13091,8 @@ header.masthead .site-heading .h1 {
   .PostMeta {
     font-size: 1.125rem;
     margin: 1rem 0;
+    letter-spacing: 0.1rem;
+    line-height: 1.85rem;
     padding: 0 clamp(10px, 5vw, 3rem);
     color: var(--PostMeta);
   }

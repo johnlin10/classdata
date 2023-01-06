@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>PWA 應用開發計畫 - 班級資訊平台</title>
+        <title>Home Assistant 智慧家居平台</title>
         <link rel="icon" type="image/png" href="../school.png" />
         <!-- PWA設定 -->
         <link rel="manifest" href="../manifest.json">
@@ -31,7 +31,7 @@
         <!-- 頂部標題欄 -->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div id="TopNavbar">
-                <a class="navbar-brand" href="../mobile.html"><i class="fa-solid fa-school"></i> 班級資訊平台</a>
+                <a class="navbar-brand" href="../mobile.html"><i class="fa-solid fa-user-graduate"></i> 自主學習成果</a>
                 </a>
             </div>
         </nav>
@@ -40,7 +40,7 @@
         <div class="footer-top-view">
             <div class="footer-view">
                 <footer class="footer">
-                    <a href="../mobile.html" class="footer-title"><div class="footer-icon"><i class="fa-solid fa-school"></i><span>班級資訊平台</span></div></a>
+                    <a href="../mobile.html" class="footer-title"><div class="footer-icon"><i class="fa-solid fa-user-graduate"></i><span>自主學習成果</span></div></a>
                     <hr style="width: 80%; margin-left: calc(10% - 5px); color: #ffffff10;">
                     <a href="../mobile.html" class="footer-list"><div><i class="fa-solid fa-house"></i><span>首頁</span></div></a>
                     <a href="POST.html" class="footer-list"><div><i class="fa-solid fa-volume-off"></i><span>公告</span></div></a>
@@ -71,7 +71,7 @@
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-md-10 col-lg-8 col-xl-7">
                             <div class="site-heading">
-                                <h1>PWA 應用開發計畫</h1>
+                                <h1>Home Assistant<br>智慧家居平台</h1>
                                 <span class="subheading"></span>
                             </div>
                         </div>
@@ -86,35 +86,31 @@
                         <div class="post-view post-view-blue bg-blue">
                             <div>
                                 <h5 class="post-meta-blue post-title-view">2023.1.6</h5>
-                                <h2 class="post-title-blue post-title-view">開發進度</h2>
+                                <h2 class="post-title-blue post-title-view">完成進度</h2>
                                 <div class="Progress">
-                                    <div class="ProgressBar" style="width: 55%;"></div>
+                                    <div class="ProgressBar" style="width: 90%;"></div>
                                 </div>
-                                <span class="ProgressText">執行開發中...　55%</span>
+                                <span class="ProgressText">可正常連線與操作</span>
                             </div>
-                            
                             <div style="height: 1rem;"></div>
                         </div>
                     </div>
-                    <br>
-                    <br>
-                    <h2 class="PostTitle"><i class="fa-solid fa-hashtag"></i> 開發計畫</h2>
-                    <p class="post-meta PostMeta">PWA 應用的前期建設需要非常深厚的開發基礎，顯然這超出了我目前的能力範圍，但我仍會不斷突破，此功能預計在 5.0 版本中推出，敬請期待！</p>
-                    <br>
-                    <br>
-                    <br>
-                    <h2 class="PostTitle"><i class="fa-solid fa-hashtag"></i> PWA 簡介</h2>
-                    <p class="post-meta PostMeta">PWA，全稱 Progressive Web App。</p>
-                    <p class="post-meta PostMeta">擁有極佳的適應能力，可安裝於電腦及行動裝置上，等同於獨立的 APP，安裝佔用極少資源，可一直保持最新狀態，用戶不需手動更新應用，新功能可隨時上線。</p>
+                    
+                    <h2 class="PostTitle"><i class="fa-solid fa-map-location-dot"></i> 初期規劃與準備</h2>
+                    <p class="post-meta PostMeta">　　在這開始規劃這次的自主學習計畫前，我已經對於物聯網有一定的瞭解，且有實際經驗，在家中有佈置了一些智慧家庭裝置，當時也為了避免踩坑，嘗試去了解物聯網的運作方式，像是不同設備的功能、不同的連線方式、支持的操作系統。</p>
+                    <p class="post-meta PostMeta">　　除了基礎知識，這次的主題是「Home Assistant 智慧家居平台」，所以必須要有物聯網裝置在這個平台上運作，好在我已經有了一些基礎裝置。另外，還需要一台 Windows 電腦，以及路由器，用於平台的搭建。（本來想用樹莓派作為智慧家居平台的載體，但樹莓派在太貴了（T_T）</p>
+                    <div class="img-view"><img src="images/HomeAssistant.jpg" class="img"></div>
+
+                    <h2 class="PostTitle"><i class="fa-solid fa-wifi"></i> 網路配置</h2>
+                    <p class="post-meta PostMeta">　　物聯網裝置需要有穩定的網路環境，因為它們需要連接到互聯網才能正常工作。如果網路不穩定或中斷，物聯網裝置就無法與其他裝置通信，也就無法正常執行自動化指令或提供監控和遙控功能。</p>
+                    <p class="post-meta PostMeta">　　此外，物聯網裝置需要持續與互聯網連接，以便能夠接收最新的軟體更新和數據。如果網路環境不穩定，物聯網裝置可能無法及時更新軟體，導致安全漏洞和功能缺失。</p>
+                    <p class="post-meta PostMeta">　　為了確保物聯網裝置能夠正常工作，建議使用高頻寬、支持多天線收發的路由器或無線收發器（例如支持 Wi-Fi 6、6E 的路由器），並確保所有物聯網裝置都在同一區域網內。</p>
                     <div class="img-view"><img src="images/pww-vs-native.jpg" class="img"></div>
-                    <p class="post-meta PostMeta">相比於一般網頁，PWA 應用可提供近於 APP 的使用介面，可離線使用。</p>
-                    <p class="post-meta PostMeta">相比於一般 APP，PWA 應用安裝更為便捷，一串網址即可分享，不須到應用商店安裝或更新。</p>
+
                     <br>
                     <br>
                 </div>
             </div>
-            <br>
-            <br>
             
             <!-- Footer-->
             <footer class="border-top">
