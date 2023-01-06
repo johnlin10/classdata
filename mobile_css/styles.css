@@ -260,6 +260,7 @@
 
     /* 表格樣式 */
     --Table-Title-text: #28404c;
+    --Table-Title-text-bg: #3c5b6a;
     --Table-Data_text: #8fb4c7;
     --Table-Data-bg: #28404c;
     --Table-Data-bg-hover: #314f5e;
@@ -14211,6 +14212,8 @@ input[type="radio"]:checked {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
+  padding-bottom: 15px;
+  padding-right: 15px;
 }
 
 .Table_TitleRows {
@@ -14238,6 +14241,19 @@ input[type="radio"]:checked {
 .Table_Rows {
   margin-right: 0.5rem;
 }
+.Table_Rows_bg {
+  padding: 0 10px;
+  border-radius: 1.2rem;
+  background-color: #ffffff10;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
+}
+.Table_Rows_bg .Table_TopTitle{
+  color: var(--Table-Title-text-bg);
+}
+
 .Table_Data {
   display: flex;
   justify-content: center;
