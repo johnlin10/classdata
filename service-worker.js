@@ -3,7 +3,7 @@ const deleteCache = async (key) => {
   await caches.delete(key);
 };
 const deleteOldCaches = async () => {
-  const cacheKeepList = ["v4.12.3.12"];
+  const cacheKeepList = ["v4.12.3.13"];
   const keyList = await caches.keys();
   const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
   await Promise.all(cachesToDelete.map(deleteCache));
@@ -11,21 +11,31 @@ const deleteOldCaches = async () => {
 
 // 通過版本控制更新
 const addResourcesToCache = async (resources) => {
-  const cache = await caches.open("v4.12.3.12");
+  const cache = await caches.open("v4.12.3.13");
   await cache.addAll(resources);
 };
 const putInCache = async (request, response) => {
-  const cache = await caches.open("v4.12.3.12");
+  const cache = await caches.open("v4.12.3.13");
   await cache.put(request, response);
 };
 
-// 新版本緩存後，自動刷新頁面
-self.addEventListener('activate', event => {
-  event.waitUntil(clients.claim());
+self.addEventListener("fetch", (event) => {
+  // 在這裡檢查 service worker 是否已經更新
+  if (isNewServiceWorker()) {
+    event.respondWith(
+      // 如果是新的 service worker，則重新整理網頁
+      self.clients.matchAll().then((clients) => {
+        clients.forEach((client) => client.navigate(client.url));
+      })
+    );
+  } else {
+    // 如果不是新的 service worker，則繼續正常處理請求
+    event.respondWith(
+      fetch(event.request)
+    );
+  }
 });
-self.skipWaiting().then(() => {
-  console.log('Activated new service worker...');
-});
+
 
 
 // 啟動 Service Worker
@@ -98,23 +108,24 @@ self.addEventListener("install", (event) => {
   self.skipWaiting();
   event.waitUntil(
     addResourcesToCache([
-      "/classdata/mobile.html",
-      "/classdata/manifest.json",
-      "/classdata/js/scripts.js",
-      "/classdata/js/FastGo.js",
-      "/classdata/mobile_css/styles.css",
-      "/classdata/pages/POST.html",
-      "/classdata/pages/FOLDER.html",
-      "/classdata/pages/LOG.html",
-      "/classdata/Post/PWA.html",
-      "/classdata/pages/CourseSchedule.html",
-      "/classdata/pages/ExaminationSchedule.html",
-      "/classdata/pages/CheerleaderCompetition.html",
-      "/classdata/ReportProblem.html",
-      "/classdata/pages/Karnaugh%20Map%20Builder%20and%20Solver.html",
-      "/classdata/Karnaugh%20Map%20Builder%20and%20Solver_files/app.js",
-      "/classdata/Karnaugh%20Map%20Builder%20and%20Solver_files/equation.js",
-      "/classdata/Karnaugh%20Map%20Builder%20and%20Solver_files/style.css",
+      "mobile.html",
+      "manifest.json",
+      "js/scripts.js",
+      "js/FastGo.js",
+      "mobile_css/styles.css",
+      "pages/POST.html",
+      "pages/FOLDER.html",
+      "pages/LOG.html",
+      "pages/HappyNewYear.html",
+      "Post/PWA.html",
+      "pages/CourseSchedule.html",
+      "pages/ExaminationSchedule.html",
+      "pages/CheerleaderCompetition.html",
+      "ReportProblem.html",
+      "pages/Karnaugh Map Builder and Solver.html",
+      "Karnaugh Map Builder and Solver_files/app.js",
+      "Karnaugh Map Builder and Solver_files/equation.js",
+      "Karnaugh Map Builder and Solver_files/style.css",
     ])
   );
 });
