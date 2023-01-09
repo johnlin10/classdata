@@ -3,7 +3,7 @@ const deleteCache = async (key) => {
   await caches.delete(key);
 };
 const deleteOldCaches = async () => {
-  const cacheKeepList = ["v4.12.3.13"];
+  const cacheKeepList = ["v4.12.3.14"];
   const keyList = await caches.keys();
   const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
   await Promise.all(cachesToDelete.map(deleteCache));
@@ -11,31 +11,21 @@ const deleteOldCaches = async () => {
 
 // 通過版本控制更新
 const addResourcesToCache = async (resources) => {
-  const cache = await caches.open("v4.12.3.13");
+  const cache = await caches.open("v4.12.3.14");
   await cache.addAll(resources);
 };
 const putInCache = async (request, response) => {
-  const cache = await caches.open("v4.12.3.13");
+  const cache = await caches.open("v4.12.3.14");
   await cache.put(request, response);
 };
 
-self.addEventListener("fetch", (event) => {
-  // 在這裡檢查 service worker 是否已經更新
-  if (isNewServiceWorker()) {
-    event.respondWith(
-      // 如果是新的 service worker，則重新整理網頁
-      self.clients.matchAll().then((clients) => {
-        clients.forEach((client) => client.navigate(client.url));
-      })
-    );
-  } else {
-    // 如果不是新的 service worker，則繼續正常處理請求
-    event.respondWith(
-      fetch(event.request)
-    );
-  }
+// 新版本緩存後，自動刷新頁面
+self.addEventListener('activate', event => {
+  event.waitUntil(clients.claim());
 });
-
+self.skipWaiting().then(() => {
+  console.log('Activated new service worker...');
+});
 
 
 // 啟動 Service Worker
@@ -129,4 +119,3 @@ self.addEventListener("install", (event) => {
     ])
   );
 });
-
